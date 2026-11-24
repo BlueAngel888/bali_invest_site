@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Nuanu Bali Properties · Bali Invest">
+<meta property="og:description" content="Nuanu Creative City projects and BREIG villas in Bali: prices, photos, video tours. WhatsApp Florin +40 757 070 757.">
+<meta property="og:image" content="/media/img/luna-residences_6.webp">
+<link rel="icon" href="/media/img/florin-s.webp">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>Nuanu Bali Properties</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Bali Invest: Nuanu Creative City projects in Bali with prices, photos, video tours and the Nuanu map. Ask Florin on WhatsApp +40 757 070 757.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: full-bleed hero photo, then alternating project spreads (gallery | facts | phone video), dark CTA bands every few projects */
+:root {
+  --bg: #ECEEE8; --surface: #F8F9F5; --ink: #13201A; --muted: #56645B; --line: #CDD4CA;
+  --accent: #A8692A; --wa: #0F7A40; --wa-ink: #FFFFFF; --band: #12201A; --band-ink: #EEF1EA; --band-muted: #A9B8AD;
+  --display: "Syne", "Avenir Next", "Segoe UI", sans-serif;
+  --body: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 14px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0C130F; --surface: #131C17; --ink: #E7ECE5; --muted: #9AA89E; --line: #27342C;
+  --accent: #D9A35E; --wa: #1FA85A; --wa-ink: #06130B; --band: #18271F; --band-ink: #EEF1EA; --band-muted: #A9B8AD; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0C130F; --surface: #131C17; --ink: #E7ECE5; --muted: #9AA89E; --line: #27342C;
+  --accent: #D9A35E; --wa: #1FA85A; --wa-ink: #06130B; --band: #18271F; --band-ink: #EEF1EA; --band-muted: #A9B8AD; color-scheme: dark; }
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 72px); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.mono { font-family: var(--mono); }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); line-height: 1.04; letter-spacing: -0.01em; text-wrap: balance; margin: 0; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+/* top bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand .face { width: 40px; height: 40px; }
+.brand b { font-family: var(--display); font-size: 18px; letter-spacing: .02em; }
+.brand small { display: block; font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: .08em; }
+.bar nav { display: flex; gap: 18px; font-size: 14px; font-weight: 600; }
+.bar nav a { text-decoration: none; color: var(--muted); }
+.bar nav a:hover { color: var(--ink); }
+@media (max-width: 820px) { .bar nav { display: none; } }
+@media (max-width: 480px) { .brand small { display: none; } }
+
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 999px; font-weight: 700; font-size: 15px; text-decoration: none; border: 0; cursor: pointer; line-height: 1.2; }
+.btn.wa { background: var(--wa); color: var(--wa-ink); }
+.btn.wa:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: inherit; border: 1.5px solid currentColor; }
+.btn.sm { padding: 9px 14px; font-size: 14px; }
+.ico { width: 20px; height: 20px; flex: none; }
+.face { border-radius: 50%; width: 52px; height: 52px; object-fit: cover; flex: none; }
+
+/* hero */
+.hero { position: relative; color: #F4F6F1; background: #0d1511; }
+.hero picture img { width: 100%; height: min(78vh, 760px); min-height: 520px; object-fit: cover; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,14,10,.15) 0%, rgba(8,14,10,.05) 35%, rgba(8,14,10,.78) 100%); pointer-events: none; }
+.hero-copy { position: absolute; inset: auto 0 0 0; z-index: 2; padding-block: 0 44px; }
+.hero-copy .eyebrow { color: #E4EAE2; text-shadow: 0 1px 8px rgba(0,0,0,.6); }
+.hero p.lead, .coords { text-shadow: 0 1px 10px rgba(0,0,0,.55); }
+.hero h1 { font-size: clamp(44px, 9vw, 120px); font-weight: 800; margin: 10px 0 14px; letter-spacing: -0.02em; }
+.hero h1 em { font-style: normal; color: #E7B877; }
+.hero p.lead { max-width: 56ch; font-size: clamp(16px, 2vw, 19px); color: #E4EAE2; margin: 0 0 22px; }
+.hero-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.hero .btn.ghost { color: #F4F6F1; }
+.coords { position: absolute; top: 18px; right: max(16px, env(safe-area-inset-right, 0px)); z-index: 2; font-family: var(--mono); font-size: 12px; color: #E4EAE2; letter-spacing: .08em; text-align: right; }
+
+/* about Nuanu + map */
+.intro { padding-block: 72px 24px; }
+.intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 48px; align-items: start; }
+.intro h2 { font-size: clamp(32px, 4.4vw, 54px); margin-top: 10px; }
+.intro p { max-width: 62ch; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; margin: 26px 0 0; padding: 0; }
+.stats div { border-top: 1px solid var(--line); padding-top: 10px; }
+.stats dt { font-family: var(--display); font-size: 30px; font-weight: 700; color: var(--ink); }
+.stats dd { margin: 0; color: var(--muted); font-size: 14px; }
+.map { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.map img { width: 100%; height: auto; cursor: zoom-in; }
+.map figcaption { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 12px 16px; font-size: 13px; color: var(--muted); }
+@media (max-width: 900px) { .intro-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
+
+/* index */
+.index { padding-block: 40px 24px; }
+.index-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.index-head h2 { font-size: clamp(28px, 3.4vw, 40px); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: 600 14px var(--body); padding: 8px 14px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.ix-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.ix a { display: block; text-decoration: none; position: relative; border-radius: 12px; overflow: hidden; background: var(--surface); }
+.ix img { width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: transform .5s ease; }
+.ix a:hover img { transform: scale(1.04); }
+.ix-meta { display: flex; flex-direction: column; padding: 10px 12px 12px; gap: 2px; }
+.ix-name { font-weight: 700; font-size: 15px; line-height: 1.25; }
+.ix-price { font-size: 12.5px; color: var(--accent); }
+.ix.dim { opacity: .28; }
+@media (max-width: 1100px) { .ix-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .ix-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+
+/* project spreads */
+.project { padding-block: 64px; border-top: 1px solid var(--line); }
+.project.dim { display: none; }
+.p-head { display: grid; gap: 6px; margin-bottom: 24px; }
+.p-index { font-size: 12px; letter-spacing: .1em; color: var(--accent); margin: 0; }
+.p-head h2 { font-size: clamp(34px, 5vw, 64px); font-weight: 800; }
+.p-kind { margin: 0; color: var(--muted); font-weight: 500; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.tag { font-family: var(--mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; padding: 3px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.p-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr) 250px; gap: 32px; align-items: start; }
+.project:nth-of-type(even) .gallery { order: 2; }
+.project:nth-of-type(even) .p-info { order: 1; }
+.project:nth-of-type(even) .phone { order: 3; }
+.gallery { display: grid; gap: 10px; min-width: 0; }
+.g-main { width: 100%; aspect-ratio: 3/2; object-fit: cover; border-radius: var(--r); cursor: zoom-in; background: var(--line); }
+.thumbs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.thumbs img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; cursor: zoom-in; background: var(--line); }
+.thumbs.small { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.p-info { min-width: 0; }
+.price { font-family: var(--display); font-size: clamp(34px, 3.6vw, 46px); font-weight: 700; margin: 0 0 14px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.price.sm { font-size: 30px; margin-bottom: 10px; }
+.price .from { font-size: 13px; font-weight: 400; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); vertical-align: middle; margin-right: 4px; }
+.facts { margin: 0 0 16px; display: grid; gap: 0; }
+.fact { display: grid; grid-template-columns: 9.5em minmax(0, 1fr); gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+.fact dt { color: var(--muted); font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding-top: 3px; }
+.fact dd { margin: 0; font-weight: 600; }
+.fact sup { color: var(--accent); }
+.about { color: var(--muted); margin: 0 0 14px; }
+.amen { list-style: none; padding: 0; margin: 0 0 20px; display: flex; flex-wrap: wrap; gap: 6px; }
+.amen li { font-size: 13px; padding: 5px 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.ask { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.phone { margin: 0; display: grid; gap: 8px; justify-items: center; }
+.phone video { width: 100%; max-width: 250px; aspect-ratio: 9/16; border-radius: 22px; background: #000; border: 6px solid var(--ink); object-fit: cover; }
+.phone figcaption { font-size: 12px; color: var(--muted); letter-spacing: .06em; }
+@media (max-width: 1100px) {
+  .p-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); }
+  .phone { grid-column: 1 / -1; }
+  .project:nth-of-type(even) .gallery, .project:nth-of-type(even) .p-info { order: 0; }
+}
+@media (max-width: 760px) {
+  .p-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .thumbs { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+  .project { padding-block: 44px; }
+  .fact { grid-template-columns: 8em minmax(0, 1fr); }
+}
+
+/* CTA band */
+.cta-band { background: var(--band); color: var(--band-ink); }
+.cta-inner { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 28px; align-items: center; padding-block: 44px; }
+.cta-band .eyebrow { color: var(--band-muted); }
+.cta-band h3 { font-size: clamp(24px, 3vw, 36px); margin: 6px 0 8px; }
+.cta-sub { margin: 0; color: var(--band-muted); max-width: 54ch; }
+.face.big { width: 120px; height: 120px; }
+.cta-actions { display: grid; gap: 8px; justify-items: center; }
+.cta-actions .num { font-size: 14px; color: var(--band-muted); user-select: all; }
+.cta-band .btn.wa { background: #1FA85A; color: #06130B; }
+@media (max-width: 760px) { .cta-inner { grid-template-columns: minmax(0, 1fr); justify-items: start; gap: 18px; } .cta-actions { justify-items: start; } .face.big { width: 92px; height: 92px; } }
+
+/* BREIG */
+.breig { padding-block: 80px 40px; border-top: 1px solid var(--line); }
+.breig-head { display: grid; gap: 10px; margin-bottom: 28px; max-width: 70ch; }
+.breig-head h2 { font-size: clamp(32px, 4.4vw, 54px); }
+.breig-head p { margin: 0; color: var(--muted); }
+.b-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.b-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; display: grid; align-content: start; }
+.b-main { width: 100%; aspect-ratio: 16/10; object-fit: cover; cursor: zoom-in; }
+.b-card .thumbs.small { padding: 8px 8px 0; }
+.b-body { padding: 18px 20px 22px; display: grid; gap: 8px; }
+.b-body h3 { font-size: 30px; }
+.b-body .facts { margin-bottom: 6px; }
+@media (max-width: 860px) { .b-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* contact */
+.contact { padding-block: 80px; background: var(--surface); border-top: 1px solid var(--line); }
+.contact-grid { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 40px; align-items: center; }
+.contact .face.xl { width: 220px; height: 220px; }
+.contact h2 { font-size: clamp(36px, 5vw, 64px); margin: 8px 0 14px; }
+.contact p { color: var(--muted); max-width: 58ch; }
+.lines { display: grid; gap: 10px; margin: 20px 0 24px; }
+.line { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 18px; }
+.line .k { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); width: 7.5em; }
+.line .v { font-weight: 700; user-select: all; overflow-wrap: anywhere; }
+.copy { font: 600 12px var(--body); padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
+@media (max-width: 760px) { .contact-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; } .contact .face.xl { width: 140px; height: 140px; } }
+.company { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 40px; }
+.co-head h3 { font-size: clamp(24px, 3vw, 34px); margin: 8px 0 10px; }
+.co-head p { color: var(--muted); margin: 0; }
+.co-facts { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; }
+.co-facts div { border-top: 1px solid var(--line); padding-top: 8px; min-width: 0; }
+.co-facts dt { font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.co-facts dd { margin: 2px 0 0; font-weight: 600; font-size: 15px; overflow-wrap: anywhere; }
+@media (max-width: 860px) { .company { grid-template-columns: minmax(0, 1fr); gap: 20px; } .co-facts { grid-template-columns: minmax(0, 1fr); } }
+.disclaimer { padding-block: 28px 110px; font-size: 12.5px; color: var(--muted); }
+.disclaimer p { max-width: 100ch; margin: 0 0 8px; }
+
+/* floating bubble */
+.float { position: fixed; z-index: 30; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 0; text-decoration: none; }
+.float .face { width: 68px; height: 68px; box-shadow: 0 8px 24px rgba(0,0,0,.28); }
+.float .badge { position: absolute; right: -2px; bottom: -2px; width: 28px; height: 28px; border-radius: 50%; background: #1FA85A; color: #fff; display: grid; place-items: center; border: 2px solid var(--surface); }
+.float .badge .ico { width: 16px; height: 16px; }
+.float .label { background: var(--surface); color: var(--ink); border: 1px solid var(--line); font-weight: 700; font-size: 14px; padding: 9px 14px; border-radius: 999px; margin-right: 10px; box-shadow: 0 6px 18px rgba(0,0,0,.14); white-space: nowrap; }
+@media (max-width: 520px) { .float .label { display: none; } .float .face { width: 60px; height: 60px; } }
+
+/* lightbox */
+dialog.lb { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 92vh; }
+dialog.lb::backdrop { background: rgba(5,9,7,.88); }
+dialog.lb img { max-width: 96vw; max-height: 86vh; object-fit: contain; border-radius: 10px; }
+dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0px)); right: calc(14px + env(safe-area-inset-right, 0px)); font: 700 15px var(--body); padding: 10px 16px; border-radius: 999px; border: 0; background: #F4F6F1; color: #13201A; cursor: pointer; }
+</style>
+
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><img class="face" src="media/img/florin-s.webp" alt="" width="40" height="40"><span><b>BALI INVEST</b><small>Florin · Nuanu & Bali property</small></span></a>
+    <nav aria-label="Sections"><a href="#nuanu">Nuanu</a><a href="#map">Map</a><a href="#projects">Projects</a><a href="#breig">BREIG villas</a><a href="#contact">Contact</a></nav>
+    <a class="btn wa sm" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20property%20in%20Nuanu%2C%20Bali." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>WhatsApp</span></a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <picture>
+    <source media="(max-width: 700px)" srcset="media/img/luna-residences_2-s.webp 800w, media/img/luna-residences_2.webp 1600w">
+    <img src="media/img/luna-residences_6.webp" srcset="media/img/luna-residences_6-s.webp 800w, media/img/luna-residences_6.webp 1600w" sizes="100vw" alt="Luna Residences on the black-sand coast of Nuanu, Bali" fetchpriority="high">
+  </picture>
+  <p class="coords" aria-hidden="true">8°38′S 115°06′E<br>Tabanan · West Bali</p>
+  <div class="hero-copy"><div class="wrap">
+    <p class="eyebrow">Bali Invest · Property presentation</p>
+    <h1>Nuanu, <em>Bali.</em></h1>
+    <p class="lead">Fifteen projects inside Nuanu Creative City on Bali's west coast, plus a selection of BREIG villas across the island. Prices, key facts, renders and video tours in one place.</p>
+    <div class="hero-row">
+      <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%20saw%20your%20Nuanu%20projects%20page%20and%20I%27d%20like%20more%20details." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin on WhatsApp</span></a>
+      <a class="btn ghost" href="#projects">See the projects</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="intro" id="nuanu">
+  <div class="wrap intro-grid">
+    <div>
+      <p class="eyebrow">About the area</p>
+      <h2>A creative city on the black-sand coast</h2>
+      <p>Nuanu is a master-planned creative city in Tabanan, on Bali's west coast, about 15 minutes from Canggu. It mixes villas, residences and hotels with beach clubs, art spaces, international schools, wellness and restaurants, all inside one walkable, landscaped community next to Nyanyi Beach.</p>
+      <p>Every project on this page sits inside Nuanu and uses its shared infrastructure. Several offer freehold ownership for foreign buyers.</p>
+      <dl class="stats">
+        <div><dt>44 ha</dt><dd>of planned city infrastructure</dd></div>
+        <div><dt>15</dt><dd>projects in this presentation</dd></div>
+        <div><dt>$115k</dt><dd>lowest starting price (Black Sands Oasis)</dd></div>
+        <div><dt>~15 min</dt><dd>drive to Canggu</dd></div>
+      </dl>
+    </div>
+    <figure class="map" id="map">
+      <img src="media/img/nuanu-map-s.webp" srcset="media/img/nuanu-map-s.webp 1200w, media/img/nuanu-map.webp 2400w" sizes="(min-width: 900px) 55vw, 100vw" alt="Map of Nuanu Creative City with project locations" loading="lazy" data-zoom="media/img/nuanu-map.webp" width="1200" height="901">
+      <figcaption><span>Nuanu Creative City masterplan. Tap to enlarge.</span><a href="https://wa.me/40757070757?text=Hello%20Florin%2C%20can%20you%20send%20me%20the%20Nuanu%20map%20with%20the%20project%20locations%3F" target="_blank" rel="noopener">Ask for the full map</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="index" id="projects" aria-label="Project index">
+  <div class="wrap">
+    <div class="index-head">
+      <h2>All Nuanu projects</h2>
+      <div class="chips" role="group" aria-label="Filter projects"><button type="button" class="chip" data-f="villas" id="f-villas" aria-pressed="false">Villas</button><button type="button" class="chip" data-f="apartments" id="f-apartments" aria-pressed="false">Apartments</button><button type="button" class="chip" data-f="hotel" id="f-hotel" aria-pressed="false">Hotel</button><button type="button" class="chip" data-f="freehold" id="f-freehold" aria-pressed="false">Freehold</button><button type="button" class="chip" data-f="ready" id="f-ready" aria-pressed="false">Ready now</button></div>
+    </div>
+    <ul class="ix-grid"><li class="ix" data-tags="apartments beachfront offplan"><a href="#luna">
+  <img class="" src="media/img/luna-residences_6-s.webp" srcset="media/img/luna-residences_6-s.webp 800w, media/img/luna-residences_6.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Luna Residences" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Luna Residences</span><span class="ix-price mono">from $185,000</span></span></a></li><li class="ix" data-tags="villas freehold offplan"><a href="#flower">
+  <img class="" src="media/img/flower-estates_1-s.webp" srcset="media/img/flower-estates_1-s.webp 800w, media/img/flower-estates_1.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Flower Estates" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Flower Estates</span><span class="ix-price mono">from $500,000</span></span></a></li><li class="ix" data-tags="villas freehold offplan"><a href="#pavilions">
+  <img class="" src="media/img/the-pavilions_1-s.webp" srcset="media/img/the-pavilions_1-s.webp 800w, media/img/the-pavilions_1.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Pavilions" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">The Pavilions</span><span class="ix-price mono">from $620,000</span></span></a></li><li class="ix" data-tags="hotel offplan"><a href="#xhotel">
+  <img class="" src="media/img/xhotel_6-s.webp" srcset="media/img/xhotel_6-s.webp 800w, media/img/xhotel_6.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="X Hotel" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">X Hotel</span><span class="ix-price mono">from $173,999</span></span></a></li><li class="ix" data-tags="villas apartments offplan"><a href="#bso">
+  <img class="" src="media/img/black-sands-oasis_5-s.webp" srcset="media/img/black-sands-oasis_5-s.webp 800w, media/img/black-sands-oasis_5.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Black Sands Oasis" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Black Sands Oasis</span><span class="ix-price mono">from $115,400</span></span></a></li><li class="ix" data-tags="villas apartments freehold offplan"><a href="#biom">
+  <img class="" src="media/img/biom_3-s.webp" srcset="media/img/biom_3-s.webp 800w, media/img/biom_3.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="BIOM" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">BIOM</span><span class="ix-price mono">from $145,000</span></span></a></li><li class="ix" data-tags="villas hotel offplan"><a href="#origins">
+  <img class="" src="media/img/origins_8-s.webp" srcset="media/img/origins_8-s.webp 800w, media/img/origins_8.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Origins" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Origins</span><span class="ix-price mono">from $590,700</span></span></a></li><li class="ix" data-tags="apartments ready"><a href="#ecoverse">
+  <img class="" src="media/img/ecoverse_5-s.webp" srcset="media/img/ecoverse_5-s.webp 800w, media/img/ecoverse_5.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Ecoverse Residences" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Ecoverse Residences</span><span class="ix-price mono">from $197,000</span></span></a></li><li class="ix" data-tags="villas ready"><a href="#vol1">
+  <img class="" src="media/img/collectionsvol1_4-s.webp" srcset="media/img/collectionsvol1_4-s.webp 800w, media/img/collectionsvol1_4.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Collections Vol. 1" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">The Collections Vol. 1</span><span class="ix-price mono">from $750,000</span></span></a></li><li class="ix" data-tags="villas freehold"><a href="#vol2">
+  <img class="" src="media/img/collectionsvol2_6-s.webp" srcset="media/img/collectionsvol2_6-s.webp 800w, media/img/collectionsvol2_6.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Collections Vol. 2" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">The Collections Vol. 2</span><span class="ix-price mono">from $1,050,000</span></span></a></li><li class="ix" data-tags="villas freehold"><a href="#vol3">
+  <img class="" src="media/img/collectionsvol3_7-s.webp" srcset="media/img/collectionsvol3_7-s.webp 800w, media/img/collectionsvol3_7.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Collections Vol. 3" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">The Collections Vol. 3</span><span class="ix-price mono">from $1,800,000</span></span></a></li><li class="ix" data-tags="villas freehold"><a href="#residence">
+  <img class="" src="media/img/the-residence_5-s.webp" srcset="media/img/the-residence_5-s.webp 800w, media/img/the-residence_5.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Residence" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">The Residence</span><span class="ix-price mono">from $685,110</span></span></a></li><li class="ix" data-tags="apartments villas"><a href="#nyanyi">
+  <img class="" src="media/img/nyanyi-village-u3_3-s.webp" srcset="media/img/nyanyi-village-u3_3-s.webp 800w, media/img/nyanyi-village-u3_3.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Nyanyi Village U3" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Nyanyi Village U3</span><span class="ix-price mono">from $118,700</span></span></a></li><li class="ix" data-tags="apartments villas ready"><a href="#u2">
+  <img class="" src="media/img/unit-nuanu-u2_1-s.webp" srcset="media/img/unit-nuanu-u2_1-s.webp 800w, media/img/unit-nuanu-u2_1.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Unit Nuanu Village" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Unit Nuanu Village</span><span class="ix-price mono">On request</span></span></a></li><li class="ix" data-tags="apartments villas ready"><a href="#u1">
+  <img class="" src="media/img/unit-space-u1_4-s.webp" srcset="media/img/unit-space-u1_4-s.webp 800w, media/img/unit-space-u1_4.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Unit Space U1" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Unit Space U1</span><span class="ix-price mono">On request</span></span></a></li></ul>
+  </div>
+</section>
+
+
+<section class="project" id="luna" data-tags="apartments beachfront offplan">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">01 / 15 · Nuanu</p>
+      <h2>Luna Residences</h2>
+      <p class="p-kind">Beachfront residences · by 618 Development</p>
+      <div class="tags"><span class="tag">Apartments</span><span class="tag">Beachfront</span><span class="tag">Off-plan</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/luna-residences_6-s.webp" srcset="media/img/luna-residences_6-s.webp 800w, media/img/luna-residences_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Luna Residences, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_6.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/luna-residences_3-s.webp" srcset="media/img/luna-residences_3-s.webp 800w, media/img/luna-residences_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_3.webp"></li><li><img class="" src="media/img/luna-residences_4-s.webp" srcset="media/img/luna-residences_4-s.webp 800w, media/img/luna-residences_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_4.webp"></li><li><img class="" src="media/img/luna-residences_7-s.webp" srcset="media/img/luna-residences_7-s.webp 800w, media/img/luna-residences_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_7.webp"></li><li><img class="" src="media/img/luna-residences_5-s.webp" srcset="media/img/luna-residences_5-s.webp 800w, media/img/luna-residences_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_5.webp"></li><li><img class="" src="media/img/luna-residences_8-s.webp" srcset="media/img/luna-residences_8-s.webp 800w, media/img/luna-residences_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_8.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $185,000</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q4 2028</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold 60+ years</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Studio to 3BR penthouse</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>10–14%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">A beachfront residential project where the river meets the ocean, part of the Nuanu Creative City ecosystem. Ocean-view residences with private terraces, full blackout systems, YODEZEEN-designed interiors and panoramic views of the ocean, river and jungle. From 25% down payment.</p>
+        <ul class="amen"><li>Luna Beach Club access</li><li>Private ocean beach</li><li>YODEZEEN interiors</li><li>5-star 24/7 property management</li><li>In-residence dining</li><li>Daily shuttle in Nuanu</li><li>Lumeira Spa nearby</li><li>International school nearby</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Luna%20Residences%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Luna Residences</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/luna.webp" aria-label="Video tour: Luna Residences">
+          <source src="media/v/luna.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="flower" data-tags="villas freehold offplan">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">02 / 15 · Nuanu</p>
+      <h2>Flower Estates</h2>
+      <p class="p-kind">Standalone villas, 2–3 BR · by 618 Development</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Freehold</span><span class="tag">Off-plan</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/flower-estates_1-s.webp" srcset="media/img/flower-estates_1-s.webp 800w, media/img/flower-estates_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Flower Estates, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_1.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/flower-estates_8-s.webp" srcset="media/img/flower-estates_8-s.webp 800w, media/img/flower-estates_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_8.webp"></li><li><img class="" src="media/img/flower-estates_2-s.webp" srcset="media/img/flower-estates_2-s.webp 800w, media/img/flower-estates_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_2.webp"></li><li><img class="" src="media/img/flower-estates_4-s.webp" srcset="media/img/flower-estates_4-s.webp 800w, media/img/flower-estates_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_4.webp"></li><li><img class="" src="media/img/flower-estates_6-s.webp" srcset="media/img/flower-estates_6-s.webp 800w, media/img/flower-estates_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_6.webp"></li><li><img class="" src="media/img/flower-estates_3-s.webp" srcset="media/img/flower-estates_3-s.webp 800w, media/img/flower-estates_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_3.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $500,000</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q3 2027</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
+          <div class="fact"><dt>Project</dt><dd>26 standalone villas</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>10–12%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">The first residential project on Nuanu&#x27;s Golden Mile, the most exclusive district of the city. Standalone villas only, each with its own signature plant in a private garden. No apartment blocks, no hotels.</p>
+        <ul class="amen"><li>Communal flower gardens</li><li>Flower shop</li><li>Juice bar</li><li>Tea lounge</li><li>Fire pit &amp; BBQ area</li><li>Kids&#x27; playground</li><li>Pedestrian-friendly walkways</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Flower%20Estates%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Flower Estates</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/flower.webp" aria-label="Video tour: Flower Estates">
+          <source src="media/v/flower.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="pavilions" data-tags="villas freehold offplan">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">03 / 15 · Nuanu</p>
+      <h2>The Pavilions</h2>
+      <p class="p-kind">Pavilion-style villas · by OXO Living</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Freehold</span><span class="tag">Off-plan</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/the-pavilions_1-s.webp" srcset="media/img/the-pavilions_1-s.webp 800w, media/img/the-pavilions_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Pavilions, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_1.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/the-pavilions_8-s.webp" srcset="media/img/the-pavilions_8-s.webp 800w, media/img/the-pavilions_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_8.webp"></li><li><img class="" src="media/img/the-pavilions_2-s.webp" srcset="media/img/the-pavilions_2-s.webp 800w, media/img/the-pavilions_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_2.webp"></li><li><img class="" src="media/img/the-pavilions_3-s.webp" srcset="media/img/the-pavilions_3-s.webp 800w, media/img/the-pavilions_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_3.webp"></li><li><img class="" src="media/img/the-pavilions_5-s.webp" srcset="media/img/the-pavilions_5-s.webp 800w, media/img/the-pavilions_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_5.webp"></li><li><img class="" src="media/img/the-pavilions_9-s.webp" srcset="media/img/the-pavilions_9-s.webp 800w, media/img/the-pavilions_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_9.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $620,000</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q3 2027</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
+          <div class="fact"><dt>Project</dt><dd>26 boutique villas</dd></div>
+          
+        </dl>
+        <p class="about">An exclusive boutique development of pavilion-style villas co-created by OXO Living and Precht. Inspired by traditional Balinese pavilion living, it is built around privacy, wellness and longevity, with a private wellness center for owners.</p>
+        <ul class="amen"><li>Private wellness center “The Core”</li><li>Meditation pyramid</li><li>Hammam &amp; saunas</li><li>Hydrotherapy indoor pools</li><li>Gym &amp; yoga studio</li><li>Sound healing</li><li>Café “Nowhere”</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20The%20Pavilions%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about The Pavilions</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/pavilions.webp" aria-label="Video tour: The Pavilions">
+          <source src="media/v/pavilions.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<aside class="cta-band" aria-label="Contact Florin">
+  <div class="wrap cta-inner">
+    <img class="face big" src="media/img/florin.webp" alt="Florin, Bali Invest" width="120" height="120" loading="lazy">
+    <div class="cta-copy">
+      <p class="eyebrow">Bali Invest · Florin</p>
+      <h3>Like what you see? I&#x27;ll send you the full presentation.</h3>
+      <p class="cta-sub">Brochures, layouts, price lists and video tours on WhatsApp. Usually within the same day.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%20saw%20your%20Nuanu%20projects%20page%20and%20I%27d%20like%20more%20details." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask for details</span></a>
+      <span class="num mono">+40 757 070 757</span>
+    </div>
+  </div>
+</aside>
+<section class="project" id="xhotel" data-tags="hotel offplan">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">04 / 15 · Nuanu</p>
+      <h2>X Hotel</h2>
+      <p class="p-kind">Investment hotel rooms · by Nuanu &amp; Rentaved</p>
+      <div class="tags"><span class="tag">Hotel</span><span class="tag">Off-plan</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/xhotel_6-s.webp" srcset="media/img/xhotel_6-s.webp 800w, media/img/xhotel_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="X Hotel, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/xhotel_6.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/xhotel_4-s.webp" srcset="media/img/xhotel_4-s.webp 800w, media/img/xhotel_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_4.webp"></li><li><img class="" src="media/img/xhotel_1-s.webp" srcset="media/img/xhotel_1-s.webp 800w, media/img/xhotel_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_1.webp"></li><li><img class="" src="media/img/xhotel_3-s.webp" srcset="media/img/xhotel_3-s.webp 800w, media/img/xhotel_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_3.webp"></li><li><img class="" src="media/img/xhotel_2-s.webp" srcset="media/img/xhotel_2-s.webp 800w, media/img/xhotel_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_2.webp"></li><li><img class="" src="media/img/xhotel_7-s.webp" srcset="media/img/xhotel_7-s.webp 800w, media/img/xhotel_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_7.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $173,999</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>2027</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold 25 + 20 years</dd></div>
+          <div class="fact"><dt>Project</dt><dd>41 hotel rooms</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>10–14%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">The first investment hotel inside Nuanu Creative City and its official hospitality partner: a 4-star property 3 minutes from the beach. Bali&#x27;s first art-experience hotel concept, with recycled art façade panels, light-mapping installations, the largest natural lagoon pool in Nuanu and a 360° sunset rooftop. About 30% of 2027 bookings are pre-confirmed.</p>
+        <ul class="amen"><li>45 m lagoon pool (420 m²)</li><li>360° rooftop bar</li><li>On-site restaurant</li><li>Hotel gym</li><li>24/7 concierge</li><li>Private balconies in every room</li><li>Experience Concierge</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20X%20Hotel%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about X Hotel</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/xhotel.webp" aria-label="Video tour: X Hotel">
+          <source src="media/v/xhotel.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="bso" data-tags="villas apartments offplan">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">05 / 15 · Nuanu</p>
+      <h2>Black Sands Oasis</h2>
+      <p class="p-kind">Villas, studios &amp; penthouses · by UNIT (Unit Space)</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Apartments</span><span class="tag">Off-plan</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/black-sands-oasis_5-s.webp" srcset="media/img/black-sands-oasis_5-s.webp 800w, media/img/black-sands-oasis_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Black Sands Oasis, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_5.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/black-sands-oasis_1-s.webp" srcset="media/img/black-sands-oasis_1-s.webp 800w, media/img/black-sands-oasis_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_1.webp"></li><li><img class="" src="media/img/black-sands-oasis_3-s.webp" srcset="media/img/black-sands-oasis_3-s.webp 800w, media/img/black-sands-oasis_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_3.webp"></li><li><img class="" src="media/img/black-sands-oasis_2-s.webp" srcset="media/img/black-sands-oasis_2-s.webp 800w, media/img/black-sands-oasis_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_2.webp"></li><li><img class="" src="media/img/black-sands-oasis_8-s.webp" srcset="media/img/black-sands-oasis_8-s.webp 800w, media/img/black-sands-oasis_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_8.webp"></li><li><img class="" src="media/img/black-sands-oasis_9-s.webp" srcset="media/img/black-sands-oasis_9-s.webp 800w, media/img/black-sands-oasis_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_9.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $115,400</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>2028</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold 35 + 20 years</dd></div>
+          <div class="fact"><dt>Project</dt><dd>83 villas · 20 studios · 8 penthouses</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>10.5–17.8%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">A 1.5-hectare development 700 m from the ocean that fuses desert-modern architecture with Moroccan, dune-inspired aesthetics, surrounded by 5 hectares of landscaped walking areas. Apartments are scheduled for April 2028 and villas for October 2028.</p>
+        <ul class="amen"><li>Hammam</li><li>Reflection pool</li><li>Arabic-cuisine restaurant</li><li>Rooftop area</li><li>Direct access to Aurora Park</li><li>30+ restaurants within 1 min</li><li>International school &amp; kindergarten (1 min)</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Black%20Sands%20Oasis%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Black Sands Oasis</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/bso.webp" aria-label="Video tour: Black Sands Oasis">
+          <source src="media/v/bso.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="biom" data-tags="villas apartments freehold offplan">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">06 / 15 · Nuanu</p>
+      <h2>BIOM</h2>
+      <p class="p-kind">Villas &amp; residences · by Biom Development Group</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Apartments</span><span class="tag">Freehold</span><span class="tag">Off-plan</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/biom_3-s.webp" srcset="media/img/biom_3-s.webp 800w, media/img/biom_3.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="BIOM, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/biom_3.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/biom_1-s.webp" srcset="media/img/biom_1-s.webp 800w, media/img/biom_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_1.webp"></li><li><img class="" src="media/img/biom_5-s.webp" srcset="media/img/biom_5-s.webp 800w, media/img/biom_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_5.webp"></li><li><img class="" src="media/img/biom_9-s.webp" srcset="media/img/biom_9-s.webp 800w, media/img/biom_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_9.webp"></li><li><img class="" src="media/img/biom_4-s.webp" srcset="media/img/biom_4-s.webp 800w, media/img/biom_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_4.webp"></li><li><img class="" src="media/img/biom_7-s.webp" srcset="media/img/biom_7-s.webp 800w, media/img/biom_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_7.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $145,000</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q4 2027</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold 35 + 20 years · freehold for 2–3 BR villas</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Living district by Rustam Kerimov</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>12–14%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">A nature-integrated living district designed by architect Rustam Kerimov, 400 m from the ocean. Developed with Nuanu and Atom Group, close to international schools and kindergartens, made for families and professionals.</p>
+        <ul class="amen"><li>Swimming pools</li><li>Clubhouse &amp; café</li><li>Yoga shala</li><li>Co-working</li><li>Outdoor fitness zone</li><li>Playgrounds &amp; gardens</li><li>24/7 check-in &amp; rental management</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20BIOM%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about BIOM</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/biom.webp" aria-label="Video tour: BIOM">
+          <source src="media/v/biom.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="origins" data-tags="villas hotel offplan">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">07 / 15 · Nuanu</p>
+      <h2>Origins</h2>
+      <p class="p-kind">Boutique hotel villas · by Bali Baza Development</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Hotel</span><span class="tag">Off-plan</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/origins_8-s.webp" srcset="media/img/origins_8-s.webp 800w, media/img/origins_8.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Origins, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/origins_8.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/origins_1-s.webp" srcset="media/img/origins_1-s.webp 800w, media/img/origins_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_1.webp"></li><li><img class="" src="media/img/origins_2-s.webp" srcset="media/img/origins_2-s.webp 800w, media/img/origins_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_2.webp"></li><li><img class="" src="media/img/origins_3-s.webp" srcset="media/img/origins_3-s.webp 800w, media/img/origins_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_3.webp"></li><li><img class="" src="media/img/origins_6-s.webp" srcset="media/img/origins_6-s.webp 800w, media/img/origins_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_6.webp"></li><li><img class="" src="media/img/origins_9-s.webp" srcset="media/img/origins_9-s.webp 800w, media/img/origins_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_9.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $590,700</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q2 2027</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold 35 years</dd></div>
+          <div class="fact"><dt>Project</dt><dd>18 one-of-a-kind villas</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>14–15%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">A collection of boutique villas in a soft-brutalism style that runs as a premium boutique hotel with professional management. Volcanic stone, warm timber, sweeping arched windows and private pools in tropical gardens. Each villa has its own character in the Character Hotel format.</p>
+        <ul class="amen"><li>Private pools</li><li>Rooftop terrace with grill</li><li>Cabana, yoga deck &amp; koi pond</li><li>Electric scooter per villa</li><li>Starlink internet</li><li>24/7 luxury concierge</li><li>Destination restaurant &amp; lounge</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Origins%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Origins</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/origins.webp" aria-label="Video tour: Origins">
+          <source src="media/v/origins.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<aside class="cta-band" aria-label="Contact Florin">
+  <div class="wrap cta-inner">
+    <img class="face big" src="media/img/florin.webp" alt="Florin, Bali Invest" width="120" height="120" loading="lazy">
+    <div class="cta-copy">
+      <p class="eyebrow">Bali Invest · Florin</p>
+      <h3>Comparing projects? I can put them side by side for you.</h3>
+      <p class="cta-sub">Brochures, layouts, price lists and video tours on WhatsApp. Usually within the same day.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%20saw%20your%20Nuanu%20projects%20page%20and%20I%27d%20like%20more%20details." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask for details</span></a>
+      <span class="num mono">+40 757 070 757</span>
+    </div>
+  </div>
+</aside>
+<section class="project" id="ecoverse" data-tags="apartments ready">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">08 / 15 · Nuanu</p>
+      <h2>Ecoverse Residences</h2>
+      <p class="p-kind">Eco-luxury residences · by NPG Indonesia</p>
+      <div class="tags"><span class="tag">Apartments</span><span class="tag">Ready</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/ecoverse_5-s.webp" srcset="media/img/ecoverse_5-s.webp 800w, media/img/ecoverse_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Ecoverse Residences, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_5.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/ecoverse_1-s.webp" srcset="media/img/ecoverse_1-s.webp 800w, media/img/ecoverse_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_1.webp"></li><li><img class="" src="media/img/ecoverse_8-s.webp" srcset="media/img/ecoverse_8-s.webp 800w, media/img/ecoverse_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_8.webp"></li><li><img class="" src="media/img/ecoverse_3-s.webp" srcset="media/img/ecoverse_3-s.webp 800w, media/img/ecoverse_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_3.webp"></li><li><img class="" src="media/img/ecoverse_9-s.webp" srcset="media/img/ecoverse_9-s.webp 800w, media/img/ecoverse_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_9.webp"></li><li><img class="" src="media/img/ecoverse_7-s.webp" srcset="media/img/ecoverse_7-s.webp 800w, media/img/ecoverse_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_7.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $197,000</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Completed (Q1 2026)</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold 25 + 30 years priority extension</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Ready to move in</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>11–15%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">Eco-friendly luxury living that pairs environmental responsibility with high construction standards. Completed in Q1 2026, with a 25-year structural warranty and a 1-year interior warranty, managed by OXO.</p>
+        <ul class="amen"><li>Olympic pool</li><li>Modern gym</li><li>Co-working &amp; meeting room</li><li>Restaurant</li><li>24/7 reception</li><li>Solar panels</li><li>UV water filters</li><li>Underground parking</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Ecoverse%20Residences%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Ecoverse Residences</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/ecoverse.webp" aria-label="Video tour: Ecoverse Residences">
+          <source src="media/v/ecoverse.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="vol1" data-tags="villas ready">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">09 / 15 · Nuanu</p>
+      <h2>The Collections Vol. 1</h2>
+      <p class="p-kind">Japandi pool villas · by 618 Development</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Ready</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/collectionsvol1_4-s.webp" srcset="media/img/collectionsvol1_4-s.webp 800w, media/img/collectionsvol1_4.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 1, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_4.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/collectionsvol1_3-s.webp" srcset="media/img/collectionsvol1_3-s.webp 800w, media/img/collectionsvol1_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_3.webp"></li><li><img class="" src="media/img/collectionsvol1_7-s.webp" srcset="media/img/collectionsvol1_7-s.webp 800w, media/img/collectionsvol1_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_7.webp"></li><li><img class="" src="media/img/collectionsvol1_8-s.webp" srcset="media/img/collectionsvol1_8-s.webp 800w, media/img/collectionsvol1_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_8.webp"></li><li><img class="" src="media/img/collectionsvol1_9-s.webp" srcset="media/img/collectionsvol1_9-s.webp 800w, media/img/collectionsvol1_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_9.webp"></li><li><img class="" src="media/img/collectionsvol1_6-s.webp" srcset="media/img/collectionsvol1_6-s.webp 800w, media/img/collectionsvol1_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_6.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $750,000</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Completed (Q4 2025)</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold 24 years, renewable to 34</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Villa collection</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>13.7%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">A villa complex with ocean views, 300 m from the beach and 10 minutes from Canggu. Japandi architecture, with construction details made for Bali&#x27;s humid climate, including enhanced waterproofing of foundations, walls and roofs.</p>
+        <ul class="amen"><li>Private pool &amp; terrace</li><li>Landscaped garden</li><li>250 m to the ocean</li><li>Full property management</li><li>Access to Nuanu infrastructure</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20The%20Collections%20Vol.%201%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about The Collections Vol. 1</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/vol1.webp" aria-label="Video tour: The Collections Vol. 1">
+          <source src="media/v/vol1.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="vol2" data-tags="villas freehold">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">10 / 15 · Nuanu</p>
+      <h2>The Collections Vol. 2</h2>
+      <p class="p-kind">Grand private villas · by 618 Development</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Freehold</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/collectionsvol2_6-s.webp" srcset="media/img/collectionsvol2_6-s.webp 800w, media/img/collectionsvol2_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 2, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_6.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/collectionsvol2_3-s.webp" srcset="media/img/collectionsvol2_3-s.webp 800w, media/img/collectionsvol2_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_3.webp"></li><li><img class="" src="media/img/collectionsvol2_2-s.webp" srcset="media/img/collectionsvol2_2-s.webp 800w, media/img/collectionsvol2_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_2.webp"></li><li><img class="" src="media/img/collectionsvol2_7-s.webp" srcset="media/img/collectionsvol2_7-s.webp 800w, media/img/collectionsvol2_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_7.webp"></li><li><img class="" src="media/img/collectionsvol2_8-s.webp" srcset="media/img/collectionsvol2_8-s.webp 800w, media/img/collectionsvol2_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_8.webp"></li><li><img class="" src="media/img/collectionsvol2_9-s.webp" srcset="media/img/collectionsvol2_9-s.webp 800w, media/img/collectionsvol2_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_9.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $1,050,000</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q4 2026</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Villa collection</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>11–12%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">Grand private villas inside Nuanu Creative City, 10 minutes&#x27; walk to the beach and 10 minutes&#x27; drive to Canggu, managed by Nuanu. Built for the tropical climate, with enhanced waterproofing throughout.</p>
+        <ul class="amen"><li>Private pool &amp; deck</li><li>Landscaped garden</li><li>10 min walk to the beach</li><li>Full property management</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20The%20Collections%20Vol.%202%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about The Collections Vol. 2</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/vol2.webp" aria-label="Video tour: The Collections Vol. 2">
+          <source src="media/v/vol2.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="vol3" data-tags="villas freehold">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">11 / 15 · Nuanu</p>
+      <h2>The Collections Vol. 3</h2>
+      <p class="p-kind">Signature 5-bedroom villas · by 618 Development</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Freehold</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/collectionsvol3_7-s.webp" srcset="media/img/collectionsvol3_7-s.webp 800w, media/img/collectionsvol3_7.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 3, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_7.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/collectionsvol3_2-s.webp" srcset="media/img/collectionsvol3_2-s.webp 800w, media/img/collectionsvol3_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_2.webp"></li><li><img class="" src="media/img/collectionsvol3_6-s.webp" srcset="media/img/collectionsvol3_6-s.webp 800w, media/img/collectionsvol3_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_6.webp"></li><li><img class="" src="media/img/collectionsvol3_8-s.webp" srcset="media/img/collectionsvol3_8-s.webp 800w, media/img/collectionsvol3_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_8.webp"></li><li><img class="" src="media/img/collectionsvol3_5-s.webp" srcset="media/img/collectionsvol3_5-s.webp 800w, media/img/collectionsvol3_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_5.webp"></li><li><img class="" src="media/img/collectionsvol3_9-s.webp" srcset="media/img/collectionsvol3_9-s.webp 800w, media/img/collectionsvol3_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_9.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $1,800,000</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q3 2026</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
+          <div class="fact"><dt>Project</dt><dd>2 signature villas</dd></div>
+          
+        </dl>
+        <p class="about">The signature villa collection by 618 Development: open-plan living, floor-to-ceiling panoramic windows and views over a banana grove, in the heart of Nuanu.</p>
+        <ul class="amen"><li>Banana grove views</li><li>Open-plan living</li><li>Floor-to-ceiling windows</li><li>Nature-integrated design</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20The%20Collections%20Vol.%203%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about The Collections Vol. 3</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/vol3.webp" aria-label="Video tour: The Collections Vol. 3">
+          <source src="media/v/vol3.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<aside class="cta-band" aria-label="Contact Florin">
+  <div class="wrap cta-inner">
+    <img class="face big" src="media/img/florin.webp" alt="Florin, Bali Invest" width="120" height="120" loading="lazy">
+    <div class="cta-copy">
+      <p class="eyebrow">Bali Invest · Florin</p>
+      <h3>Want a video call or an on-site viewing in Bali?</h3>
+      <p class="cta-sub">Brochures, layouts, price lists and video tours on WhatsApp. Usually within the same day.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%20saw%20your%20Nuanu%20projects%20page%20and%20I%27d%20like%20more%20details." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask for details</span></a>
+      <span class="num mono">+40 757 070 757</span>
+    </div>
+  </div>
+</aside>
+<section class="project" id="residence" data-tags="villas freehold">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">12 / 15 · Nuanu</p>
+      <h2>The Residence</h2>
+      <p class="p-kind">Family villas · by OXO Living</p>
+      <div class="tags"><span class="tag">Villas</span><span class="tag">Freehold</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/the-residence_5-s.webp" srcset="media/img/the-residence_5-s.webp 800w, media/img/the-residence_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Residence, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/the-residence_5.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/the-residence_3-s.webp" srcset="media/img/the-residence_3-s.webp 800w, media/img/the-residence_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_3.webp"></li><li><img class="" src="media/img/the-residence_8-s.webp" srcset="media/img/the-residence_8-s.webp 800w, media/img/the-residence_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_8.webp"></li><li><img class="" src="media/img/the-residence_9-s.webp" srcset="media/img/the-residence_9-s.webp 800w, media/img/the-residence_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_9.webp"></li><li><img class="" src="media/img/the-residence_6-s.webp" srcset="media/img/the-residence_6-s.webp 800w, media/img/the-residence_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_6.webp"></li><li><img class="" src="media/img/the-residence_7-s.webp" srcset="media/img/the-residence_7-s.webp 800w, media/img/the-residence_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_7.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $685,110</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q4 2026</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Villa community</dd></div>
+          
+        </dl>
+        <p class="about">Spacious, carefully crafted villas for living and investment by OXO Living, available on freehold terms to Indonesian and international buyers.</p>
+        <ul class="amen"><li>Clubhouse</li><li>Kids pool</li><li>Playground</li><li>BBQ area</li><li>24/7 security</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20The%20Residence%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about The Residence</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/residence.webp" aria-label="Video tour: The Residence">
+          <source src="media/v/residence.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="nyanyi" data-tags="apartments villas">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">13 / 15 · Nuanu</p>
+      <h2>Nyanyi Village U3</h2>
+      <p class="p-kind">Family village · by UNIT (Unit Space)</p>
+      <div class="tags"><span class="tag">Apartments</span><span class="tag">Villas</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/nyanyi-village-u3_3-s.webp" srcset="media/img/nyanyi-village-u3_3-s.webp 800w, media/img/nyanyi-village-u3_3.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Nyanyi Village U3, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_3.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/nyanyi-village-u3_1-s.webp" srcset="media/img/nyanyi-village-u3_1-s.webp 800w, media/img/nyanyi-village-u3_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_1.webp"></li><li><img class="" src="media/img/nyanyi-village-u3_8-s.webp" srcset="media/img/nyanyi-village-u3_8-s.webp 800w, media/img/nyanyi-village-u3_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_8.webp"></li><li><img class="" src="media/img/nyanyi-village-u3_4-s.webp" srcset="media/img/nyanyi-village-u3_4-s.webp 800w, media/img/nyanyi-village-u3_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_4.webp"></li><li><img class="" src="media/img/nyanyi-village-u3_5-s.webp" srcset="media/img/nyanyi-village-u3_5-s.webp 800w, media/img/nyanyi-village-u3_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_5.webp"></li><li><img class="" src="media/img/nyanyi-village-u3_6-s.webp" srcset="media/img/nyanyi-village-u3_6-s.webp 800w, media/img/nyanyi-village-u3_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_6.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price"><span class="from mono">from</span> $118,700</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Q3 2026</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold 25 + 25 years priority extension</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Next to Pro Education school</dd></div>
+          <div class="fact"><dt>Projected yield</dt><dd>12–22%<sup>*</sup></dd></div>
+        </dl>
+        <p class="about">A family-friendly village by Unit Space Group, right next to Pro Education International School and a kindergarten. The developer states a guaranteed minimum 9% return in the first year.</p>
+        <ul class="amen"><li>Pro Education International School</li><li>Kindergarten from age 3</li><li>Children&#x27;s room with caregiver</li><li>Creative workshops &amp; festivals</li><li>Family community</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Nyanyi%20Village%20U3%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Nyanyi Village U3</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/nyanyi.webp" aria-label="Video tour: Nyanyi Village U3">
+          <source src="media/v/nyanyi.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="u2" data-tags="apartments villas ready">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">14 / 15 · Nuanu</p>
+      <h2>Unit Nuanu Village</h2>
+      <p class="p-kind">Apartments &amp; villas · by UNIT (Unit Space)</p>
+      <div class="tags"><span class="tag">Apartments</span><span class="tag">Villas</span><span class="tag">Ready</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/unit-nuanu-u2_1-s.webp" srcset="media/img/unit-nuanu-u2_1-s.webp 800w, media/img/unit-nuanu-u2_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Unit Nuanu Village, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2_1.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/unit-nuanu-u2_2-s.webp" srcset="media/img/unit-nuanu-u2_2-s.webp 800w, media/img/unit-nuanu-u2_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Nuanu Village render" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2_2.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price">On request</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Completed</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Rice field views</dd></div>
+          
+        </dl>
+        <p class="about">The cornerstone of Unit Space Village, the first phase of Unit Space City. Finished apartments and villas with rice field views, inside the Nuanu ecosystem.</p>
+        <ul class="amen"><li>Schools &amp; kindergartens nearby</li><li>Low-rise living</li><li>Green spaces</li><li>Nuanu City infrastructure</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Unit%20Nuanu%20Village%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Unit Nuanu Village</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/u2.webp" aria-label="Video tour: Unit Nuanu Village">
+          <source src="media/v/u2.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="project" id="u1" data-tags="apartments villas ready">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">15 / 15 · Nuanu</p>
+      <h2>Unit Space U1</h2>
+      <p class="p-kind">Low-rise village · by UNIT (Unit Space)</p>
+      <div class="tags"><span class="tag">Apartments</span><span class="tag">Villas</span><span class="tag">Ready</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        <img class="g-main" src="media/img/unit-space-u1_4-s.webp" srcset="media/img/unit-space-u1_4-s.webp 800w, media/img/unit-space-u1_4.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Unit Space U1, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1_4.webp">
+        <ul class="thumbs"><li><img class="" src="media/img/unit-space-u1_1-s.webp" srcset="media/img/unit-space-u1_1-s.webp 800w, media/img/unit-space-u1_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1 render" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1_1.webp"></li><li><img class="" src="media/img/unit-space-u1_2-s.webp" srcset="media/img/unit-space-u1_2-s.webp 800w, media/img/unit-space-u1_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1 render" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1_2.webp"></li></ul>
+      </div>
+      <div class="p-info">
+        <p class="price">On request</p>
+        <dl class="facts">
+          <div class="fact"><dt>Handover</dt><dd>Completed</dd></div>
+          <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
+          <div class="fact"><dt>Project</dt><dd>Lived-in community</dd></div>
+          
+        </dl>
+        <p class="about">The first village of Unit Space City: completed and lived in, with low-rise homes, green spaces and a real community around you in Nuanu.</p>
+        <ul class="amen"><li>Low-rise homes</li><li>Green spaces</li><li>Schools &amp; kindergartens nearby</li><li>Nuanu City infrastructure</li></ul>
+        <div class="ask">
+          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
+          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Unit%20Space%20U1%20in%20Nuanu%2C%20Bali%20%28brochure%2C%20layouts%2C%20prices%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Unit Space U1</span></a>
+        </div>
+      </div>
+      
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/u1.webp" aria-label="Video tour: Unit Space U1">
+          <source src="media/v/u1.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="breig" id="breig">
+  <div class="wrap">
+    <div class="breig-head">
+      <p class="eyebrow">Beyond Nuanu · BREIG Property</p>
+      <h2>BREIG villas across Bali</h2>
+      <p>BREIG Property is a Bali developer founded in 2016, with completed projects in Canggu, Pererenan, Ubud and Nusa Dua and its own management and construction companies. A selection of their villas for sale:</p>
+    </div>
+    <div class="b-grid">
+<article class="b-card" id="edem2">
+  <img class="b-main" src="media/img/breig-edem_1-s.webp" srcset="media/img/breig-edem_1-s.webp 800w, media/img/breig-edem_1.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Edem Villas II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_1.webp">
+  <ul class="thumbs small"><li><img class="" src="media/img/breig-edem_5-s.webp" srcset="media/img/breig-edem_5-s.webp 800w, media/img/breig-edem_5.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_5.webp"></li><li><img class="" src="media/img/breig-edem_3-s.webp" srcset="media/img/breig-edem_3-s.webp 800w, media/img/breig-edem_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_3.webp"></li><li><img class="" src="media/img/breig-edem_2-s.webp" srcset="media/img/breig-edem_2-s.webp 800w, media/img/breig-edem_2.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_2.webp"></li></ul>
+  <div class="b-body">
+    <p class="eyebrow">Nusa Dua · Benoa</p>
+    <h3>Edem Villas II</h3>
+    <p class="price sm"><span class="from mono">from</span> $102,000</p>
+    <dl class="facts">
+      <div class="fact"><dt>Type</dt><dd>Studios to 3BR villas, 24–180 m²</dd></div>
+      <div class="fact"><dt>Status</dt><dd>Q4 2027 (off-plan)</dd></div>
+      <div class="fact"><dt>Ownership</dt><dd>Leasehold up to 60 years</dd></div>
+    </dl>
+    <p class="about">Furnished, turnkey units 500 m from the ocean in the Nusa Dua tourism zone, with smart-home tech and solar energy. Rental programme with Homes &amp; Villas by Marriott. Payment plan: 15% + 15%, then 0% instalments during construction.</p>
+    <ul class="amen"><li>Private pools (villas)</li><li>Rooftop terraces</li><li>Gym, sauna &amp; spa</li><li>Yoga &amp; co-working</li><li>Restaurant</li><li>Kids zone</li></ul>
+    <div class="ask"><img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy"><a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Edem%20Villas%20II%20by%20BREIG%20%28Nusa%20Dua%20%C2%B7%20Benoa%2C%20Bali%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask about Edem Villas II</span></a></div>
+  </div>
+</article>
+<article class="b-card" id="garden2">
+  <img class="b-main" src="media/img/breig-garden_5-s.webp" srcset="media/img/breig-garden_5-s.webp 800w, media/img/breig-garden_5.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Garden Villa II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_5.webp">
+  <ul class="thumbs small"><li><img class="" src="media/img/breig-garden_3-s.webp" srcset="media/img/breig-garden_3-s.webp 800w, media/img/breig-garden_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_3.webp"></li><li><img class="" src="media/img/breig-garden_4-s.webp" srcset="media/img/breig-garden_4-s.webp 800w, media/img/breig-garden_4.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_4.webp"></li><li><img class="" src="media/img/breig-garden_1-s.webp" srcset="media/img/breig-garden_1-s.webp 800w, media/img/breig-garden_1.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_1.webp"></li></ul>
+  <div class="b-body">
+    <p class="eyebrow">Sukawati · Gianyar</p>
+    <h3>Garden Villa II</h3>
+    <p class="price sm"><span class="from mono">from</span> $330,000</p>
+    <dl class="facts">
+      <div class="fact"><dt>Type</dt><dd>3BR jungle villas, ~180 m²</dd></div>
+      <div class="fact"><dt>Status</dt><dd>Completed (Q4 2025)</dd></div>
+      <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
+    </dl>
+    <p class="about">A boutique complex of four jungle villas on the southern edge of the Ubud corridor, with rice-field and jungle views, 20 minutes from Sanur and Ubud.</p>
+    <ul class="amen"><li>Jungle infinity pool</li><li>Rice-field views</li><li>Garden &amp; balcony</li><li>BBQ area</li><li>Managed rental</li></ul>
+    <div class="ask"><img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy"><a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Garden%20Villa%20II%20by%20BREIG%20%28Sukawati%20%C2%B7%20Gianyar%2C%20Bali%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask about Garden Villa II</span></a></div>
+  </div>
+</article>
+<article class="b-card" id="aqua1">
+  <img class="b-main" src="media/img/breig-aqua_1-s.webp" srcset="media/img/breig-aqua_1-s.webp 800w, media/img/breig-aqua_1.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Aquamarine I by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_1.webp">
+  <ul class="thumbs small"><li><img class="" src="media/img/breig-aqua_2-s.webp" srcset="media/img/breig-aqua_2-s.webp 800w, media/img/breig-aqua_2.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_2.webp"></li><li><img class="" src="media/img/breig-aqua_3-s.webp" srcset="media/img/breig-aqua_3-s.webp 800w, media/img/breig-aqua_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_3.webp"></li><li><img class="" src="media/img/breig-aqua_4-s.webp" srcset="media/img/breig-aqua_4-s.webp 800w, media/img/breig-aqua_4.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_4.webp"></li></ul>
+  <div class="b-body">
+    <p class="eyebrow">Berawa · Canggu</p>
+    <h3>Aquamarine I</h3>
+    <p class="price sm"><span class="from mono">from</span> $620,000</p>
+    <dl class="facts">
+      <div class="fact"><dt>Type</dt><dd>3–4BR pool villas, 263–358 m²</dd></div>
+      <div class="fact"><dt>Status</dt><dd>Completed</dd></div>
+      <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
+    </dl>
+    <p class="about">Private-pool villas 200 m from Nelayan Beach, close to Atlas and Finns beach clubs. Rooftop terraces, sauna and smart-home features in selected villas.</p>
+    <ul class="amen"><li>Private pool</li><li>Rooftop terrace</li><li>Sauna (selected)</li><li>Smart home</li><li>Managed rental</li></ul>
+    <div class="ask"><img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy"><a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Aquamarine%20I%20by%20BREIG%20%28Berawa%20%C2%B7%20Canggu%2C%20Bali%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask about Aquamarine I</span></a></div>
+  </div>
+</article>
+<article class="b-card" id="baliwood2">
+  <img class="b-main" src="media/img/breig-baliwood_2-s.webp" srcset="media/img/breig-baliwood_2-s.webp 800w, media/img/breig-baliwood_2.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Baliwood II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_2.webp">
+  <ul class="thumbs small"><li><img class="" src="media/img/breig-baliwood_1-s.webp" srcset="media/img/breig-baliwood_1-s.webp 800w, media/img/breig-baliwood_1.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_1.webp"></li><li><img class="" src="media/img/breig-baliwood_3-s.webp" srcset="media/img/breig-baliwood_3-s.webp 800w, media/img/breig-baliwood_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_3.webp"></li><li><img class="" src="media/img/breig-baliwood_5-s.webp" srcset="media/img/breig-baliwood_5-s.webp 800w, media/img/breig-baliwood_5.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_5.webp"></li></ul>
+  <div class="b-body">
+    <p class="eyebrow">Pererenan · Canggu</p>
+    <h3>Baliwood II</h3>
+    <p class="price sm"><span class="from mono">from</span> $750,000</p>
+    <dl class="facts">
+      <div class="fact"><dt>Type</dt><dd>3–5BR oceanfront villas, 268–336 m²</dd></div>
+      <div class="fact"><dt>Status</dt><dd>Completed</dd></div>
+      <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
+    </dl>
+    <p class="about">Luxury villas a one-minute walk from Pererenan Beach, with ocean views from the rooftop terraces, 10 minutes from Canggu.</p>
+    <ul class="amen"><li>Private pool</li><li>Rooftop with ocean views</li><li>Garden &amp; balcony</li><li>BBQ area</li><li>Managed rental</li></ul>
+    <div class="ask"><img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy"><a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Baliwood%20II%20by%20BREIG%20%28Pererenan%20%C2%B7%20Canggu%2C%20Bali%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask about Baliwood II</span></a></div>
+  </div>
+</article></div>
+  </div>
+</section>
+
+
+<aside class="cta-band" aria-label="Contact Florin">
+  <div class="wrap cta-inner">
+    <img class="face big" src="media/img/florin.webp" alt="Florin, Bali Invest" width="120" height="120" loading="lazy">
+    <div class="cta-copy">
+      <p class="eyebrow">Bali Invest · Florin</p>
+      <h3>Not sure where to start? Tell me your budget and I&#x27;ll shortlist.</h3>
+      <p class="cta-sub">Brochures, layouts, price lists and video tours on WhatsApp. Usually within the same day.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20my%20budget%20is%20...%20and%20I%27m%20looking%20for%20...%20in%20Bali.%20Can%20you%20shortlist%20some%20options%3F" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask for details</span></a>
+      <span class="num mono">+40 757 070 757</span>
+    </div>
+  </div>
+</aside>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <img class="face xl" src="media/img/florin.webp" alt="Florin, Bali Invest" width="220" height="220" loading="lazy">
+    <div>
+      <p class="eyebrow">Talk to Florin</p>
+      <h2>Bali Invest</h2>
+      <p>I help investors from Europe and Australia buy property in Bali, from the first shortlist to the notary. Message me for brochures, layouts, payment plans and video calls.</p>
+      <div class="lines">
+        <div class="line"><span class="k">WhatsApp</span><span class="v mono" id="v-wa">+40 757 070 757</span><button class="copy" type="button" data-copy="+40 757 070 757" id="c-wa">Copy</button></div>
+        <div class="line"><span class="k">Email</span><span class="v mono" id="v-em">baliinvestrealestate@gmail.com</span><button class="copy" type="button" data-copy="baliinvestrealestate@gmail.com" id="c-em">Copy</button></div>
+      </div>
+      <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20property%20in%20Bali." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Message on WhatsApp</span></a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="company">
+      <div class="co-head">
+        <p class="eyebrow">Registered company in Bali</p>
+        <h3>PT Bali Investment Experts</h3>
+        <p>Foreign-owned Indonesian company (PT PMA), registered with the Ministry of Law of the Republic of Indonesia (AHU). Bali Invest is its property brand.</p>
+      </div>
+      <dl class="co-facts">
+        <div><dt>Director</dt><dd>Florin Dragu</dd></div>
+        <div><dt>Company type</dt><dd>PT PMA (foreign investment)</dd></div>
+        <div><dt>Deed of establishment</dt><dd>No. 01, 2 August 2025, notary Komang Rio Anjana S.H., M.Kn.</dd></div>
+        <div><dt>Licensed activities</dt><dd>Real estate agency &amp; brokerage (KBLI 68200), real estate (KBLI 68111), investment &amp; management consulting (KBLI 70209)</dd></div>
+        <div><dt>Registered office</dt><dd>Jalan Pengubungan, Gang Kayu Damar, Kerobokan, Kuta Utara, Badung, Bali, Indonesia</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer class="disclaimer"><div class="wrap">
+  <p><sup>*</sup>Projected yields are developer estimates and are not guaranteed. Prices are starting prices in USD and may change; please confirm current prices before any decision. Visuals are developer renders and photos.</p>
+  <p>Nuanu project data: Nuanu Real Estate partner portal. BREIG data: public listings (Rumavi, Realting, Lazudi), indicative only. © Bali Invest · PT Bali Investment Experts (PT PMA), Kerobokan, Badung, Bali · Florin Dragu, Director · +40 757 070 757 · baliinvestrealestate@gmail.com</p>
+</div></footer>
+
+<a class="float" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20property%20in%20Bali." target="_blank" rel="noopener" aria-label="Chat with Florin on WhatsApp">
+  <span class="label">Ask Florin for details</span>
+  <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="" width="68" height="68">
+  <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg></span>
+</a>
+
+<dialog class="lb" id="lb"><img id="lb-img" alt=""><button type="button" id="lb-close">Close</button></dialog>
+
+<script>
+(function () {
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img');
+  document.addEventListener('click', function (ev) {
+    var t = ev.target.closest('[data-zoom]');
+    if (t && lb.showModal) { lbImg.src = t.getAttribute('data-zoom'); lbImg.alt = t.alt || ''; lb.showModal(); }
+  });
+  document.getElementById('lb-close').addEventListener('click', function () { lb.close(); });
+  lb.addEventListener('click', function (ev) { if (ev.target === lb) lb.close(); });
+
+  var active = null;
+  document.querySelectorAll('.chip').forEach(function (c) {
+    c.addEventListener('click', function () {
+      active = (active === c.dataset.f) ? null : c.dataset.f;
+      document.querySelectorAll('.chip').forEach(function (o) { o.setAttribute('aria-pressed', o.dataset.f === active ? 'true' : 'false'); });
+      document.querySelectorAll('.ix, .project').forEach(function (el) {
+        var on = !active || el.dataset.tags.split(' ').indexOf(active) > -1;
+        el.classList.toggle('dim', !on);
+      });
+    });
+  });
+
+  document.querySelectorAll('.copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var txt = b.dataset.copy;
+      var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1600); };
+      var fallback = function () { var r = document.createRange(); r.selectNodeContents(b.previousElementSibling); var s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+      try { navigator.clipboard.writeText(txt).then(done, fallback); } catch (e) { fallback(); }
+    });
+  });
+
+  // pause other videos when one plays
+  document.querySelectorAll('video').forEach(function (v) {
+    v.addEventListener('play', function () { document.querySelectorAll('video').forEach(function (o) { if (o !== v) o.pause(); }); });
+  });
+})();
+</script>
+
+</body>
+</html>
