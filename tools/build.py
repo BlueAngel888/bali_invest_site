@@ -142,10 +142,10 @@ def dubai_section():
           "Italian hand-laid mosaic pool", "Branded lobby & corridors", "Optional Tonino Lamborghini furniture"]
     amen = ["Wellness hub","Adults' & kids' pools","Padel court","Gym","Jogging track","Botanical garden","Kids' play area","Retail shops","Concierge","Valet parking","Smart home","24/7 security"]
     return f'''
-<section class="dubai" id="dubai" data-tags="apartments offplan" data-beds="b1 b2 b3">
+<section class="dubai" id="tonino" data-tags="apartments offplan" data-beds="b1 b2 b3">
   <div class="wrap">
     <header class="p-head">
-      <p class="p-index mono">Beyond Bali · Dubai</p>
+      <p class="p-index mono">01 / 01 · Dubai · Meydan</p>
       <h2>Tonino Lamborghini Residences</h2>
       <p class="p-kind">Branded residences in Meydan, Dubai · by Gulf Land Property Developers</p>
       <div class="tags"><span class="tag">Apartments</span><span class="tag">Off-plan</span><span class="tag">Branded</span></div>
@@ -522,6 +522,23 @@ h1, h2, h3 {{ font-family: var(--display); line-height: 1.04; letter-spacing: -0
 .b-body .facts {{ margin-bottom: 6px; }}
 @media (max-width: 860px) {{ .b-grid {{ grid-template-columns: minmax(0, 1fr); }} }}
 
+/* region switch */
+.region {{ display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--bg); flex: none; }}
+.region a {{ padding: 7px 16px; border-radius: 999px; font-weight: 700; font-size: 14px; text-decoration: none; color: var(--muted); line-height: 1.2; }}
+.region a[aria-current] {{ background: var(--ink); color: var(--surface); }}
+.region a:not([aria-current]):hover {{ color: var(--ink); }}
+@media (max-width: 520px) {{ .bar .brand small {{ display: none; }} .bar .brand b {{ font-size: 13px; }} .region a {{ padding: 6px 11px; font-size: 13px; }} .bar .btn.wa.sm span {{ display: none; }} }}
+.btn.dxb {{ background: #0E0E0F; color: #F2F1EE; border: 1.5px solid #D2232A; }}
+.btn.dxb:hover {{ background: #D2232A; }}
+.hero.dx-hero::after {{ background: linear-gradient(180deg, rgba(8,8,9,.25) 0%, rgba(8,8,9,.05) 35%, rgba(8,8,9,.85) 100%); }}
+.hero.dx-hero h1 em {{ color: #D2232A; }}
+.dx-intro {{ background: #0E0E0F; color: #F2F1EE; padding-block: 56px 8px; }}
+.dx-intro p {{ color: #A3A19C; max-width: 70ch; margin: 10px 0 0; font-size: 17px; }}
+.dx-intro h2 {{ font-size: clamp(30px, 4vw, 48px); }}
+.dx-list {{ display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }}
+.dx-list a {{ color: #F2F1EE; text-decoration: none; border: 1px solid #2E2D2B; background: #18181A; border-radius: 999px; padding: 8px 16px; font-weight: 600; font-size: 14px; }}
+.dx-list a span {{ color: #C9A46A; font-family: var(--mono); font-size: 12px; margin-left: 8px; }}
+
 /* Dubai */
 .dubai {{ padding-block: 80px 64px; background: #0E0E0F; color: #F2F1EE; --ink: #F2F1EE; --muted: #A3A19C; --line: #2E2D2B; --surface: #18181A; }}
 .dubai .p-index {{ color: #D2232A; }}
@@ -582,7 +599,8 @@ dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top
 <header class="bar">
   <div class="wrap">
     <a class="brand" href="#top"><img class="face" src="media/img/florin-s.webp" alt="" width="40" height="40"><span><b>BALI INVEST</b><small>Florin · Nuanu & Bali property</small></span></a>
-    <nav aria-label="Sections"><a href="#nuanu">Nuanu</a><a href="#map">Map</a><a href="#projects">Projects</a><a href="#breig">BREIG villas</a><a href="#dubai">Dubai</a><a href="#contact">Contact</a></nav>
+    <div class="region" role="navigation" aria-label="Region"><a href="/" aria-current="page">Bali</a><a href="/dubai">Dubai</a></div>
+    <nav aria-label="Sections"><a href="#nuanu">Nuanu</a><a href="#map">Map</a><a href="#projects">Projects</a><a href="#breig">BREIG villas</a><a href="#contact">Contact</a></nav>
     <a class="btn wa sm" href="{wa("Hello Florin, I'd like details about property in Nuanu, Bali.")}" target="_blank" rel="noopener">{WA_ICON}<span>WhatsApp</span></a>
   </div>
 </header>
@@ -596,10 +614,11 @@ dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top
   <div class="hero-copy"><div class="wrap">
     <p class="eyebrow">Bali Invest · Property presentation</p>
     <h1>Nuanu, <em>Bali.</em></h1>
-    <p class="lead">Fifteen projects inside Nuanu Creative City on Bali's west coast, plus a selection of BREIG villas across the island and Tonino Lamborghini Residences in Dubai. Prices, key facts, renders and video tours in one place.</p>
+    <p class="lead">Fifteen projects inside Nuanu Creative City on Bali's west coast, plus a selection of BREIG villas across the island. Prices, key facts, renders and video tours in one place. Looking at Dubai? Our Dubai projects have their own page.</p>
     <div class="hero-row">
       <a class="btn wa" href="{wa("Hello Florin, I saw your Nuanu projects page and I'd like more details.")}" target="_blank" rel="noopener">{WA_ICON}<span>Ask Florin on WhatsApp</span></a>
       <a class="btn ghost" href="#projects">See the projects</a>
+      <a class="btn dxb" href="/dubai">Dubai projects <span aria-hidden="true">&rarr;</span></a>
     </div>
   </div></div>
 </section>
@@ -651,8 +670,6 @@ dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top
     <div class="b-grid">{"".join(breig_card(b) for b in BREIG)}</div>
   </div>
 </section>
-
-{dubai_section()}
 
 {cta_band("Not sure where to start? Tell me your budget and I'll shortlist.", "Hello Florin, my budget is ... and I'm looking for ... in Bali. Can you shortlist some options?", 99)}
 
@@ -790,6 +807,59 @@ dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top
 
 os.makedirs("site", exist_ok=True)
 open("site/index.html", "w").write(page)
+
+# ---------- Dubai page (/dubai) ----------
+head, rest = page.split('<header class="bar">', 1)
+tail = '<section class="contact" id="contact">' + rest.split('<section class="contact" id="contact">', 1)[1]
+head = (head.replace("<title>Nuanu Bali Properties</title>", "<title>Dubai Properties · Bali Invest</title>")
+            .replace('content="Bali Invest: Nuanu Creative City projects in Bali with prices, photos, video tours and the Nuanu map.',
+                     'content="Bali Invest: hand-picked Dubai projects, including Tonino Lamborghini Residences in Meydan. Photos, key facts and video tours.'))
+dx_msg = "Hello Florin, I'm interested in your Dubai projects."
+tail = (tail.replace(wa("Hello Florin, I'd like details about property in Bali."), wa(dx_msg))
+            .replace("I help investors from Europe and Australia buy property in Bali, from the first shortlist to the notary.",
+                     "I help investors from Europe and Australia buy property in Bali and Dubai, from the first shortlist to the final paperwork."))
+dpage = head + f'''<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="/"><img class="face" src="media/img/florin-s.webp" alt="" width="40" height="40"><span><b>BALI INVEST</b><small>Florin · Bali & Dubai property</small></span></a>
+    <div class="region" role="navigation" aria-label="Region"><a href="/">Bali</a><a href="/dubai" aria-current="page">Dubai</a></div>
+    <nav aria-label="Sections"><a href="#projects">Projects</a><a href="#tonino">Tonino Lamborghini</a><a href="#contact">Contact</a></nav>
+    <a class="btn wa sm" href="{wa(dx_msg)}" target="_blank" rel="noopener">{WA_ICON}<span>WhatsApp</span></a>
+  </div>
+</header>
+
+<section class="hero dx-hero" id="top">
+  <picture>
+    <source media="(max-width: 700px)" srcset="media/img/tl-tower-s.webp 800w, media/img/tl-tower.webp 1600w">
+    <img src="media/img/tl-ext.webp" srcset="media/img/tl-ext-s.webp 800w, media/img/tl-ext.webp 1600w" sizes="100vw" alt="Tonino Lamborghini Residences, Meydan, Dubai" fetchpriority="high">
+  </picture>
+  <p class="coords" aria-hidden="true">25°09′N 55°18′E<br>Meydan · Dubai</p>
+  <div class="hero-copy"><div class="wrap">
+    <p class="eyebrow">Bali Invest · Dubai selection</p>
+    <h1>Dubai, <em>branded.</em></h1>
+    <p class="lead">Hand-picked off-plan and branded residences in Dubai, starting with Tonino Lamborghini Residences in Meydan. Key facts, renders and video tours; prices on request.</p>
+    <div class="hero-row">
+      <a class="btn wa" href="{wa(dx_msg)}" target="_blank" rel="noopener">{WA_ICON}<span>Ask Florin on WhatsApp</span></a>
+      <a class="btn ghost" href="#projects">See the projects</a>
+      <a class="btn ghost" href="/">Bali projects</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="dx-intro" id="projects">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#D2232A">Dubai projects</p>
+    <h2>Our Dubai selection</h2>
+    <p>Dubai offers freehold ownership for foreign buyers, no annual property tax and flexible off-plan payment plans. These are the projects we currently present; more are added regularly.</p>
+    <div class="dx-list"><a href="#tonino">Tonino Lamborghini Residences<span>Meydan · 1–3 BR</span></a></div>
+  </div>
+</section>
+
+{dubai_section()}
+
+{cta_band("Looking for something specific in Dubai? Tell me your budget.", "Hello Florin, my budget is ... and I'm looking for ... in Dubai. Can you shortlist some options?", 98)}
+
+''' + tail
+open("site/dubai.html", "w").write(dpage)
 
 # list used media
 import re

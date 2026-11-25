@@ -190,6 +190,23 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.04; letter-spacing: -0.
 .b-body .facts { margin-bottom: 6px; }
 @media (max-width: 860px) { .b-grid { grid-template-columns: minmax(0, 1fr); } }
 
+/* region switch */
+.region { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--bg); flex: none; }
+.region a { padding: 7px 16px; border-radius: 999px; font-weight: 700; font-size: 14px; text-decoration: none; color: var(--muted); line-height: 1.2; }
+.region a[aria-current] { background: var(--ink); color: var(--surface); }
+.region a:not([aria-current]):hover { color: var(--ink); }
+@media (max-width: 520px) { .bar .brand small { display: none; } .bar .brand b { font-size: 13px; } .region a { padding: 6px 11px; font-size: 13px; } .bar .btn.wa.sm span { display: none; } }
+.btn.dxb { background: #0E0E0F; color: #F2F1EE; border: 1.5px solid #D2232A; }
+.btn.dxb:hover { background: #D2232A; }
+.hero.dx-hero::after { background: linear-gradient(180deg, rgba(8,8,9,.25) 0%, rgba(8,8,9,.05) 35%, rgba(8,8,9,.85) 100%); }
+.hero.dx-hero h1 em { color: #D2232A; }
+.dx-intro { background: #0E0E0F; color: #F2F1EE; padding-block: 56px 8px; }
+.dx-intro p { color: #A3A19C; max-width: 70ch; margin: 10px 0 0; font-size: 17px; }
+.dx-intro h2 { font-size: clamp(30px, 4vw, 48px); }
+.dx-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.dx-list a { color: #F2F1EE; text-decoration: none; border: 1px solid #2E2D2B; background: #18181A; border-radius: 999px; padding: 8px 16px; font-weight: 600; font-size: 14px; }
+.dx-list a span { color: #C9A46A; font-family: var(--mono); font-size: 12px; margin-left: 8px; }
+
 /* Dubai */
 .dubai { padding-block: 80px 64px; background: #0E0E0F; color: #F2F1EE; --ink: #F2F1EE; --muted: #A3A19C; --line: #2E2D2B; --surface: #18181A; }
 .dubai .p-index { color: #D2232A; }
@@ -250,7 +267,8 @@ dialog.lb #lb-close { position: fixed; top: calc(14px + env(safe-area-inset-top,
 </head><body><header class="bar">
   <div class="wrap">
     <a class="brand" href="#top"><img class="face" src="media/img/florin-s.webp" alt="" width="40" height="40"><span><b>BALI INVEST</b><small>Florin · Nuanu & Bali property</small></span></a>
-    <nav aria-label="Sections"><a href="#nuanu">Nuanu</a><a href="#map">Map</a><a href="#projects">Projects</a><a href="#breig">BREIG villas</a><a href="#dubai">Dubai</a><a href="#contact">Contact</a></nav>
+    <div class="region" role="navigation" aria-label="Region"><a href="/" aria-current="page">Bali</a><a href="/dubai">Dubai</a></div>
+    <nav aria-label="Sections"><a href="#nuanu">Nuanu</a><a href="#map">Map</a><a href="#projects">Projects</a><a href="#breig">BREIG villas</a><a href="#contact">Contact</a></nav>
     <a class="btn wa sm" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20property%20in%20Nuanu%2C%20Bali." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>WhatsApp</span></a>
   </div>
 </header>
@@ -264,10 +282,11 @@ dialog.lb #lb-close { position: fixed; top: calc(14px + env(safe-area-inset-top,
   <div class="hero-copy"><div class="wrap">
     <p class="eyebrow">Bali Invest · Property presentation</p>
     <h1>Nuanu, <em>Bali.</em></h1>
-    <p class="lead">Fifteen projects inside Nuanu Creative City on Bali's west coast, plus a selection of BREIG villas across the island and Tonino Lamborghini Residences in Dubai. Prices, key facts, renders and video tours in one place.</p>
+    <p class="lead">Fifteen projects inside Nuanu Creative City on Bali's west coast, plus a selection of BREIG villas across the island. Prices, key facts, renders and video tours in one place. Looking at Dubai? Our Dubai projects have their own page.</p>
     <div class="hero-row">
       <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%20saw%20your%20Nuanu%20projects%20page%20and%20I%27d%20like%20more%20details." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin on WhatsApp</span></a>
       <a class="btn ghost" href="#projects">See the projects</a>
+      <a class="btn dxb" href="/dubai">Dubai projects <span aria-hidden="true">&rarr;</span></a>
     </div>
   </div></div>
 </section>
@@ -1046,50 +1065,6 @@ dialog.lb #lb-close { position: fixed; top: calc(14px + env(safe-area-inset-top,
     <div class="ask"><img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy"><a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Baliwood%20II%20by%20BREIG%20%28Pererenan%20%C2%B7%20Canggu%2C%20Bali%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask about Baliwood II</span></a></div>
   </div>
 </article></div>
-  </div>
-</section>
-
-
-<section class="dubai" id="dubai" data-tags="apartments offplan" data-beds="b1 b2 b3">
-  <div class="wrap">
-    <header class="p-head">
-      <p class="p-index mono">Beyond Bali · Dubai</p>
-      <h2>Tonino Lamborghini Residences</h2>
-      <p class="p-kind">Branded residences in Meydan, Dubai · by Gulf Land Property Developers</p>
-      <div class="tags"><span class="tag">Apartments</span><span class="tag">Off-plan</span><span class="tag">Branded</span></div>
-    </header>
-    <div class="p-grid">
-      <div class="gallery">
-        <img class="g-main" src="media/img/tl-ext-s.webp" srcset="media/img/tl-ext-s.webp 800w, media/img/tl-ext.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Tonino Lamborghini Residences, Meydan Dubai" loading="lazy" decoding="async" data-zoom="media/img/tl-ext.webp" data-gal="tonino" data-idx="0">
-        <ul class="thumbs "><li><img class="" src="media/img/tl-aerial-s.webp" srcset="media/img/tl-aerial-s.webp 800w, media/img/tl-aerial.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Tonino Lamborghini Residences, Meydan Dubai photo 2" loading="lazy" decoding="async" data-zoom="media/img/tl-aerial.webp" data-gal="tonino" data-idx="1"></li><li><img class="" src="media/img/tl-tower-s.webp" srcset="media/img/tl-tower-s.webp 800w, media/img/tl-tower.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Tonino Lamborghini Residences, Meydan Dubai photo 3" loading="lazy" decoding="async" data-zoom="media/img/tl-tower.webp" data-gal="tonino" data-idx="2"></li><li><img class="" src="media/img/tl-kitchen-s.webp" srcset="media/img/tl-kitchen-s.webp 800w, media/img/tl-kitchen.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Tonino Lamborghini Residences, Meydan Dubai photo 4" loading="lazy" decoding="async" data-zoom="media/img/tl-kitchen.webp" data-gal="tonino" data-idx="3"></li><li><img class="" src="media/img/tl-living-s.webp" srcset="media/img/tl-living-s.webp 800w, media/img/tl-living.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Tonino Lamborghini Residences, Meydan Dubai photo 5" loading="lazy" decoding="async" data-zoom="media/img/tl-living.webp" data-gal="tonino" data-idx="4"></li><li><img class="" src="media/img/tl-bed1-s.webp" srcset="media/img/tl-bed1-s.webp 800w, media/img/tl-bed1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Tonino Lamborghini Residences, Meydan Dubai photo 6" loading="lazy" decoding="async" data-zoom="media/img/tl-bed1.webp" data-gal="tonino" data-idx="5"><span class="more" aria-hidden="true">+10</span></li></ul><span hidden data-gal="tonino" data-idx="6" data-zoom="media/img/tl-bed2.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 7"></span><span hidden data-gal="tonino" data-idx="7" data-zoom="media/img/tl-dining.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 8"></span><span hidden data-gal="tonino" data-idx="8" data-zoom="media/img/tl-tub.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 9"></span><span hidden data-gal="tonino" data-idx="9" data-zoom="media/img/tl-sink.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 10"></span><span hidden data-gal="tonino" data-idx="10" data-zoom="media/img/tl-pool.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 11"></span><span hidden data-gal="tonino" data-idx="11" data-zoom="media/img/tl-padel.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 12"></span><span hidden data-gal="tonino" data-idx="12" data-zoom="media/img/tl-wellness.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 13"></span><span hidden data-gal="tonino" data-idx="13" data-zoom="media/img/tl-terrace.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 14"></span><span hidden data-gal="tonino" data-idx="14" data-zoom="media/img/tl-sauna.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 15"></span><span hidden data-gal="tonino" data-idx="15" data-zoom="media/img/tl-constr.webp" data-alt="Tonino Lamborghini Residences, Meydan Dubai photo 16"></span>
-      </div>
-      <div class="p-info">
-        <p class="price dx-price">Price on request</p>
-        <dl class="facts">
-          <div class="fact"><dt>Bedrooms</dt><dd>1 · 2 · 3 bedrooms</dd></div>
-          <div class="fact"><dt>Construction</dt><dd>60% complete</dd></div>
-          <div class="fact"><dt>Handover</dt><dd>Q4 2027</dd></div>
-          <div class="fact"><dt>Location</dt><dd>Meydan, 10 min to Burj Khalifa</dd></div>
-          <div class="fact"><dt>Community</dt><dd>541 residences, 4 towers</dd></div>
-          <div class="fact"><dt>Payment plan</dt><dd>60/40 (20% down)</dd></div>
-        </dl>
-        <p class="about">A luxury hidden gem in Meydan, one of Dubai's most prestigious districts, and the only address that Tonino Lamborghini himself will call home. Four sculpted towers around a private resort podium, with the Italian house's design in every kitchen and bathroom, ten minutes from Burj Khalifa and The Dubai Mall.</p>
-        <div class="dx-units"><div class="dx-unit"><b>1 Bedroom</b><span class="mono">860–1,312 sq ft · ~80–122 m²</span></div><div class="dx-unit"><b>2 Bedrooms</b><span class="mono">1,484–1,637 sq ft · ~138–152 m²</span></div><div class="dx-unit"><b>3 Bedrooms</b><span class="mono">1,508–1,885 sq ft · ~140–175 m²</span></div></div>
-        <ul class="amen"><li>Fully branded Tonino Lamborghini kitchens</li><li>Tonino Lamborghini sanitaryware</li><li>Carbon fibre feature walls (select units)</li><li>Italian hand-laid mosaic pool</li><li>Branded lobby &amp; corridors</li><li>Optional Tonino Lamborghini furniture</li></ul>
-        <ul class="amen dx-amen"><li>Wellness hub</li><li>Adults&#x27; &amp; kids&#x27; pools</li><li>Padel court</li><li>Gym</li><li>Jogging track</li><li>Botanical garden</li><li>Kids&#x27; play area</li><li>Retail shops</li><li>Concierge</li><li>Valet parking</li><li>Smart home</li><li>24/7 security</li></ul>
-        <div class="ask">
-          <img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy">
-          <a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27m%20interested%20in%20Tonino%20Lamborghini%20Residences%20in%20Meydan%2C%20Dubai.%20Please%20send%20me%20the%20presentation%20and%20floor%20plans." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask Florin about Tonino Lamborghini</span></a>
-          <a class="btn ghost" href="media/doc/Tonino_Lamborghini_Residences_Dubai_BaliInvest.pdf" target="_blank" rel="noopener">Presentation (PDF)</a>
-        </div>
-      </div>
-      <figure class="phone">
-        <video controls playsinline preload="none" poster="media/v/tonino.webp" aria-label="Video: Tonino Lamborghini Residences Dubai">
-          <source src="media/v/tonino.mp4" type="video/mp4">
-        </video>
-        <figcaption class="mono">Video tour · tap to play</figcaption>
-      </figure>
-    </div>
   </div>
 </section>
 
