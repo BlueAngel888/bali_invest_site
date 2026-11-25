@@ -14,116 +14,116 @@ def e(s):
 
 # ---------- Nuanu projects (source: partners.nuanu.realestate, Nov 2026) ----------
 NUANU = [
-  dict(id="luna", name="Luna Residences", dev="618 Development", tags=["apartments","beachfront","offplan"],
+  dict(id="luna", beds="S,1,2,3", name="Luna Residences", dev="618 Development", tags=["apartments","beachfront","offplan"],
        kind="Beachfront residences", price="$185,000", handover="Q4 2028", own="Leasehold 60+ years", roi="10–14%",
        units="Studio to 3BR penthouse",
        about="A beachfront residential project where the river meets the ocean, part of the Nuanu Creative City ecosystem. Ocean-view residences with private terraces, full blackout systems, YODEZEEN-designed interiors and panoramic views of the ocean, river and jungle. From 25% down payment.",
        amen=["Luna Beach Club access","Private ocean beach","YODEZEEN interiors","5-star 24/7 property management","In-residence dining","Daily shuttle in Nuanu","Lumeira Spa nearby","International school nearby"],
        imgs=["luna-residences_6","luna-residences_3","luna-residences_4","luna-residences_7","luna-residences_5","luna-residences_8"], vid="luna"),
-  dict(id="flower", name="Flower Estates", dev="618 Development", tags=["villas","freehold","offplan"],
+  dict(id="flower", beds="2,3", name="Flower Estates", dev="618 Development", tags=["villas","freehold","offplan"],
        kind="Standalone villas, 2–3 BR", price="$500,000", handover="Q3 2027", own="Freehold for foreigners", roi="10–12%",
        units="26 standalone villas",
        about="The first residential project on Nuanu's Golden Mile, the most exclusive district of the city. Standalone villas only, each with its own signature plant in a private garden. No apartment blocks, no hotels.",
        amen=["Communal flower gardens","Flower shop","Juice bar","Tea lounge","Fire pit & BBQ area","Kids' playground","Pedestrian-friendly walkways"],
        imgs=["flower-estates_1","flower-estates_8","flower-estates_2","flower-estates_4","flower-estates_6","flower-estates_3"], vid="flower"),
-  dict(id="pavilions", name="The Pavilions", dev="OXO Living", tags=["villas","freehold","offplan"],
+  dict(id="pavilions", beds="3,4,5", name="The Pavilions", dev="OXO Living", tags=["villas","freehold","offplan"],
        kind="Pavilion-style villas", price="$620,000", handover="Q3 2027", own="Freehold for foreigners", roi=None,
        units="26 boutique villas",
        about="An exclusive boutique development of pavilion-style villas co-created by OXO Living and Precht. Inspired by traditional Balinese pavilion living, it is built around privacy, wellness and longevity, with a private wellness center for owners.",
        amen=["Private wellness center “The Core”","Meditation pyramid","Hammam & saunas","Hydrotherapy indoor pools","Gym & yoga studio","Sound healing","Café “Nowhere”"],
        imgs=["the-pavilions_1","the-pavilions_8","the-pavilions_2","the-pavilions_3","the-pavilions_5","the-pavilions_9"], vid="pavilions"),
-  dict(id="xhotel", name="X Hotel", dev="Nuanu & Rentaved", tags=["hotel","offplan"],
+  dict(id="xhotel", beds="S", name="X Hotel", dev="Nuanu & Rentaved", tags=["hotel","offplan"],
        kind="Investment hotel rooms", price="$173,999", handover="2027", own="Leasehold 25 + 20 years", roi="10–14%",
        units="41 hotel rooms",
        about="The first investment hotel inside Nuanu Creative City and its official hospitality partner: a 4-star property 3 minutes from the beach. Bali's first art-experience hotel concept, with recycled art façade panels, light-mapping installations, the largest natural lagoon pool in Nuanu and a 360° sunset rooftop. About 30% of 2027 bookings are pre-confirmed.",
        amen=["45 m lagoon pool (420 m²)","360° rooftop bar","On-site restaurant","Hotel gym","24/7 concierge","Private balconies in every room","Experience Concierge"],
        imgs=["xhotel_6","xhotel_4","xhotel_1","xhotel_3","xhotel_2","xhotel_7"], vid="xhotel"),
-  dict(id="bso", name="Black Sands Oasis", dev="UNIT (Unit Space)", tags=["villas","apartments","offplan"],
+  dict(id="bso", beds="S,1,2,3,4", name="Black Sands Oasis", dev="UNIT (Unit Space)", tags=["villas","apartments","offplan"],
        kind="Villas, studios & penthouses", price="$115,400", handover="2028", own="Leasehold 35 + 20 years", roi="10.5–17.8%",
        units="83 villas · 20 studios · 8 penthouses",
        about="A 1.5-hectare development 700 m from the ocean that fuses desert-modern architecture with Moroccan, dune-inspired aesthetics, surrounded by 5 hectares of landscaped walking areas. Apartments are scheduled for April 2028 and villas for October 2028.",
        amen=["Hammam","Reflection pool","Arabic-cuisine restaurant","Rooftop area","Direct access to Aurora Park","30+ restaurants within 1 min","International school & kindergarten (1 min)"],
        imgs=["black-sands-oasis_5","black-sands-oasis_1","black-sands-oasis_3","black-sands-oasis_2","black-sands-oasis_8","black-sands-oasis_9"], vid="bso"),
-  dict(id="biom", name="BIOM", dev="Biom Development Group", tags=["villas","apartments","freehold","offplan"],
+  dict(id="biom", beds="S,1,2,3", name="BIOM", dev="Biom Development Group", tags=["villas","apartments","freehold","offplan"],
        kind="Villas & residences", price="$145,000", handover="Q4 2027", own="Leasehold 35 + 20 years · freehold for 2–3 BR villas", roi="12–14%",
        units="Living district by Rustam Kerimov",
        about="A nature-integrated living district designed by architect Rustam Kerimov, 400 m from the ocean. Developed with Nuanu and Atom Group, close to international schools and kindergartens, made for families and professionals.",
        amen=["Swimming pools","Clubhouse & café","Yoga shala","Co-working","Outdoor fitness zone","Playgrounds & gardens","24/7 check-in & rental management"],
        imgs=["biom_3","biom_1","biom_5","biom_9","biom_4","biom_7"], vid="biom"),
-  dict(id="origins", name="Origins", dev="Bali Baza Development", tags=["villas","hotel","offplan"],
+  dict(id="origins", beds="2,3,4", name="Origins", dev="Bali Baza Development", tags=["villas","hotel","offplan"],
        kind="Boutique hotel villas", price="$590,700", handover="Q2 2027", own="Leasehold 35 years", roi="14–15%",
        units="18 one-of-a-kind villas",
        about="A collection of boutique villas in a soft-brutalism style that runs as a premium boutique hotel with professional management. Volcanic stone, warm timber, sweeping arched windows and private pools in tropical gardens. Each villa has its own character in the Character Hotel format.",
        amen=["Private pools","Rooftop terrace with grill","Cabana, yoga deck & koi pond","Electric scooter per villa","Starlink internet","24/7 luxury concierge","Destination restaurant & lounge"],
        imgs=["origins_8","origins_1","origins_2","origins_3","origins_6","origins_9"], vid="origins"),
-  dict(id="ecoverse", name="Ecoverse Residences", dev="NPG Indonesia", tags=["apartments","ready"],
+  dict(id="ecoverse", beds="S,2,3", name="Ecoverse Residences", dev="NPG Indonesia", tags=["apartments","ready"],
        kind="Eco-luxury residences", price="$197,000", handover="Completed (Q1 2026)", own="Leasehold 25 + 30 years priority extension", roi="11–15%",
        units="Ready to move in",
        about="Eco-friendly luxury living that pairs environmental responsibility with high construction standards. Completed in Q1 2026, with a 25-year structural warranty and a 1-year interior warranty, managed by OXO.",
        amen=["Olympic pool","Modern gym","Co-working & meeting room","Restaurant","24/7 reception","Solar panels","UV water filters","Underground parking"],
        imgs=["ecoverse_5","ecoverse_1","ecoverse_8","ecoverse_3","ecoverse_9","ecoverse_7"], vid="ecoverse"),
-  dict(id="vol1", name="The Collections Vol. 1", dev="618 Development", tags=["villas","ready"],
+  dict(id="vol1", beds="3", name="The Collections Vol. 1", dev="618 Development", tags=["villas","ready"],
        kind="Japandi pool villas", price="$750,000", handover="Completed (Q4 2025)", own="Leasehold 24 years, renewable to 34", roi="13.7%",
        units="Villa collection",
        about="A villa complex with ocean views, 300 m from the beach and 10 minutes from Canggu. Japandi architecture, with construction details made for Bali's humid climate, including enhanced waterproofing of foundations, walls and roofs.",
        amen=["Private pool & terrace","Landscaped garden","250 m to the ocean","Full property management","Access to Nuanu infrastructure"],
        imgs=["collectionsvol1_4","collectionsvol1_3","collectionsvol1_7","collectionsvol1_8","collectionsvol1_9","collectionsvol1_6"], vid="vol1"),
-  dict(id="vol2", name="The Collections Vol. 2", dev="618 Development", tags=["villas","freehold"],
+  dict(id="vol2", beds="3", name="The Collections Vol. 2", dev="618 Development", tags=["villas","freehold"],
        kind="Grand private villas", price="$1,050,000", handover="Q4 2026", own="Freehold for foreigners", roi="11–12%",
        units="Villa collection",
        about="Grand private villas inside Nuanu Creative City, 10 minutes' walk to the beach and 10 minutes' drive to Canggu, managed by Nuanu. Built for the tropical climate, with enhanced waterproofing throughout.",
        amen=["Private pool & deck","Landscaped garden","10 min walk to the beach","Full property management"],
        imgs=["collectionsvol2_6","collectionsvol2_3","collectionsvol2_2","collectionsvol2_7","collectionsvol2_8","collectionsvol2_9"], vid="vol2"),
-  dict(id="vol3", name="The Collections Vol. 3", dev="618 Development", tags=["villas","freehold"],
+  dict(id="vol3", beds="5", name="The Collections Vol. 3", dev="618 Development", tags=["villas","freehold"],
        kind="Signature 5-bedroom villas", price="$1,800,000", handover="Q3 2026", own="Freehold for foreigners", roi=None,
        units="2 signature villas",
        about="The signature villa collection by 618 Development: open-plan living, floor-to-ceiling panoramic windows and views over a banana grove, in the heart of Nuanu.",
        amen=["Banana grove views","Open-plan living","Floor-to-ceiling windows","Nature-integrated design"],
        imgs=["collectionsvol3_7","collectionsvol3_2","collectionsvol3_6","collectionsvol3_8","collectionsvol3_5","collectionsvol3_9"], vid="vol3"),
-  dict(id="residence", name="The Residence", dev="OXO Living", tags=["villas","freehold"],
+  dict(id="residence", beds="3,4,5", name="The Residence", dev="OXO Living", tags=["villas","freehold"],
        kind="Family villas", price="$685,110", handover="Q4 2026", own="Freehold for foreigners", roi=None,
        units="Villa community",
        about="Spacious, carefully crafted villas for living and investment by OXO Living, available on freehold terms to Indonesian and international buyers.",
        amen=["Clubhouse","Kids pool","Playground","BBQ area","24/7 security"],
        imgs=["the-residence_5","the-residence_3","the-residence_8","the-residence_9","the-residence_6","the-residence_7"], vid="residence"),
-  dict(id="nyanyi", name="Nyanyi Village U3", dev="UNIT (Unit Space)", tags=["apartments","villas"],
+  dict(id="nyanyi", beds="S,2", name="Nyanyi Village U3", dev="UNIT (Unit Space)", tags=["apartments","villas"],
        kind="Family village", price="$118,700", handover="Q3 2026", own="Leasehold 25 + 25 years priority extension", roi="12–22%",
        units="Next to Pro Education school",
        about="A family-friendly village by Unit Space Group, right next to Pro Education International School and a kindergarten. The developer states a guaranteed minimum 9% return in the first year.",
        amen=["Pro Education International School","Kindergarten from age 3","Children's room with caregiver","Creative workshops & festivals","Family community"],
        imgs=["nyanyi-village-u3_3","nyanyi-village-u3_1","nyanyi-village-u3_8","nyanyi-village-u3_4","nyanyi-village-u3_5","nyanyi-village-u3_6"], vid="nyanyi"),
-  dict(id="u2", name="Unit Nuanu Village", dev="UNIT (Unit Space)", tags=["apartments","villas","ready"],
+  dict(id="u2", beds="S,1,2,3", name="Unit Nuanu Village", dev="UNIT (Unit Space)", tags=["apartments","villas","ready"],
        kind="Apartments & villas", price=None, handover="Completed", own="Leasehold", roi=None,
        units="Rice field views",
        about="The cornerstone of Unit Space Village, the first phase of Unit Space City. Finished apartments and villas with rice field views, inside the Nuanu ecosystem.",
        amen=["Schools & kindergartens nearby","Low-rise living","Green spaces","Nuanu City infrastructure"],
-       imgs=["unit-nuanu-u2_1","unit-nuanu-u2_2"], vid="u2"),
-  dict(id="u1", name="Unit Space U1", dev="UNIT (Unit Space)", tags=["apartments","villas","ready"],
+       imgs=["unit-nuanu-u2x_1","unit-nuanu-u2_1","unit-nuanu-u2x_2","unit-nuanu-u2x_3","unit-nuanu-u2x_4","unit-nuanu-u2x_5","unit-nuanu-u2x_6","unit-nuanu-u2x_7","unit-nuanu-u2x_8","unit-nuanu-u2x_9","unit-nuanu-u2_2"], vid="u2"),
+  dict(id="u1", beds="S,1,2", name="Unit Space U1", dev="UNIT (Unit Space)", tags=["apartments","villas","ready"],
        kind="Low-rise village", price=None, handover="Completed", own="Leasehold", roi=None,
        units="Lived-in community",
        about="The first village of Unit Space City: completed and lived in, with low-rise homes, green spaces and a real community around you in Nuanu.",
        amen=["Low-rise homes","Green spaces","Schools & kindergartens nearby","Nuanu City infrastructure"],
-       imgs=["unit-space-u1_4","unit-space-u1_1","unit-space-u1_2"], vid="u1"),
+       imgs=["unit-space-u1x_1","unit-space-u1_4","unit-space-u1x_2","unit-space-u1x_3","unit-space-u1x_4","unit-space-u1x_5","unit-space-u1x_6","unit-space-u1x_7","unit-space-u1x_8","unit-space-u1_1"], vid="u1"),
 ]
 
 # ---------- BREIG Property (public listings: rumavi.com, realting.com, lazudi.com) ----------
 BREIG = [
-  dict(id="edem2", name="Edem Villas II", area="Nusa Dua · Benoa", price="$102,000", kind="Studios to 3BR villas, 24–180 m²",
+  dict(id="edem2", beds="S,1,2,3", name="Edem Villas II", area="Nusa Dua · Benoa", price="$102,000", kind="Studios to 3BR villas, 24–180 m²",
        handover="Q4 2027 (off-plan)", own="Leasehold up to 60 years",
        about="Furnished, turnkey units 500 m from the ocean in the Nusa Dua tourism zone, with smart-home tech and solar energy. Rental programme with Homes & Villas by Marriott. Payment plan: 15% + 15%, then 0% instalments during construction.",
        amen=["Private pools (villas)","Rooftop terraces","Gym, sauna & spa","Yoga & co-working","Restaurant","Kids zone"],
        imgs=["breig-edem_1","breig-edem_5","breig-edem_3","breig-edem_2"]),
-  dict(id="garden2", name="Garden Villa II", area="Sukawati · Gianyar", price="$330,000", kind="3BR jungle villas, ~180 m²",
+  dict(id="garden2", beds="3", name="Garden Villa II", area="Sukawati · Gianyar", price="$330,000", kind="3BR jungle villas, ~180 m²",
        handover="Completed (Q4 2025)", own="Leasehold",
        about="A boutique complex of four jungle villas on the southern edge of the Ubud corridor, with rice-field and jungle views, 20 minutes from Sanur and Ubud.",
        amen=["Jungle infinity pool","Rice-field views","Garden & balcony","BBQ area","Managed rental"],
        imgs=["breig-garden_5","breig-garden_3","breig-garden_4","breig-garden_1"]),
-  dict(id="aqua1", name="Aquamarine I", area="Berawa · Canggu", price="$620,000", kind="3–4BR pool villas, 263–358 m²",
+  dict(id="aqua1", beds="3,4", name="Aquamarine I", area="Berawa · Canggu", price="$620,000", kind="3–4BR pool villas, 263–358 m²",
        handover="Completed", own="Leasehold",
        about="Private-pool villas 200 m from Nelayan Beach, close to Atlas and Finns beach clubs. Rooftop terraces, sauna and smart-home features in selected villas.",
        amen=["Private pool","Rooftop terrace","Sauna (selected)","Smart home","Managed rental"],
        imgs=["breig-aqua_1","breig-aqua_2","breig-aqua_3","breig-aqua_4"]),
-  dict(id="baliwood2", name="Baliwood II", area="Pererenan · Canggu", price="$750,000", kind="3–5BR oceanfront villas, 268–336 m²",
+  dict(id="baliwood2", beds="3,4,5", name="Baliwood II", area="Pererenan · Canggu", price="$750,000", kind="3–5BR oceanfront villas, 268–336 m²",
        handover="Completed", own="Leasehold",
        about="Luxury villas a one-minute walk from Pererenan Beach, with ocean views from the rooftop terraces, 10 minutes from Canggu.",
        amen=["Private pool","Rooftop with ocean views","Garden & balcony","BBQ area","Managed rental"],
@@ -132,9 +132,10 @@ BREIG = [
 
 TAG_LABEL = dict(villas="Villas", apartments="Apartments", hotel="Hotel", freehold="Freehold", ready="Ready", offplan="Off-plan", beachfront="Beachfront")
 
-def pic(name, alt, sizes="(min-width: 1000px) 60vw, 100vw", cls="", eager=False, zoom=True):
+def pic(name, alt, sizes="(min-width: 1000px) 60vw, 100vw", cls="", eager=False, zoom=True, gal=None, idx=0):
     load = 'fetchpriority="high"' if eager else 'loading="lazy"'
     z = f' data-zoom="media/img/{name}.webp"' if zoom else ""
+    if gal: z += f' data-gal="{gal}" data-idx="{idx}"'
     return (f'<img class="{cls}" src="media/img/{name}-s.webp" '
             f'srcset="media/img/{name}-s.webp 800w, media/img/{name}.webp 1600w" sizes="{sizes}" '
             f'alt="{e(alt)}" {load} decoding="async"{z}>')
@@ -160,6 +161,30 @@ def cta_band(title, msg, i):
 
 WA_ICON = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>'
 
+def beds_label(b):
+    parts = ["Studio" if x == "S" else x for x in b.split(",")]
+    if parts == ["Studio"]:
+        return "Studio / hotel room"
+    nums = [x for x in parts if x != "Studio"]
+    lab = (" · ".join(nums) + " bedrooms") if len(nums) > 1 else (nums[0] + (" bedroom" if nums[0] == "1" else " bedrooms"))
+    return ("Studio · " if "Studio" in parts else "") + lab
+
+def beds_attr(b):
+    return " ".join("b" + x.lower() for x in b.split(","))
+
+def gallery(gid, imgs, alt, first_cls, first_sizes, thumb_cls, thumb_sizes, max_thumbs):
+    main = pic(imgs[0], alt, sizes=first_sizes, cls=first_cls, gal=gid, idx=0)
+    rest = imgs[1:]
+    shown = rest[:max_thumbs]
+    more = len(rest) - len(shown)
+    lis = []
+    for j, im in enumerate(shown, 1):
+        badge = f'<span class="more" aria-hidden="true">+{more}</span>' if (j == len(shown) and more > 0) else ''
+        lis.append(f'<li>{pic(im, alt + " photo " + str(j + 1), sizes=thumb_sizes, gal=gid, idx=j)}{badge}</li>')
+    hidden = "".join(f'<span hidden data-gal="{gid}" data-idx="{k}" data-zoom="media/img/{im}.webp" data-alt="{e(alt)} photo {k + 1}"></span>'
+                     for k, im in enumerate(rest[len(shown):], len(shown) + 1))
+    return main, f'<ul class="thumbs {thumb_cls}">{"".join(lis)}</ul>{hidden}'
+
 def fact(label, value, note=False):
     if not value: return ""
     star = '<sup>*</sup>' if note else ''
@@ -169,8 +194,7 @@ def project_section(p, n):
     price = p["price"] or "On request"
     tags = "".join(f'<span class="tag">{TAG_LABEL[t]}</span>' for t in p["tags"])
     imgs = p["imgs"]
-    main = pic(imgs[0], f'{p["name"]}, Nuanu Bali', cls="g-main")
-    thumbs = "".join(f'<li>{pic(i, p["name"] + " render", sizes="(min-width: 1000px) 15vw, 33vw")}</li>' for i in imgs[1:6])
+    main, thumbs = gallery(p["id"], imgs, f'{p["name"]}, Nuanu Bali', "g-main", "(min-width: 1000px) 60vw, 100vw", "", "(min-width: 1000px) 15vw, 33vw", 5)
     amen = "".join(f"<li>{e(a)}</li>" for a in p["amen"])
     msg = f"Hello Florin, I'd like details about {p['name']} in Nuanu, Bali (brochure, layouts, prices)."
     video = ""
@@ -183,7 +207,7 @@ def project_section(p, n):
         <figcaption class="mono">Video tour · tap to play</figcaption>
       </figure>'''
     return f'''
-<section class="project" id="{p["id"]}" data-tags="{' '.join(p['tags'])}">
+<section class="project" id="{p["id"]}" data-tags="{' '.join(p['tags'])}" data-beds="{beds_attr(p['beds'])}">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">{n:02d} / {len(NUANU):02d} · Nuanu</p>
@@ -194,11 +218,12 @@ def project_section(p, n):
     <div class="p-grid">
       <div class="gallery">
         {main}
-        <ul class="thumbs">{thumbs}</ul>
+        {thumbs}
       </div>
       <div class="p-info">
         <p class="price">{'<span class="from mono">from</span> ' if p["price"] else ''}{e(price)}</p>
         <dl class="facts">
+          {fact("Bedrooms", beds_label(p["beds"]))}
           {fact("Handover", p["handover"])}
           {fact("Ownership", p["own"])}
           {fact("Project", p["units"])}
@@ -218,17 +243,18 @@ def project_section(p, n):
 
 def breig_card(b):
     amen = "".join(f"<li>{e(a)}</li>" for a in b["amen"])
-    thumbs = "".join(f'<li>{pic(i, b["name"], sizes="(min-width: 1000px) 12vw, 30vw")}</li>' for i in b["imgs"][1:4])
+    main, thumbs = gallery(b["id"], b["imgs"], b["name"] + " by BREIG", "b-main", "(min-width: 1000px) 45vw, 100vw", "small", "(min-width: 1000px) 12vw, 30vw", 3)
     msg = f"Hello Florin, I'd like details about {b['name']} by BREIG ({b['area']}, Bali)."
     return f'''
-<article class="b-card" id="{b["id"]}">
-  {pic(b["imgs"][0], b["name"] + " by BREIG", sizes="(min-width: 1000px) 45vw, 100vw", cls="b-main")}
-  <ul class="thumbs small">{thumbs}</ul>
+<article class="b-card" id="{b["id"]}" data-tags="villas" data-beds="{beds_attr(b['beds'])}">
+  {main}
+  {thumbs}
   <div class="b-body">
     <p class="eyebrow">{e(b["area"])}</p>
     <h3>{e(b["name"])}</h3>
     <p class="price sm"><span class="from mono">from</span> {e(b["price"])}</p>
     <dl class="facts">
+      {fact("Bedrooms", beds_label(b["beds"]))}
       {fact("Type", b["kind"])}
       {fact("Status", b["handover"])}
       {fact("Ownership", b["own"])}
@@ -241,9 +267,9 @@ def breig_card(b):
 
 def index_card(p, n):
     price = p["price"] or "On request"
-    return f'''<li class="ix" data-tags="{' '.join(p['tags'])}"><a href="#{p["id"]}">
+    return f'''<li class="ix" data-tags="{' '.join(p['tags'])}" data-beds="{beds_attr(p['beds'])}"><a href="#{p["id"]}">
   {pic(p["imgs"][0], p["name"], sizes="(min-width: 1000px) 22vw, 50vw", zoom=False)}
-  <span class="ix-meta"><span class="ix-name">{e(p["name"])}</span><span class="ix-price mono">{'from ' if p["price"] else ''}{e(price)}</span></span></a></li>'''
+  <span class="ix-meta"><span class="ix-name">{e(p["name"])}</span><span class="ix-price mono">{'from ' if p["price"] else ''}{e(price)}</span><span class="ix-beds">{e(beds_label(p["beds"]))}</span></span></a></li>'''
 
 sections = []
 for i, p in enumerate(NUANU, 1):
@@ -255,6 +281,7 @@ for i, p in enumerate(NUANU, 1):
                   11: "Want a video call or an on-site viewing in Bali?"}
         sections.append(cta_band(titles[i], f"Hello Florin, I saw your Nuanu projects page and I'd like more details.", i))
 
+bed_filters = "".join(f'<button type="button" class="chip bchip" data-b="{k}" id="fb-{k}" aria-pressed="false">{v}</button>' for k, v in [("bs","Studio"),("b1","1 BR"),("b2","2 BR"),("b3","3 BR"),("b4","4 BR"),("b5","5 BR")])
 filters = "".join(f'<button type="button" class="chip" data-f="{k}" id="f-{k}" aria-pressed="false">{v}</button>' for k, v in [("villas","Villas"),("apartments","Apartments"),("hotel","Hotel"),("freehold","Freehold"),("ready","Ready now")])
 
 page = f'''<title>Nuanu Bali Properties</title>
@@ -355,7 +382,16 @@ h1, h2, h3 {{ font-family: var(--display); line-height: 1.04; letter-spacing: -0
 .ix-meta {{ display: flex; flex-direction: column; padding: 10px 12px 12px; gap: 2px; }}
 .ix-name {{ font-weight: 700; font-size: 15px; line-height: 1.25; }}
 .ix-price {{ font-size: 12.5px; color: var(--accent); }}
-.ix.dim {{ opacity: .28; }}
+.ix.dim {{ display: none; }}
+.ix-beds {{ font-size: 12px; color: var(--muted); }}
+.filters {{ display: grid; gap: 10px; margin-bottom: 20px; }}
+.frow {{ display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }}
+.flabel {{ font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); width: 6.5em; }}
+.fstatus {{ margin: 0; font-size: 14px; color: var(--muted); min-height: 1.4em; }}
+.fstatus button {{ font: 600 14px var(--body); background: none; border: 0; color: var(--accent); cursor: pointer; text-decoration: underline; padding: 0 4px; }}
+.b-card.dim {{ display: none; }}
+.thumbs li {{ position: relative; }}
+.thumbs .more {{ position: absolute; inset: 0; display: grid; place-items: center; background: rgba(10,16,12,.55); color: #fff; font: 700 18px var(--display); border-radius: 10px; pointer-events: none; }}
 @media (max-width: 1100px) {{ .ix-grid {{ grid-template-columns: repeat(3, minmax(0, 1fr)); }} }}
 @media (max-width: 600px) {{ .ix-grid {{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }} }}
 
@@ -463,10 +499,16 @@ h1, h2, h3 {{ font-family: var(--display); line-height: 1.04; letter-spacing: -0
 @media (max-width: 520px) {{ .float .label {{ display: none; }} .float .face {{ width: 60px; height: 60px; }} }}
 
 /* lightbox */
-dialog.lb {{ border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 92vh; }}
-dialog.lb::backdrop {{ background: rgba(5,9,7,.88); }}
-dialog.lb img {{ max-width: 96vw; max-height: 86vh; object-fit: contain; border-radius: 10px; }}
-dialog.lb button {{ position: fixed; top: calc(14px + env(safe-area-inset-top, 0px)); right: calc(14px + env(safe-area-inset-right, 0px)); font: 700 15px var(--body); padding: 10px 16px; border-radius: 999px; border: 0; background: #F4F6F1; color: #13201A; cursor: pointer; }}
+dialog.lb {{ border: 0; padding: 0; background: transparent; width: 100vw; height: 100vh; max-width: 100vw; max-height: 100vh; overflow: hidden; }}
+dialog.lb::backdrop {{ background: rgba(5,9,7,.92); }}
+.lb-stage {{ width: 100%; height: 100%; display: grid; place-items: center; touch-action: pan-y; }}
+dialog.lb img {{ max-width: 94vw; max-height: 80vh; object-fit: contain; border-radius: 10px; user-select: none; -webkit-user-drag: none; transition: opacity .15s ease; }}
+dialog.lb .lb-nav {{ position: fixed; top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border-radius: 50%; border: 0; background: rgba(244,246,241,.92); color: #13201A; font: 700 28px/1 var(--body); cursor: pointer; display: grid; place-items: center; padding: 0 0 4px; }}
+dialog.lb .lb-prev {{ left: calc(12px + env(safe-area-inset-left, 0px)); }}
+dialog.lb .lb-next {{ right: calc(12px + env(safe-area-inset-right, 0px)); }}
+dialog.lb .lb-count {{ position: fixed; bottom: calc(22px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); color: #EEF1EA; font: 500 14px var(--mono); letter-spacing: .08em; }}
+@media (max-width: 600px) {{ dialog.lb .lb-nav {{ width: 48px; height: 48px; top: auto; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); transform: none; }} }}
+dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top, 0px)); right: calc(14px + env(safe-area-inset-right, 0px)); font: 700 15px var(--body); padding: 10px 16px; border-radius: 999px; border: 0; background: #F4F6F1; color: #13201A; cursor: pointer; }}
 </style>
 
 <header class="bar">
@@ -519,7 +561,11 @@ dialog.lb button {{ position: fixed; top: calc(14px + env(safe-area-inset-top, 0
   <div class="wrap">
     <div class="index-head">
       <h2>All Nuanu projects</h2>
-      <div class="chips" role="group" aria-label="Filter projects">{filters}</div>
+    </div>
+    <div class="filters">
+      <div class="frow"><span class="flabel mono">Type</span><div class="chips" role="group" aria-label="Filter by type">{filters}</div></div>
+      <div class="frow"><span class="flabel mono">Bedrooms</span><div class="chips" role="group" aria-label="Filter by bedrooms">{bed_filters}</div></div>
+      <p class="fstatus" id="fstatus" aria-live="polite"></p>
     </div>
     <ul class="ix-grid">{"".join(index_card(p, i) for i, p in enumerate(NUANU, 1))}</ul>
   </div>
@@ -583,28 +629,75 @@ dialog.lb button {{ position: fixed; top: calc(14px + env(safe-area-inset-top, 0
   <span class="badge">{WA_ICON}</span>
 </a>
 
-<dialog class="lb" id="lb"><img id="lb-img" alt=""><button type="button" id="lb-close">Close</button></dialog>
+<dialog class="lb" id="lb" aria-label="Photo viewer"><div class="lb-stage" id="lb-stage"><img id="lb-img" alt=""></div><button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">&#8249;</button><button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Next photo">&#8250;</button><span class="lb-count" id="lb-count"></span><button type="button" id="lb-close">Close</button></dialog>
 
 <script>
 (function () {{
-  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img');
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'), lbCount = document.getElementById('lb-count');
+  var prevBtn = document.getElementById('lb-prev'), nextBtn = document.getElementById('lb-next');
+  var set = [], pos = 0;
+  function show(i) {{
+    if (!set.length) return;
+    pos = (i + set.length) % set.length;
+    var el = set[pos];
+    lbImg.src = el.getAttribute('data-zoom');
+    lbImg.alt = el.getAttribute('alt') || el.getAttribute('data-alt') || '';
+    lbCount.textContent = set.length > 1 ? (pos + 1) + ' / ' + set.length : '';
+    prevBtn.hidden = nextBtn.hidden = set.length < 2;
+    var nx = set[(pos + 1) % set.length]; if (nx) {{ var pre = new Image(); pre.src = nx.getAttribute('data-zoom'); }}
+  }}
+  function open(el) {{
+    var g = el.getAttribute('data-gal');
+    set = g ? Array.prototype.slice.call(document.querySelectorAll('[data-gal="' + g + '"]')).sort(function (a, b) {{ return a.dataset.idx - b.dataset.idx; }}) : [el];
+    show(g ? set.indexOf(el) : 0);
+    if (lb.showModal && !lb.open) lb.showModal();
+  }}
   document.addEventListener('click', function (ev) {{
     var t = ev.target.closest('[data-zoom]');
-    if (t && lb.showModal) {{ lbImg.src = t.getAttribute('data-zoom'); lbImg.alt = t.alt || ''; lb.showModal(); }}
+    if (t) open(t);
   }});
+  prevBtn.addEventListener('click', function (ev) {{ ev.stopPropagation(); show(pos - 1); }});
+  nextBtn.addEventListener('click', function (ev) {{ ev.stopPropagation(); show(pos + 1); }});
   document.getElementById('lb-close').addEventListener('click', function () {{ lb.close(); }});
-  lb.addEventListener('click', function (ev) {{ if (ev.target === lb) lb.close(); }});
+  document.getElementById('lb-stage').addEventListener('click', function (ev) {{ if (ev.target.id === 'lb-stage') lb.close(); }});
+  document.addEventListener('keydown', function (ev) {{
+    if (!lb.open) return;
+    if (ev.key === 'ArrowRight') {{ show(pos + 1); ev.preventDefault(); }}
+    else if (ev.key === 'ArrowLeft') {{ show(pos - 1); ev.preventDefault(); }}
+  }});
+  var sx = null, sy = 0;
+  lb.addEventListener('touchstart', function (ev) {{ if (ev.touches.length === 1) {{ sx = ev.touches[0].clientX; sy = ev.touches[0].clientY; }} }}, {{ passive: true }});
+  lb.addEventListener('touchend', function (ev) {{
+    if (sx === null) return;
+    var dx = ev.changedTouches[0].clientX - sx, dy = ev.changedTouches[0].clientY - sy; sx = null;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) show(dx < 0 ? pos + 1 : pos - 1);
+  }}, {{ passive: true }});
 
-  var active = null;
-  document.querySelectorAll('.chip').forEach(function (c) {{
-    c.addEventListener('click', function () {{
-      active = (active === c.dataset.f) ? null : c.dataset.f;
-      document.querySelectorAll('.chip').forEach(function (o) {{ o.setAttribute('aria-pressed', o.dataset.f === active ? 'true' : 'false'); }});
-      document.querySelectorAll('.ix, .project').forEach(function (el) {{
-        var on = !active || el.dataset.tags.split(' ').indexOf(active) > -1;
-        el.classList.toggle('dim', !on);
-      }});
+  var fType = null, fBed = null, status = document.getElementById('fstatus');
+  function applyFilters() {{
+    document.querySelectorAll('.chip[data-f]').forEach(function (o) {{ o.setAttribute('aria-pressed', o.dataset.f === fType ? 'true' : 'false'); }});
+    document.querySelectorAll('.chip[data-b]').forEach(function (o) {{ o.setAttribute('aria-pressed', o.dataset.b === fBed ? 'true' : 'false'); }});
+    var n = 0, nb = 0;
+    document.querySelectorAll('.ix, .project, .b-card').forEach(function (el) {{
+      var okT = !fType || el.dataset.tags.split(' ').indexOf(fType) > -1;
+      var okB = !fBed || el.dataset.beds.split(' ').indexOf(fBed) > -1;
+      var on = okT && okB;
+      el.classList.toggle('dim', !on);
+      if (on && el.classList.contains('ix')) n++;
+      if (on && el.classList.contains('b-card')) nb++;
     }});
+    if (!fType && !fBed) {{ status.textContent = ''; return; }}
+    status.innerHTML = '';
+    status.appendChild(document.createTextNode(n + ' Nuanu project' + (n === 1 ? '' : 's') + ' and ' + nb + ' BREIG villa project' + (nb === 1 ? '' : 's') + ' match.'));
+    var clr = document.createElement('button'); clr.type = 'button'; clr.textContent = 'Clear filters';
+    clr.addEventListener('click', function () {{ fType = null; fBed = null; applyFilters(); }});
+    status.appendChild(clr);
+  }}
+  document.querySelectorAll('.chip[data-f]').forEach(function (c) {{
+    c.addEventListener('click', function () {{ fType = (fType === c.dataset.f) ? null : c.dataset.f; applyFilters(); }});
+  }});
+  document.querySelectorAll('.chip[data-b]').forEach(function (c) {{
+    c.addEventListener('click', function () {{ fBed = (fBed === c.dataset.b) ? null : c.dataset.b; applyFilters(); }});
   }});
 
   document.querySelectorAll('.copy').forEach(function (b) {{

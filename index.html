@@ -7,8 +7,7 @@
 <meta property="og:description" content="Nuanu Creative City projects and BREIG villas in Bali: prices, photos, video tours. WhatsApp Florin +40 757 070 757.">
 <meta property="og:image" content="/media/img/luna-residences_6.webp">
 <link rel="icon" href="/media/img/florin-s.webp">
-<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
-<title>Nuanu Bali Properties</title>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style><title>Nuanu Bali Properties</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Bali Invest: Nuanu Creative City projects in Bali with prices, photos, video tours and the Nuanu map. Ask Florin on WhatsApp +40 757 070 757.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,7 +105,16 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.04; letter-spacing: -0.
 .ix-meta { display: flex; flex-direction: column; padding: 10px 12px 12px; gap: 2px; }
 .ix-name { font-weight: 700; font-size: 15px; line-height: 1.25; }
 .ix-price { font-size: 12.5px; color: var(--accent); }
-.ix.dim { opacity: .28; }
+.ix.dim { display: none; }
+.ix-beds { font-size: 12px; color: var(--muted); }
+.filters { display: grid; gap: 10px; margin-bottom: 20px; }
+.frow { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.flabel { font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); width: 6.5em; }
+.fstatus { margin: 0; font-size: 14px; color: var(--muted); min-height: 1.4em; }
+.fstatus button { font: 600 14px var(--body); background: none; border: 0; color: var(--accent); cursor: pointer; text-decoration: underline; padding: 0 4px; }
+.b-card.dim { display: none; }
+.thumbs li { position: relative; }
+.thumbs .more { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(10,16,12,.55); color: #fff; font: 700 18px var(--display); border-radius: 10px; pointer-events: none; }
 @media (max-width: 1100px) { .ix-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .ix-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
 
@@ -214,15 +222,19 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.04; letter-spacing: -0.
 @media (max-width: 520px) { .float .label { display: none; } .float .face { width: 60px; height: 60px; } }
 
 /* lightbox */
-dialog.lb { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 92vh; }
-dialog.lb::backdrop { background: rgba(5,9,7,.88); }
-dialog.lb img { max-width: 96vw; max-height: 86vh; object-fit: contain; border-radius: 10px; }
-dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0px)); right: calc(14px + env(safe-area-inset-right, 0px)); font: 700 15px var(--body); padding: 10px 16px; border-radius: 999px; border: 0; background: #F4F6F1; color: #13201A; cursor: pointer; }
+dialog.lb { border: 0; padding: 0; background: transparent; width: 100vw; height: 100vh; max-width: 100vw; max-height: 100vh; overflow: hidden; }
+dialog.lb::backdrop { background: rgba(5,9,7,.92); }
+.lb-stage { width: 100%; height: 100%; display: grid; place-items: center; touch-action: pan-y; }
+dialog.lb img { max-width: 94vw; max-height: 80vh; object-fit: contain; border-radius: 10px; user-select: none; -webkit-user-drag: none; transition: opacity .15s ease; }
+dialog.lb .lb-nav { position: fixed; top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border-radius: 50%; border: 0; background: rgba(244,246,241,.92); color: #13201A; font: 700 28px/1 var(--body); cursor: pointer; display: grid; place-items: center; padding: 0 0 4px; }
+dialog.lb .lb-prev { left: calc(12px + env(safe-area-inset-left, 0px)); }
+dialog.lb .lb-next { right: calc(12px + env(safe-area-inset-right, 0px)); }
+dialog.lb .lb-count { position: fixed; bottom: calc(22px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); color: #EEF1EA; font: 500 14px var(--mono); letter-spacing: .08em; }
+@media (max-width: 600px) { dialog.lb .lb-nav { width: 48px; height: 48px; top: auto; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); transform: none; } }
+dialog.lb #lb-close { position: fixed; top: calc(14px + env(safe-area-inset-top, 0px)); right: calc(14px + env(safe-area-inset-right, 0px)); font: 700 15px var(--body); padding: 10px 16px; border-radius: 999px; border: 0; background: #F4F6F1; color: #13201A; cursor: pointer; }
 </style>
 
-</head>
-<body>
-<header class="bar">
+</head><body><header class="bar">
   <div class="wrap">
     <a class="brand" href="#top"><img class="face" src="media/img/florin-s.webp" alt="" width="40" height="40"><span><b>BALI INVEST</b><small>Florin · Nuanu & Bali property</small></span></a>
     <nav aria-label="Sections"><a href="#nuanu">Nuanu</a><a href="#map">Map</a><a href="#projects">Projects</a><a href="#breig">BREIG villas</a><a href="#contact">Contact</a></nav>
@@ -272,44 +284,48 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
   <div class="wrap">
     <div class="index-head">
       <h2>All Nuanu projects</h2>
-      <div class="chips" role="group" aria-label="Filter projects"><button type="button" class="chip" data-f="villas" id="f-villas" aria-pressed="false">Villas</button><button type="button" class="chip" data-f="apartments" id="f-apartments" aria-pressed="false">Apartments</button><button type="button" class="chip" data-f="hotel" id="f-hotel" aria-pressed="false">Hotel</button><button type="button" class="chip" data-f="freehold" id="f-freehold" aria-pressed="false">Freehold</button><button type="button" class="chip" data-f="ready" id="f-ready" aria-pressed="false">Ready now</button></div>
     </div>
-    <ul class="ix-grid"><li class="ix" data-tags="apartments beachfront offplan"><a href="#luna">
+    <div class="filters">
+      <div class="frow"><span class="flabel mono">Type</span><div class="chips" role="group" aria-label="Filter by type"><button type="button" class="chip" data-f="villas" id="f-villas" aria-pressed="false">Villas</button><button type="button" class="chip" data-f="apartments" id="f-apartments" aria-pressed="false">Apartments</button><button type="button" class="chip" data-f="hotel" id="f-hotel" aria-pressed="false">Hotel</button><button type="button" class="chip" data-f="freehold" id="f-freehold" aria-pressed="false">Freehold</button><button type="button" class="chip" data-f="ready" id="f-ready" aria-pressed="false">Ready now</button></div></div>
+      <div class="frow"><span class="flabel mono">Bedrooms</span><div class="chips" role="group" aria-label="Filter by bedrooms"><button type="button" class="chip bchip" data-b="bs" id="fb-bs" aria-pressed="false">Studio</button><button type="button" class="chip bchip" data-b="b1" id="fb-b1" aria-pressed="false">1 BR</button><button type="button" class="chip bchip" data-b="b2" id="fb-b2" aria-pressed="false">2 BR</button><button type="button" class="chip bchip" data-b="b3" id="fb-b3" aria-pressed="false">3 BR</button><button type="button" class="chip bchip" data-b="b4" id="fb-b4" aria-pressed="false">4 BR</button><button type="button" class="chip bchip" data-b="b5" id="fb-b5" aria-pressed="false">5 BR</button></div></div>
+      <p class="fstatus" id="fstatus" aria-live="polite"></p>
+    </div>
+    <ul class="ix-grid"><li class="ix" data-tags="apartments beachfront offplan" data-beds="bs b1 b2 b3"><a href="#luna">
   <img class="" src="media/img/luna-residences_6-s.webp" srcset="media/img/luna-residences_6-s.webp 800w, media/img/luna-residences_6.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Luna Residences" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">Luna Residences</span><span class="ix-price mono">from $185,000</span></span></a></li><li class="ix" data-tags="villas freehold offplan"><a href="#flower">
+  <span class="ix-meta"><span class="ix-name">Luna Residences</span><span class="ix-price mono">from $185,000</span><span class="ix-beds">Studio · 1 · 2 · 3 bedrooms</span></span></a></li><li class="ix" data-tags="villas freehold offplan" data-beds="b2 b3"><a href="#flower">
   <img class="" src="media/img/flower-estates_1-s.webp" srcset="media/img/flower-estates_1-s.webp 800w, media/img/flower-estates_1.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Flower Estates" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">Flower Estates</span><span class="ix-price mono">from $500,000</span></span></a></li><li class="ix" data-tags="villas freehold offplan"><a href="#pavilions">
+  <span class="ix-meta"><span class="ix-name">Flower Estates</span><span class="ix-price mono">from $500,000</span><span class="ix-beds">2 · 3 bedrooms</span></span></a></li><li class="ix" data-tags="villas freehold offplan" data-beds="b3 b4 b5"><a href="#pavilions">
   <img class="" src="media/img/the-pavilions_1-s.webp" srcset="media/img/the-pavilions_1-s.webp 800w, media/img/the-pavilions_1.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Pavilions" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">The Pavilions</span><span class="ix-price mono">from $620,000</span></span></a></li><li class="ix" data-tags="hotel offplan"><a href="#xhotel">
+  <span class="ix-meta"><span class="ix-name">The Pavilions</span><span class="ix-price mono">from $620,000</span><span class="ix-beds">3 · 4 · 5 bedrooms</span></span></a></li><li class="ix" data-tags="hotel offplan" data-beds="bs"><a href="#xhotel">
   <img class="" src="media/img/xhotel_6-s.webp" srcset="media/img/xhotel_6-s.webp 800w, media/img/xhotel_6.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="X Hotel" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">X Hotel</span><span class="ix-price mono">from $173,999</span></span></a></li><li class="ix" data-tags="villas apartments offplan"><a href="#bso">
+  <span class="ix-meta"><span class="ix-name">X Hotel</span><span class="ix-price mono">from $173,999</span><span class="ix-beds">Studio / hotel room</span></span></a></li><li class="ix" data-tags="villas apartments offplan" data-beds="bs b1 b2 b3 b4"><a href="#bso">
   <img class="" src="media/img/black-sands-oasis_5-s.webp" srcset="media/img/black-sands-oasis_5-s.webp 800w, media/img/black-sands-oasis_5.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Black Sands Oasis" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">Black Sands Oasis</span><span class="ix-price mono">from $115,400</span></span></a></li><li class="ix" data-tags="villas apartments freehold offplan"><a href="#biom">
+  <span class="ix-meta"><span class="ix-name">Black Sands Oasis</span><span class="ix-price mono">from $115,400</span><span class="ix-beds">Studio · 1 · 2 · 3 · 4 bedrooms</span></span></a></li><li class="ix" data-tags="villas apartments freehold offplan" data-beds="bs b1 b2 b3"><a href="#biom">
   <img class="" src="media/img/biom_3-s.webp" srcset="media/img/biom_3-s.webp 800w, media/img/biom_3.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="BIOM" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">BIOM</span><span class="ix-price mono">from $145,000</span></span></a></li><li class="ix" data-tags="villas hotel offplan"><a href="#origins">
+  <span class="ix-meta"><span class="ix-name">BIOM</span><span class="ix-price mono">from $145,000</span><span class="ix-beds">Studio · 1 · 2 · 3 bedrooms</span></span></a></li><li class="ix" data-tags="villas hotel offplan" data-beds="b2 b3 b4"><a href="#origins">
   <img class="" src="media/img/origins_8-s.webp" srcset="media/img/origins_8-s.webp 800w, media/img/origins_8.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Origins" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">Origins</span><span class="ix-price mono">from $590,700</span></span></a></li><li class="ix" data-tags="apartments ready"><a href="#ecoverse">
+  <span class="ix-meta"><span class="ix-name">Origins</span><span class="ix-price mono">from $590,700</span><span class="ix-beds">2 · 3 · 4 bedrooms</span></span></a></li><li class="ix" data-tags="apartments ready" data-beds="bs b2 b3"><a href="#ecoverse">
   <img class="" src="media/img/ecoverse_5-s.webp" srcset="media/img/ecoverse_5-s.webp 800w, media/img/ecoverse_5.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Ecoverse Residences" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">Ecoverse Residences</span><span class="ix-price mono">from $197,000</span></span></a></li><li class="ix" data-tags="villas ready"><a href="#vol1">
+  <span class="ix-meta"><span class="ix-name">Ecoverse Residences</span><span class="ix-price mono">from $197,000</span><span class="ix-beds">Studio · 2 · 3 bedrooms</span></span></a></li><li class="ix" data-tags="villas ready" data-beds="b3"><a href="#vol1">
   <img class="" src="media/img/collectionsvol1_4-s.webp" srcset="media/img/collectionsvol1_4-s.webp 800w, media/img/collectionsvol1_4.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Collections Vol. 1" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">The Collections Vol. 1</span><span class="ix-price mono">from $750,000</span></span></a></li><li class="ix" data-tags="villas freehold"><a href="#vol2">
+  <span class="ix-meta"><span class="ix-name">The Collections Vol. 1</span><span class="ix-price mono">from $750,000</span><span class="ix-beds">3 bedrooms</span></span></a></li><li class="ix" data-tags="villas freehold" data-beds="b3"><a href="#vol2">
   <img class="" src="media/img/collectionsvol2_6-s.webp" srcset="media/img/collectionsvol2_6-s.webp 800w, media/img/collectionsvol2_6.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Collections Vol. 2" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">The Collections Vol. 2</span><span class="ix-price mono">from $1,050,000</span></span></a></li><li class="ix" data-tags="villas freehold"><a href="#vol3">
+  <span class="ix-meta"><span class="ix-name">The Collections Vol. 2</span><span class="ix-price mono">from $1,050,000</span><span class="ix-beds">3 bedrooms</span></span></a></li><li class="ix" data-tags="villas freehold" data-beds="b5"><a href="#vol3">
   <img class="" src="media/img/collectionsvol3_7-s.webp" srcset="media/img/collectionsvol3_7-s.webp 800w, media/img/collectionsvol3_7.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Collections Vol. 3" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">The Collections Vol. 3</span><span class="ix-price mono">from $1,800,000</span></span></a></li><li class="ix" data-tags="villas freehold"><a href="#residence">
+  <span class="ix-meta"><span class="ix-name">The Collections Vol. 3</span><span class="ix-price mono">from $1,800,000</span><span class="ix-beds">5 bedrooms</span></span></a></li><li class="ix" data-tags="villas freehold" data-beds="b3 b4 b5"><a href="#residence">
   <img class="" src="media/img/the-residence_5-s.webp" srcset="media/img/the-residence_5-s.webp 800w, media/img/the-residence_5.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="The Residence" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">The Residence</span><span class="ix-price mono">from $685,110</span></span></a></li><li class="ix" data-tags="apartments villas"><a href="#nyanyi">
+  <span class="ix-meta"><span class="ix-name">The Residence</span><span class="ix-price mono">from $685,110</span><span class="ix-beds">3 · 4 · 5 bedrooms</span></span></a></li><li class="ix" data-tags="apartments villas" data-beds="bs b2"><a href="#nyanyi">
   <img class="" src="media/img/nyanyi-village-u3_3-s.webp" srcset="media/img/nyanyi-village-u3_3-s.webp 800w, media/img/nyanyi-village-u3_3.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Nyanyi Village U3" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">Nyanyi Village U3</span><span class="ix-price mono">from $118,700</span></span></a></li><li class="ix" data-tags="apartments villas ready"><a href="#u2">
-  <img class="" src="media/img/unit-nuanu-u2_1-s.webp" srcset="media/img/unit-nuanu-u2_1-s.webp 800w, media/img/unit-nuanu-u2_1.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Unit Nuanu Village" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">Unit Nuanu Village</span><span class="ix-price mono">On request</span></span></a></li><li class="ix" data-tags="apartments villas ready"><a href="#u1">
-  <img class="" src="media/img/unit-space-u1_4-s.webp" srcset="media/img/unit-space-u1_4-s.webp 800w, media/img/unit-space-u1_4.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Unit Space U1" loading="lazy" decoding="async">
-  <span class="ix-meta"><span class="ix-name">Unit Space U1</span><span class="ix-price mono">On request</span></span></a></li></ul>
+  <span class="ix-meta"><span class="ix-name">Nyanyi Village U3</span><span class="ix-price mono">from $118,700</span><span class="ix-beds">Studio · 2 bedrooms</span></span></a></li><li class="ix" data-tags="apartments villas ready" data-beds="bs b1 b2 b3"><a href="#u2">
+  <img class="" src="media/img/unit-nuanu-u2x_1-s.webp" srcset="media/img/unit-nuanu-u2x_1-s.webp 800w, media/img/unit-nuanu-u2x_1.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Unit Nuanu Village" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Unit Nuanu Village</span><span class="ix-price mono">On request</span><span class="ix-beds">Studio · 1 · 2 · 3 bedrooms</span></span></a></li><li class="ix" data-tags="apartments villas ready" data-beds="bs b1 b2"><a href="#u1">
+  <img class="" src="media/img/unit-space-u1x_1-s.webp" srcset="media/img/unit-space-u1x_1-s.webp 800w, media/img/unit-space-u1x_1.webp 1600w" sizes="(min-width: 1000px) 22vw, 50vw" alt="Unit Space U1" loading="lazy" decoding="async">
+  <span class="ix-meta"><span class="ix-name">Unit Space U1</span><span class="ix-price mono">On request</span><span class="ix-beds">Studio · 1 · 2 bedrooms</span></span></a></li></ul>
   </div>
 </section>
 
 
-<section class="project" id="luna" data-tags="apartments beachfront offplan">
+<section class="project" id="luna" data-tags="apartments beachfront offplan" data-beds="bs b1 b2 b3">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">01 / 15 · Nuanu</p>
@@ -319,12 +335,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/luna-residences_6-s.webp" srcset="media/img/luna-residences_6-s.webp 800w, media/img/luna-residences_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Luna Residences, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_6.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/luna-residences_3-s.webp" srcset="media/img/luna-residences_3-s.webp 800w, media/img/luna-residences_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_3.webp"></li><li><img class="" src="media/img/luna-residences_4-s.webp" srcset="media/img/luna-residences_4-s.webp 800w, media/img/luna-residences_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_4.webp"></li><li><img class="" src="media/img/luna-residences_7-s.webp" srcset="media/img/luna-residences_7-s.webp 800w, media/img/luna-residences_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_7.webp"></li><li><img class="" src="media/img/luna-residences_5-s.webp" srcset="media/img/luna-residences_5-s.webp 800w, media/img/luna-residences_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_5.webp"></li><li><img class="" src="media/img/luna-residences_8-s.webp" srcset="media/img/luna-residences_8-s.webp 800w, media/img/luna-residences_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences render" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_8.webp"></li></ul>
+        <img class="g-main" src="media/img/luna-residences_6-s.webp" srcset="media/img/luna-residences_6-s.webp 800w, media/img/luna-residences_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Luna Residences, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_6.webp" data-gal="luna" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/luna-residences_3-s.webp" srcset="media/img/luna-residences_3-s.webp 800w, media/img/luna-residences_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_3.webp" data-gal="luna" data-idx="1"></li><li><img class="" src="media/img/luna-residences_4-s.webp" srcset="media/img/luna-residences_4-s.webp 800w, media/img/luna-residences_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_4.webp" data-gal="luna" data-idx="2"></li><li><img class="" src="media/img/luna-residences_7-s.webp" srcset="media/img/luna-residences_7-s.webp 800w, media/img/luna-residences_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_7.webp" data-gal="luna" data-idx="3"></li><li><img class="" src="media/img/luna-residences_5-s.webp" srcset="media/img/luna-residences_5-s.webp 800w, media/img/luna-residences_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_5.webp" data-gal="luna" data-idx="4"></li><li><img class="" src="media/img/luna-residences_8-s.webp" srcset="media/img/luna-residences_8-s.webp 800w, media/img/luna-residences_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Luna Residences, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/luna-residences_8.webp" data-gal="luna" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $185,000</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>Studio · 1 · 2 · 3 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q4 2028</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold 60+ years</dd></div>
           <div class="fact"><dt>Project</dt><dd>Studio to 3BR penthouse</dd></div>
@@ -347,7 +364,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="flower" data-tags="villas freehold offplan">
+<section class="project" id="flower" data-tags="villas freehold offplan" data-beds="b2 b3">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">02 / 15 · Nuanu</p>
@@ -357,12 +374,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/flower-estates_1-s.webp" srcset="media/img/flower-estates_1-s.webp 800w, media/img/flower-estates_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Flower Estates, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_1.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/flower-estates_8-s.webp" srcset="media/img/flower-estates_8-s.webp 800w, media/img/flower-estates_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_8.webp"></li><li><img class="" src="media/img/flower-estates_2-s.webp" srcset="media/img/flower-estates_2-s.webp 800w, media/img/flower-estates_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_2.webp"></li><li><img class="" src="media/img/flower-estates_4-s.webp" srcset="media/img/flower-estates_4-s.webp 800w, media/img/flower-estates_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_4.webp"></li><li><img class="" src="media/img/flower-estates_6-s.webp" srcset="media/img/flower-estates_6-s.webp 800w, media/img/flower-estates_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_6.webp"></li><li><img class="" src="media/img/flower-estates_3-s.webp" srcset="media/img/flower-estates_3-s.webp 800w, media/img/flower-estates_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates render" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_3.webp"></li></ul>
+        <img class="g-main" src="media/img/flower-estates_1-s.webp" srcset="media/img/flower-estates_1-s.webp 800w, media/img/flower-estates_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Flower Estates, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_1.webp" data-gal="flower" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/flower-estates_8-s.webp" srcset="media/img/flower-estates_8-s.webp 800w, media/img/flower-estates_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_8.webp" data-gal="flower" data-idx="1"></li><li><img class="" src="media/img/flower-estates_2-s.webp" srcset="media/img/flower-estates_2-s.webp 800w, media/img/flower-estates_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_2.webp" data-gal="flower" data-idx="2"></li><li><img class="" src="media/img/flower-estates_4-s.webp" srcset="media/img/flower-estates_4-s.webp 800w, media/img/flower-estates_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_4.webp" data-gal="flower" data-idx="3"></li><li><img class="" src="media/img/flower-estates_6-s.webp" srcset="media/img/flower-estates_6-s.webp 800w, media/img/flower-estates_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_6.webp" data-gal="flower" data-idx="4"></li><li><img class="" src="media/img/flower-estates_3-s.webp" srcset="media/img/flower-estates_3-s.webp 800w, media/img/flower-estates_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Flower Estates, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/flower-estates_3.webp" data-gal="flower" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $500,000</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>2 · 3 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q3 2027</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
           <div class="fact"><dt>Project</dt><dd>26 standalone villas</dd></div>
@@ -385,7 +403,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="pavilions" data-tags="villas freehold offplan">
+<section class="project" id="pavilions" data-tags="villas freehold offplan" data-beds="b3 b4 b5">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">03 / 15 · Nuanu</p>
@@ -395,12 +413,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/the-pavilions_1-s.webp" srcset="media/img/the-pavilions_1-s.webp 800w, media/img/the-pavilions_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Pavilions, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_1.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/the-pavilions_8-s.webp" srcset="media/img/the-pavilions_8-s.webp 800w, media/img/the-pavilions_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_8.webp"></li><li><img class="" src="media/img/the-pavilions_2-s.webp" srcset="media/img/the-pavilions_2-s.webp 800w, media/img/the-pavilions_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_2.webp"></li><li><img class="" src="media/img/the-pavilions_3-s.webp" srcset="media/img/the-pavilions_3-s.webp 800w, media/img/the-pavilions_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_3.webp"></li><li><img class="" src="media/img/the-pavilions_5-s.webp" srcset="media/img/the-pavilions_5-s.webp 800w, media/img/the-pavilions_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_5.webp"></li><li><img class="" src="media/img/the-pavilions_9-s.webp" srcset="media/img/the-pavilions_9-s.webp 800w, media/img/the-pavilions_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions render" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_9.webp"></li></ul>
+        <img class="g-main" src="media/img/the-pavilions_1-s.webp" srcset="media/img/the-pavilions_1-s.webp 800w, media/img/the-pavilions_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Pavilions, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_1.webp" data-gal="pavilions" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/the-pavilions_8-s.webp" srcset="media/img/the-pavilions_8-s.webp 800w, media/img/the-pavilions_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_8.webp" data-gal="pavilions" data-idx="1"></li><li><img class="" src="media/img/the-pavilions_2-s.webp" srcset="media/img/the-pavilions_2-s.webp 800w, media/img/the-pavilions_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_2.webp" data-gal="pavilions" data-idx="2"></li><li><img class="" src="media/img/the-pavilions_3-s.webp" srcset="media/img/the-pavilions_3-s.webp 800w, media/img/the-pavilions_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_3.webp" data-gal="pavilions" data-idx="3"></li><li><img class="" src="media/img/the-pavilions_5-s.webp" srcset="media/img/the-pavilions_5-s.webp 800w, media/img/the-pavilions_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_5.webp" data-gal="pavilions" data-idx="4"></li><li><img class="" src="media/img/the-pavilions_9-s.webp" srcset="media/img/the-pavilions_9-s.webp 800w, media/img/the-pavilions_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Pavilions, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/the-pavilions_9.webp" data-gal="pavilions" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $620,000</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>3 · 4 · 5 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q3 2027</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
           <div class="fact"><dt>Project</dt><dd>26 boutique villas</dd></div>
@@ -437,7 +456,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </aside>
-<section class="project" id="xhotel" data-tags="hotel offplan">
+<section class="project" id="xhotel" data-tags="hotel offplan" data-beds="bs">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">04 / 15 · Nuanu</p>
@@ -447,12 +466,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/xhotel_6-s.webp" srcset="media/img/xhotel_6-s.webp 800w, media/img/xhotel_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="X Hotel, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/xhotel_6.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/xhotel_4-s.webp" srcset="media/img/xhotel_4-s.webp 800w, media/img/xhotel_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_4.webp"></li><li><img class="" src="media/img/xhotel_1-s.webp" srcset="media/img/xhotel_1-s.webp 800w, media/img/xhotel_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_1.webp"></li><li><img class="" src="media/img/xhotel_3-s.webp" srcset="media/img/xhotel_3-s.webp 800w, media/img/xhotel_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_3.webp"></li><li><img class="" src="media/img/xhotel_2-s.webp" srcset="media/img/xhotel_2-s.webp 800w, media/img/xhotel_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_2.webp"></li><li><img class="" src="media/img/xhotel_7-s.webp" srcset="media/img/xhotel_7-s.webp 800w, media/img/xhotel_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel render" loading="lazy" decoding="async" data-zoom="media/img/xhotel_7.webp"></li></ul>
+        <img class="g-main" src="media/img/xhotel_6-s.webp" srcset="media/img/xhotel_6-s.webp 800w, media/img/xhotel_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="X Hotel, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/xhotel_6.webp" data-gal="xhotel" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/xhotel_4-s.webp" srcset="media/img/xhotel_4-s.webp 800w, media/img/xhotel_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/xhotel_4.webp" data-gal="xhotel" data-idx="1"></li><li><img class="" src="media/img/xhotel_1-s.webp" srcset="media/img/xhotel_1-s.webp 800w, media/img/xhotel_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/xhotel_1.webp" data-gal="xhotel" data-idx="2"></li><li><img class="" src="media/img/xhotel_3-s.webp" srcset="media/img/xhotel_3-s.webp 800w, media/img/xhotel_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/xhotel_3.webp" data-gal="xhotel" data-idx="3"></li><li><img class="" src="media/img/xhotel_2-s.webp" srcset="media/img/xhotel_2-s.webp 800w, media/img/xhotel_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/xhotel_2.webp" data-gal="xhotel" data-idx="4"></li><li><img class="" src="media/img/xhotel_7-s.webp" srcset="media/img/xhotel_7-s.webp 800w, media/img/xhotel_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="X Hotel, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/xhotel_7.webp" data-gal="xhotel" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $173,999</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>Studio / hotel room</dd></div>
           <div class="fact"><dt>Handover</dt><dd>2027</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold 25 + 20 years</dd></div>
           <div class="fact"><dt>Project</dt><dd>41 hotel rooms</dd></div>
@@ -475,7 +495,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="bso" data-tags="villas apartments offplan">
+<section class="project" id="bso" data-tags="villas apartments offplan" data-beds="bs b1 b2 b3 b4">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">05 / 15 · Nuanu</p>
@@ -485,12 +505,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/black-sands-oasis_5-s.webp" srcset="media/img/black-sands-oasis_5-s.webp 800w, media/img/black-sands-oasis_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Black Sands Oasis, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_5.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/black-sands-oasis_1-s.webp" srcset="media/img/black-sands-oasis_1-s.webp 800w, media/img/black-sands-oasis_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_1.webp"></li><li><img class="" src="media/img/black-sands-oasis_3-s.webp" srcset="media/img/black-sands-oasis_3-s.webp 800w, media/img/black-sands-oasis_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_3.webp"></li><li><img class="" src="media/img/black-sands-oasis_2-s.webp" srcset="media/img/black-sands-oasis_2-s.webp 800w, media/img/black-sands-oasis_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_2.webp"></li><li><img class="" src="media/img/black-sands-oasis_8-s.webp" srcset="media/img/black-sands-oasis_8-s.webp 800w, media/img/black-sands-oasis_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_8.webp"></li><li><img class="" src="media/img/black-sands-oasis_9-s.webp" srcset="media/img/black-sands-oasis_9-s.webp 800w, media/img/black-sands-oasis_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis render" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_9.webp"></li></ul>
+        <img class="g-main" src="media/img/black-sands-oasis_5-s.webp" srcset="media/img/black-sands-oasis_5-s.webp 800w, media/img/black-sands-oasis_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Black Sands Oasis, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_5.webp" data-gal="bso" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/black-sands-oasis_1-s.webp" srcset="media/img/black-sands-oasis_1-s.webp 800w, media/img/black-sands-oasis_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_1.webp" data-gal="bso" data-idx="1"></li><li><img class="" src="media/img/black-sands-oasis_3-s.webp" srcset="media/img/black-sands-oasis_3-s.webp 800w, media/img/black-sands-oasis_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_3.webp" data-gal="bso" data-idx="2"></li><li><img class="" src="media/img/black-sands-oasis_2-s.webp" srcset="media/img/black-sands-oasis_2-s.webp 800w, media/img/black-sands-oasis_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_2.webp" data-gal="bso" data-idx="3"></li><li><img class="" src="media/img/black-sands-oasis_8-s.webp" srcset="media/img/black-sands-oasis_8-s.webp 800w, media/img/black-sands-oasis_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_8.webp" data-gal="bso" data-idx="4"></li><li><img class="" src="media/img/black-sands-oasis_9-s.webp" srcset="media/img/black-sands-oasis_9-s.webp 800w, media/img/black-sands-oasis_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Black Sands Oasis, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/black-sands-oasis_9.webp" data-gal="bso" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $115,400</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>Studio · 1 · 2 · 3 · 4 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>2028</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold 35 + 20 years</dd></div>
           <div class="fact"><dt>Project</dt><dd>83 villas · 20 studios · 8 penthouses</dd></div>
@@ -513,7 +534,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="biom" data-tags="villas apartments freehold offplan">
+<section class="project" id="biom" data-tags="villas apartments freehold offplan" data-beds="bs b1 b2 b3">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">06 / 15 · Nuanu</p>
@@ -523,12 +544,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/biom_3-s.webp" srcset="media/img/biom_3-s.webp 800w, media/img/biom_3.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="BIOM, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/biom_3.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/biom_1-s.webp" srcset="media/img/biom_1-s.webp 800w, media/img/biom_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_1.webp"></li><li><img class="" src="media/img/biom_5-s.webp" srcset="media/img/biom_5-s.webp 800w, media/img/biom_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_5.webp"></li><li><img class="" src="media/img/biom_9-s.webp" srcset="media/img/biom_9-s.webp 800w, media/img/biom_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_9.webp"></li><li><img class="" src="media/img/biom_4-s.webp" srcset="media/img/biom_4-s.webp 800w, media/img/biom_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_4.webp"></li><li><img class="" src="media/img/biom_7-s.webp" srcset="media/img/biom_7-s.webp 800w, media/img/biom_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM render" loading="lazy" decoding="async" data-zoom="media/img/biom_7.webp"></li></ul>
+        <img class="g-main" src="media/img/biom_3-s.webp" srcset="media/img/biom_3-s.webp 800w, media/img/biom_3.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="BIOM, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/biom_3.webp" data-gal="biom" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/biom_1-s.webp" srcset="media/img/biom_1-s.webp 800w, media/img/biom_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/biom_1.webp" data-gal="biom" data-idx="1"></li><li><img class="" src="media/img/biom_5-s.webp" srcset="media/img/biom_5-s.webp 800w, media/img/biom_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/biom_5.webp" data-gal="biom" data-idx="2"></li><li><img class="" src="media/img/biom_9-s.webp" srcset="media/img/biom_9-s.webp 800w, media/img/biom_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/biom_9.webp" data-gal="biom" data-idx="3"></li><li><img class="" src="media/img/biom_4-s.webp" srcset="media/img/biom_4-s.webp 800w, media/img/biom_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/biom_4.webp" data-gal="biom" data-idx="4"></li><li><img class="" src="media/img/biom_7-s.webp" srcset="media/img/biom_7-s.webp 800w, media/img/biom_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="BIOM, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/biom_7.webp" data-gal="biom" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $145,000</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>Studio · 1 · 2 · 3 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q4 2027</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold 35 + 20 years · freehold for 2–3 BR villas</dd></div>
           <div class="fact"><dt>Project</dt><dd>Living district by Rustam Kerimov</dd></div>
@@ -551,7 +573,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="origins" data-tags="villas hotel offplan">
+<section class="project" id="origins" data-tags="villas hotel offplan" data-beds="b2 b3 b4">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">07 / 15 · Nuanu</p>
@@ -561,12 +583,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/origins_8-s.webp" srcset="media/img/origins_8-s.webp 800w, media/img/origins_8.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Origins, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/origins_8.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/origins_1-s.webp" srcset="media/img/origins_1-s.webp 800w, media/img/origins_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_1.webp"></li><li><img class="" src="media/img/origins_2-s.webp" srcset="media/img/origins_2-s.webp 800w, media/img/origins_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_2.webp"></li><li><img class="" src="media/img/origins_3-s.webp" srcset="media/img/origins_3-s.webp 800w, media/img/origins_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_3.webp"></li><li><img class="" src="media/img/origins_6-s.webp" srcset="media/img/origins_6-s.webp 800w, media/img/origins_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_6.webp"></li><li><img class="" src="media/img/origins_9-s.webp" srcset="media/img/origins_9-s.webp 800w, media/img/origins_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins render" loading="lazy" decoding="async" data-zoom="media/img/origins_9.webp"></li></ul>
+        <img class="g-main" src="media/img/origins_8-s.webp" srcset="media/img/origins_8-s.webp 800w, media/img/origins_8.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Origins, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/origins_8.webp" data-gal="origins" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/origins_1-s.webp" srcset="media/img/origins_1-s.webp 800w, media/img/origins_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/origins_1.webp" data-gal="origins" data-idx="1"></li><li><img class="" src="media/img/origins_2-s.webp" srcset="media/img/origins_2-s.webp 800w, media/img/origins_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/origins_2.webp" data-gal="origins" data-idx="2"></li><li><img class="" src="media/img/origins_3-s.webp" srcset="media/img/origins_3-s.webp 800w, media/img/origins_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/origins_3.webp" data-gal="origins" data-idx="3"></li><li><img class="" src="media/img/origins_6-s.webp" srcset="media/img/origins_6-s.webp 800w, media/img/origins_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/origins_6.webp" data-gal="origins" data-idx="4"></li><li><img class="" src="media/img/origins_9-s.webp" srcset="media/img/origins_9-s.webp 800w, media/img/origins_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Origins, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/origins_9.webp" data-gal="origins" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $590,700</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>2 · 3 · 4 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q2 2027</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold 35 years</dd></div>
           <div class="fact"><dt>Project</dt><dd>18 one-of-a-kind villas</dd></div>
@@ -603,7 +626,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </aside>
-<section class="project" id="ecoverse" data-tags="apartments ready">
+<section class="project" id="ecoverse" data-tags="apartments ready" data-beds="bs b2 b3">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">08 / 15 · Nuanu</p>
@@ -613,12 +636,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/ecoverse_5-s.webp" srcset="media/img/ecoverse_5-s.webp 800w, media/img/ecoverse_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Ecoverse Residences, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_5.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/ecoverse_1-s.webp" srcset="media/img/ecoverse_1-s.webp 800w, media/img/ecoverse_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_1.webp"></li><li><img class="" src="media/img/ecoverse_8-s.webp" srcset="media/img/ecoverse_8-s.webp 800w, media/img/ecoverse_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_8.webp"></li><li><img class="" src="media/img/ecoverse_3-s.webp" srcset="media/img/ecoverse_3-s.webp 800w, media/img/ecoverse_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_3.webp"></li><li><img class="" src="media/img/ecoverse_9-s.webp" srcset="media/img/ecoverse_9-s.webp 800w, media/img/ecoverse_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_9.webp"></li><li><img class="" src="media/img/ecoverse_7-s.webp" srcset="media/img/ecoverse_7-s.webp 800w, media/img/ecoverse_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences render" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_7.webp"></li></ul>
+        <img class="g-main" src="media/img/ecoverse_5-s.webp" srcset="media/img/ecoverse_5-s.webp 800w, media/img/ecoverse_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Ecoverse Residences, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_5.webp" data-gal="ecoverse" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/ecoverse_1-s.webp" srcset="media/img/ecoverse_1-s.webp 800w, media/img/ecoverse_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_1.webp" data-gal="ecoverse" data-idx="1"></li><li><img class="" src="media/img/ecoverse_8-s.webp" srcset="media/img/ecoverse_8-s.webp 800w, media/img/ecoverse_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_8.webp" data-gal="ecoverse" data-idx="2"></li><li><img class="" src="media/img/ecoverse_3-s.webp" srcset="media/img/ecoverse_3-s.webp 800w, media/img/ecoverse_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_3.webp" data-gal="ecoverse" data-idx="3"></li><li><img class="" src="media/img/ecoverse_9-s.webp" srcset="media/img/ecoverse_9-s.webp 800w, media/img/ecoverse_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_9.webp" data-gal="ecoverse" data-idx="4"></li><li><img class="" src="media/img/ecoverse_7-s.webp" srcset="media/img/ecoverse_7-s.webp 800w, media/img/ecoverse_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Ecoverse Residences, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/ecoverse_7.webp" data-gal="ecoverse" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $197,000</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>Studio · 2 · 3 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Completed (Q1 2026)</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold 25 + 30 years priority extension</dd></div>
           <div class="fact"><dt>Project</dt><dd>Ready to move in</dd></div>
@@ -641,7 +665,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="vol1" data-tags="villas ready">
+<section class="project" id="vol1" data-tags="villas ready" data-beds="b3">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">09 / 15 · Nuanu</p>
@@ -651,12 +675,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/collectionsvol1_4-s.webp" srcset="media/img/collectionsvol1_4-s.webp 800w, media/img/collectionsvol1_4.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 1, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_4.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/collectionsvol1_3-s.webp" srcset="media/img/collectionsvol1_3-s.webp 800w, media/img/collectionsvol1_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_3.webp"></li><li><img class="" src="media/img/collectionsvol1_7-s.webp" srcset="media/img/collectionsvol1_7-s.webp 800w, media/img/collectionsvol1_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_7.webp"></li><li><img class="" src="media/img/collectionsvol1_8-s.webp" srcset="media/img/collectionsvol1_8-s.webp 800w, media/img/collectionsvol1_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_8.webp"></li><li><img class="" src="media/img/collectionsvol1_9-s.webp" srcset="media/img/collectionsvol1_9-s.webp 800w, media/img/collectionsvol1_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_9.webp"></li><li><img class="" src="media/img/collectionsvol1_6-s.webp" srcset="media/img/collectionsvol1_6-s.webp 800w, media/img/collectionsvol1_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_6.webp"></li></ul>
+        <img class="g-main" src="media/img/collectionsvol1_4-s.webp" srcset="media/img/collectionsvol1_4-s.webp 800w, media/img/collectionsvol1_4.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 1, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_4.webp" data-gal="vol1" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/collectionsvol1_3-s.webp" srcset="media/img/collectionsvol1_3-s.webp 800w, media/img/collectionsvol1_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_3.webp" data-gal="vol1" data-idx="1"></li><li><img class="" src="media/img/collectionsvol1_7-s.webp" srcset="media/img/collectionsvol1_7-s.webp 800w, media/img/collectionsvol1_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_7.webp" data-gal="vol1" data-idx="2"></li><li><img class="" src="media/img/collectionsvol1_8-s.webp" srcset="media/img/collectionsvol1_8-s.webp 800w, media/img/collectionsvol1_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_8.webp" data-gal="vol1" data-idx="3"></li><li><img class="" src="media/img/collectionsvol1_9-s.webp" srcset="media/img/collectionsvol1_9-s.webp 800w, media/img/collectionsvol1_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_9.webp" data-gal="vol1" data-idx="4"></li><li><img class="" src="media/img/collectionsvol1_6-s.webp" srcset="media/img/collectionsvol1_6-s.webp 800w, media/img/collectionsvol1_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 1, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol1_6.webp" data-gal="vol1" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $750,000</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>3 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Completed (Q4 2025)</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold 24 years, renewable to 34</dd></div>
           <div class="fact"><dt>Project</dt><dd>Villa collection</dd></div>
@@ -679,7 +704,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="vol2" data-tags="villas freehold">
+<section class="project" id="vol2" data-tags="villas freehold" data-beds="b3">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">10 / 15 · Nuanu</p>
@@ -689,12 +714,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/collectionsvol2_6-s.webp" srcset="media/img/collectionsvol2_6-s.webp 800w, media/img/collectionsvol2_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 2, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_6.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/collectionsvol2_3-s.webp" srcset="media/img/collectionsvol2_3-s.webp 800w, media/img/collectionsvol2_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_3.webp"></li><li><img class="" src="media/img/collectionsvol2_2-s.webp" srcset="media/img/collectionsvol2_2-s.webp 800w, media/img/collectionsvol2_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_2.webp"></li><li><img class="" src="media/img/collectionsvol2_7-s.webp" srcset="media/img/collectionsvol2_7-s.webp 800w, media/img/collectionsvol2_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_7.webp"></li><li><img class="" src="media/img/collectionsvol2_8-s.webp" srcset="media/img/collectionsvol2_8-s.webp 800w, media/img/collectionsvol2_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_8.webp"></li><li><img class="" src="media/img/collectionsvol2_9-s.webp" srcset="media/img/collectionsvol2_9-s.webp 800w, media/img/collectionsvol2_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_9.webp"></li></ul>
+        <img class="g-main" src="media/img/collectionsvol2_6-s.webp" srcset="media/img/collectionsvol2_6-s.webp 800w, media/img/collectionsvol2_6.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 2, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_6.webp" data-gal="vol2" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/collectionsvol2_3-s.webp" srcset="media/img/collectionsvol2_3-s.webp 800w, media/img/collectionsvol2_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_3.webp" data-gal="vol2" data-idx="1"></li><li><img class="" src="media/img/collectionsvol2_2-s.webp" srcset="media/img/collectionsvol2_2-s.webp 800w, media/img/collectionsvol2_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_2.webp" data-gal="vol2" data-idx="2"></li><li><img class="" src="media/img/collectionsvol2_7-s.webp" srcset="media/img/collectionsvol2_7-s.webp 800w, media/img/collectionsvol2_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_7.webp" data-gal="vol2" data-idx="3"></li><li><img class="" src="media/img/collectionsvol2_8-s.webp" srcset="media/img/collectionsvol2_8-s.webp 800w, media/img/collectionsvol2_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_8.webp" data-gal="vol2" data-idx="4"></li><li><img class="" src="media/img/collectionsvol2_9-s.webp" srcset="media/img/collectionsvol2_9-s.webp 800w, media/img/collectionsvol2_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 2, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol2_9.webp" data-gal="vol2" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $1,050,000</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>3 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q4 2026</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
           <div class="fact"><dt>Project</dt><dd>Villa collection</dd></div>
@@ -717,7 +743,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="vol3" data-tags="villas freehold">
+<section class="project" id="vol3" data-tags="villas freehold" data-beds="b5">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">11 / 15 · Nuanu</p>
@@ -727,12 +753,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/collectionsvol3_7-s.webp" srcset="media/img/collectionsvol3_7-s.webp 800w, media/img/collectionsvol3_7.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 3, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_7.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/collectionsvol3_2-s.webp" srcset="media/img/collectionsvol3_2-s.webp 800w, media/img/collectionsvol3_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_2.webp"></li><li><img class="" src="media/img/collectionsvol3_6-s.webp" srcset="media/img/collectionsvol3_6-s.webp 800w, media/img/collectionsvol3_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_6.webp"></li><li><img class="" src="media/img/collectionsvol3_8-s.webp" srcset="media/img/collectionsvol3_8-s.webp 800w, media/img/collectionsvol3_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_8.webp"></li><li><img class="" src="media/img/collectionsvol3_5-s.webp" srcset="media/img/collectionsvol3_5-s.webp 800w, media/img/collectionsvol3_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_5.webp"></li><li><img class="" src="media/img/collectionsvol3_9-s.webp" srcset="media/img/collectionsvol3_9-s.webp 800w, media/img/collectionsvol3_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3 render" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_9.webp"></li></ul>
+        <img class="g-main" src="media/img/collectionsvol3_7-s.webp" srcset="media/img/collectionsvol3_7-s.webp 800w, media/img/collectionsvol3_7.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Collections Vol. 3, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_7.webp" data-gal="vol3" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/collectionsvol3_2-s.webp" srcset="media/img/collectionsvol3_2-s.webp 800w, media/img/collectionsvol3_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_2.webp" data-gal="vol3" data-idx="1"></li><li><img class="" src="media/img/collectionsvol3_6-s.webp" srcset="media/img/collectionsvol3_6-s.webp 800w, media/img/collectionsvol3_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_6.webp" data-gal="vol3" data-idx="2"></li><li><img class="" src="media/img/collectionsvol3_8-s.webp" srcset="media/img/collectionsvol3_8-s.webp 800w, media/img/collectionsvol3_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_8.webp" data-gal="vol3" data-idx="3"></li><li><img class="" src="media/img/collectionsvol3_5-s.webp" srcset="media/img/collectionsvol3_5-s.webp 800w, media/img/collectionsvol3_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_5.webp" data-gal="vol3" data-idx="4"></li><li><img class="" src="media/img/collectionsvol3_9-s.webp" srcset="media/img/collectionsvol3_9-s.webp 800w, media/img/collectionsvol3_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Collections Vol. 3, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/collectionsvol3_9.webp" data-gal="vol3" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $1,800,000</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>5 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q3 2026</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
           <div class="fact"><dt>Project</dt><dd>2 signature villas</dd></div>
@@ -769,7 +796,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </aside>
-<section class="project" id="residence" data-tags="villas freehold">
+<section class="project" id="residence" data-tags="villas freehold" data-beds="b3 b4 b5">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">12 / 15 · Nuanu</p>
@@ -779,12 +806,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/the-residence_5-s.webp" srcset="media/img/the-residence_5-s.webp 800w, media/img/the-residence_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Residence, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/the-residence_5.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/the-residence_3-s.webp" srcset="media/img/the-residence_3-s.webp 800w, media/img/the-residence_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_3.webp"></li><li><img class="" src="media/img/the-residence_8-s.webp" srcset="media/img/the-residence_8-s.webp 800w, media/img/the-residence_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_8.webp"></li><li><img class="" src="media/img/the-residence_9-s.webp" srcset="media/img/the-residence_9-s.webp 800w, media/img/the-residence_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_9.webp"></li><li><img class="" src="media/img/the-residence_6-s.webp" srcset="media/img/the-residence_6-s.webp 800w, media/img/the-residence_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_6.webp"></li><li><img class="" src="media/img/the-residence_7-s.webp" srcset="media/img/the-residence_7-s.webp 800w, media/img/the-residence_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence render" loading="lazy" decoding="async" data-zoom="media/img/the-residence_7.webp"></li></ul>
+        <img class="g-main" src="media/img/the-residence_5-s.webp" srcset="media/img/the-residence_5-s.webp 800w, media/img/the-residence_5.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="The Residence, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/the-residence_5.webp" data-gal="residence" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/the-residence_3-s.webp" srcset="media/img/the-residence_3-s.webp 800w, media/img/the-residence_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/the-residence_3.webp" data-gal="residence" data-idx="1"></li><li><img class="" src="media/img/the-residence_8-s.webp" srcset="media/img/the-residence_8-s.webp 800w, media/img/the-residence_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/the-residence_8.webp" data-gal="residence" data-idx="2"></li><li><img class="" src="media/img/the-residence_9-s.webp" srcset="media/img/the-residence_9-s.webp 800w, media/img/the-residence_9.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/the-residence_9.webp" data-gal="residence" data-idx="3"></li><li><img class="" src="media/img/the-residence_6-s.webp" srcset="media/img/the-residence_6-s.webp 800w, media/img/the-residence_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/the-residence_6.webp" data-gal="residence" data-idx="4"></li><li><img class="" src="media/img/the-residence_7-s.webp" srcset="media/img/the-residence_7-s.webp 800w, media/img/the-residence_7.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="The Residence, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/the-residence_7.webp" data-gal="residence" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $685,110</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>3 · 4 · 5 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q4 2026</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Freehold for foreigners</dd></div>
           <div class="fact"><dt>Project</dt><dd>Villa community</dd></div>
@@ -807,7 +835,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="nyanyi" data-tags="apartments villas">
+<section class="project" id="nyanyi" data-tags="apartments villas" data-beds="bs b2">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">13 / 15 · Nuanu</p>
@@ -817,12 +845,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/nyanyi-village-u3_3-s.webp" srcset="media/img/nyanyi-village-u3_3-s.webp 800w, media/img/nyanyi-village-u3_3.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Nyanyi Village U3, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_3.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/nyanyi-village-u3_1-s.webp" srcset="media/img/nyanyi-village-u3_1-s.webp 800w, media/img/nyanyi-village-u3_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_1.webp"></li><li><img class="" src="media/img/nyanyi-village-u3_8-s.webp" srcset="media/img/nyanyi-village-u3_8-s.webp 800w, media/img/nyanyi-village-u3_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_8.webp"></li><li><img class="" src="media/img/nyanyi-village-u3_4-s.webp" srcset="media/img/nyanyi-village-u3_4-s.webp 800w, media/img/nyanyi-village-u3_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_4.webp"></li><li><img class="" src="media/img/nyanyi-village-u3_5-s.webp" srcset="media/img/nyanyi-village-u3_5-s.webp 800w, media/img/nyanyi-village-u3_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_5.webp"></li><li><img class="" src="media/img/nyanyi-village-u3_6-s.webp" srcset="media/img/nyanyi-village-u3_6-s.webp 800w, media/img/nyanyi-village-u3_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3 render" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_6.webp"></li></ul>
+        <img class="g-main" src="media/img/nyanyi-village-u3_3-s.webp" srcset="media/img/nyanyi-village-u3_3-s.webp 800w, media/img/nyanyi-village-u3_3.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Nyanyi Village U3, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_3.webp" data-gal="nyanyi" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/nyanyi-village-u3_1-s.webp" srcset="media/img/nyanyi-village-u3_1-s.webp 800w, media/img/nyanyi-village-u3_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_1.webp" data-gal="nyanyi" data-idx="1"></li><li><img class="" src="media/img/nyanyi-village-u3_8-s.webp" srcset="media/img/nyanyi-village-u3_8-s.webp 800w, media/img/nyanyi-village-u3_8.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_8.webp" data-gal="nyanyi" data-idx="2"></li><li><img class="" src="media/img/nyanyi-village-u3_4-s.webp" srcset="media/img/nyanyi-village-u3_4-s.webp 800w, media/img/nyanyi-village-u3_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_4.webp" data-gal="nyanyi" data-idx="3"></li><li><img class="" src="media/img/nyanyi-village-u3_5-s.webp" srcset="media/img/nyanyi-village-u3_5-s.webp 800w, media/img/nyanyi-village-u3_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_5.webp" data-gal="nyanyi" data-idx="4"></li><li><img class="" src="media/img/nyanyi-village-u3_6-s.webp" srcset="media/img/nyanyi-village-u3_6-s.webp 800w, media/img/nyanyi-village-u3_6.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Nyanyi Village U3, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/nyanyi-village-u3_6.webp" data-gal="nyanyi" data-idx="5"></li></ul>
       </div>
       <div class="p-info">
         <p class="price"><span class="from mono">from</span> $118,700</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>Studio · 2 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Q3 2026</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold 25 + 25 years priority extension</dd></div>
           <div class="fact"><dt>Project</dt><dd>Next to Pro Education school</dd></div>
@@ -845,7 +874,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="u2" data-tags="apartments villas ready">
+<section class="project" id="u2" data-tags="apartments villas ready" data-beds="bs b1 b2 b3">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">14 / 15 · Nuanu</p>
@@ -855,12 +884,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/unit-nuanu-u2_1-s.webp" srcset="media/img/unit-nuanu-u2_1-s.webp 800w, media/img/unit-nuanu-u2_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Unit Nuanu Village, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2_1.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/unit-nuanu-u2_2-s.webp" srcset="media/img/unit-nuanu-u2_2-s.webp 800w, media/img/unit-nuanu-u2_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Nuanu Village render" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2_2.webp"></li></ul>
+        <img class="g-main" src="media/img/unit-nuanu-u2x_1-s.webp" srcset="media/img/unit-nuanu-u2x_1-s.webp 800w, media/img/unit-nuanu-u2x_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Unit Nuanu Village, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2x_1.webp" data-gal="u2" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/unit-nuanu-u2_1-s.webp" srcset="media/img/unit-nuanu-u2_1-s.webp 800w, media/img/unit-nuanu-u2_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Nuanu Village, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2_1.webp" data-gal="u2" data-idx="1"></li><li><img class="" src="media/img/unit-nuanu-u2x_2-s.webp" srcset="media/img/unit-nuanu-u2x_2-s.webp 800w, media/img/unit-nuanu-u2x_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Nuanu Village, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2x_2.webp" data-gal="u2" data-idx="2"></li><li><img class="" src="media/img/unit-nuanu-u2x_3-s.webp" srcset="media/img/unit-nuanu-u2x_3-s.webp 800w, media/img/unit-nuanu-u2x_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Nuanu Village, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2x_3.webp" data-gal="u2" data-idx="3"></li><li><img class="" src="media/img/unit-nuanu-u2x_4-s.webp" srcset="media/img/unit-nuanu-u2x_4-s.webp 800w, media/img/unit-nuanu-u2x_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Nuanu Village, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2x_4.webp" data-gal="u2" data-idx="4"></li><li><img class="" src="media/img/unit-nuanu-u2x_5-s.webp" srcset="media/img/unit-nuanu-u2x_5-s.webp 800w, media/img/unit-nuanu-u2x_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Nuanu Village, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/unit-nuanu-u2x_5.webp" data-gal="u2" data-idx="5"><span class="more" aria-hidden="true">+5</span></li></ul><span hidden data-gal="u2" data-idx="6" data-zoom="media/img/unit-nuanu-u2x_6.webp" data-alt="Unit Nuanu Village, Nuanu Bali photo 7"></span><span hidden data-gal="u2" data-idx="7" data-zoom="media/img/unit-nuanu-u2x_7.webp" data-alt="Unit Nuanu Village, Nuanu Bali photo 8"></span><span hidden data-gal="u2" data-idx="8" data-zoom="media/img/unit-nuanu-u2x_8.webp" data-alt="Unit Nuanu Village, Nuanu Bali photo 9"></span><span hidden data-gal="u2" data-idx="9" data-zoom="media/img/unit-nuanu-u2x_9.webp" data-alt="Unit Nuanu Village, Nuanu Bali photo 10"></span><span hidden data-gal="u2" data-idx="10" data-zoom="media/img/unit-nuanu-u2_2.webp" data-alt="Unit Nuanu Village, Nuanu Bali photo 11"></span>
       </div>
       <div class="p-info">
         <p class="price">On request</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>Studio · 1 · 2 · 3 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Completed</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
           <div class="fact"><dt>Project</dt><dd>Rice field views</dd></div>
@@ -883,7 +913,7 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </div>
   </div>
 </section>
-<section class="project" id="u1" data-tags="apartments villas ready">
+<section class="project" id="u1" data-tags="apartments villas ready" data-beds="bs b1 b2">
   <div class="wrap">
     <header class="p-head">
       <p class="p-index mono">15 / 15 · Nuanu</p>
@@ -893,12 +923,13 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     </header>
     <div class="p-grid">
       <div class="gallery">
-        <img class="g-main" src="media/img/unit-space-u1_4-s.webp" srcset="media/img/unit-space-u1_4-s.webp 800w, media/img/unit-space-u1_4.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Unit Space U1, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1_4.webp">
-        <ul class="thumbs"><li><img class="" src="media/img/unit-space-u1_1-s.webp" srcset="media/img/unit-space-u1_1-s.webp 800w, media/img/unit-space-u1_1.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1 render" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1_1.webp"></li><li><img class="" src="media/img/unit-space-u1_2-s.webp" srcset="media/img/unit-space-u1_2-s.webp 800w, media/img/unit-space-u1_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1 render" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1_2.webp"></li></ul>
+        <img class="g-main" src="media/img/unit-space-u1x_1-s.webp" srcset="media/img/unit-space-u1x_1-s.webp 800w, media/img/unit-space-u1x_1.webp 1600w" sizes="(min-width: 1000px) 60vw, 100vw" alt="Unit Space U1, Nuanu Bali" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1x_1.webp" data-gal="u1" data-idx="0">
+        <ul class="thumbs "><li><img class="" src="media/img/unit-space-u1_4-s.webp" srcset="media/img/unit-space-u1_4-s.webp 800w, media/img/unit-space-u1_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1, Nuanu Bali photo 2" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1_4.webp" data-gal="u1" data-idx="1"></li><li><img class="" src="media/img/unit-space-u1x_2-s.webp" srcset="media/img/unit-space-u1x_2-s.webp 800w, media/img/unit-space-u1x_2.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1, Nuanu Bali photo 3" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1x_2.webp" data-gal="u1" data-idx="2"></li><li><img class="" src="media/img/unit-space-u1x_3-s.webp" srcset="media/img/unit-space-u1x_3-s.webp 800w, media/img/unit-space-u1x_3.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1, Nuanu Bali photo 4" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1x_3.webp" data-gal="u1" data-idx="3"></li><li><img class="" src="media/img/unit-space-u1x_4-s.webp" srcset="media/img/unit-space-u1x_4-s.webp 800w, media/img/unit-space-u1x_4.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1, Nuanu Bali photo 5" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1x_4.webp" data-gal="u1" data-idx="4"></li><li><img class="" src="media/img/unit-space-u1x_5-s.webp" srcset="media/img/unit-space-u1x_5-s.webp 800w, media/img/unit-space-u1x_5.webp 1600w" sizes="(min-width: 1000px) 15vw, 33vw" alt="Unit Space U1, Nuanu Bali photo 6" loading="lazy" decoding="async" data-zoom="media/img/unit-space-u1x_5.webp" data-gal="u1" data-idx="5"><span class="more" aria-hidden="true">+4</span></li></ul><span hidden data-gal="u1" data-idx="6" data-zoom="media/img/unit-space-u1x_6.webp" data-alt="Unit Space U1, Nuanu Bali photo 7"></span><span hidden data-gal="u1" data-idx="7" data-zoom="media/img/unit-space-u1x_7.webp" data-alt="Unit Space U1, Nuanu Bali photo 8"></span><span hidden data-gal="u1" data-idx="8" data-zoom="media/img/unit-space-u1x_8.webp" data-alt="Unit Space U1, Nuanu Bali photo 9"></span><span hidden data-gal="u1" data-idx="9" data-zoom="media/img/unit-space-u1_1.webp" data-alt="Unit Space U1, Nuanu Bali photo 10"></span>
       </div>
       <div class="p-info">
         <p class="price">On request</p>
         <dl class="facts">
+          <div class="fact"><dt>Bedrooms</dt><dd>Studio · 1 · 2 bedrooms</dd></div>
           <div class="fact"><dt>Handover</dt><dd>Completed</dd></div>
           <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
           <div class="fact"><dt>Project</dt><dd>Lived-in community</dd></div>
@@ -930,14 +961,15 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
       <p>BREIG Property is a Bali developer founded in 2016, with completed projects in Canggu, Pererenan, Ubud and Nusa Dua and its own management and construction companies. A selection of their villas for sale:</p>
     </div>
     <div class="b-grid">
-<article class="b-card" id="edem2">
-  <img class="b-main" src="media/img/breig-edem_1-s.webp" srcset="media/img/breig-edem_1-s.webp 800w, media/img/breig-edem_1.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Edem Villas II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_1.webp">
-  <ul class="thumbs small"><li><img class="" src="media/img/breig-edem_5-s.webp" srcset="media/img/breig-edem_5-s.webp 800w, media/img/breig-edem_5.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_5.webp"></li><li><img class="" src="media/img/breig-edem_3-s.webp" srcset="media/img/breig-edem_3-s.webp 800w, media/img/breig-edem_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_3.webp"></li><li><img class="" src="media/img/breig-edem_2-s.webp" srcset="media/img/breig-edem_2-s.webp 800w, media/img/breig-edem_2.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_2.webp"></li></ul>
+<article class="b-card" id="edem2" data-tags="villas" data-beds="bs b1 b2 b3">
+  <img class="b-main" src="media/img/breig-edem_1-s.webp" srcset="media/img/breig-edem_1-s.webp 800w, media/img/breig-edem_1.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Edem Villas II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_1.webp" data-gal="edem2" data-idx="0">
+  <ul class="thumbs small"><li><img class="" src="media/img/breig-edem_5-s.webp" srcset="media/img/breig-edem_5-s.webp 800w, media/img/breig-edem_5.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II by BREIG photo 2" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_5.webp" data-gal="edem2" data-idx="1"></li><li><img class="" src="media/img/breig-edem_3-s.webp" srcset="media/img/breig-edem_3-s.webp 800w, media/img/breig-edem_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II by BREIG photo 3" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_3.webp" data-gal="edem2" data-idx="2"></li><li><img class="" src="media/img/breig-edem_2-s.webp" srcset="media/img/breig-edem_2-s.webp 800w, media/img/breig-edem_2.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Edem Villas II by BREIG photo 4" loading="lazy" decoding="async" data-zoom="media/img/breig-edem_2.webp" data-gal="edem2" data-idx="3"></li></ul>
   <div class="b-body">
     <p class="eyebrow">Nusa Dua · Benoa</p>
     <h3>Edem Villas II</h3>
     <p class="price sm"><span class="from mono">from</span> $102,000</p>
     <dl class="facts">
+      <div class="fact"><dt>Bedrooms</dt><dd>Studio · 1 · 2 · 3 bedrooms</dd></div>
       <div class="fact"><dt>Type</dt><dd>Studios to 3BR villas, 24–180 m²</dd></div>
       <div class="fact"><dt>Status</dt><dd>Q4 2027 (off-plan)</dd></div>
       <div class="fact"><dt>Ownership</dt><dd>Leasehold up to 60 years</dd></div>
@@ -947,14 +979,15 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     <div class="ask"><img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy"><a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Edem%20Villas%20II%20by%20BREIG%20%28Nusa%20Dua%20%C2%B7%20Benoa%2C%20Bali%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask about Edem Villas II</span></a></div>
   </div>
 </article>
-<article class="b-card" id="garden2">
-  <img class="b-main" src="media/img/breig-garden_5-s.webp" srcset="media/img/breig-garden_5-s.webp 800w, media/img/breig-garden_5.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Garden Villa II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_5.webp">
-  <ul class="thumbs small"><li><img class="" src="media/img/breig-garden_3-s.webp" srcset="media/img/breig-garden_3-s.webp 800w, media/img/breig-garden_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_3.webp"></li><li><img class="" src="media/img/breig-garden_4-s.webp" srcset="media/img/breig-garden_4-s.webp 800w, media/img/breig-garden_4.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_4.webp"></li><li><img class="" src="media/img/breig-garden_1-s.webp" srcset="media/img/breig-garden_1-s.webp 800w, media/img/breig-garden_1.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_1.webp"></li></ul>
+<article class="b-card" id="garden2" data-tags="villas" data-beds="b3">
+  <img class="b-main" src="media/img/breig-garden_5-s.webp" srcset="media/img/breig-garden_5-s.webp 800w, media/img/breig-garden_5.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Garden Villa II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_5.webp" data-gal="garden2" data-idx="0">
+  <ul class="thumbs small"><li><img class="" src="media/img/breig-garden_3-s.webp" srcset="media/img/breig-garden_3-s.webp 800w, media/img/breig-garden_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II by BREIG photo 2" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_3.webp" data-gal="garden2" data-idx="1"></li><li><img class="" src="media/img/breig-garden_4-s.webp" srcset="media/img/breig-garden_4-s.webp 800w, media/img/breig-garden_4.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II by BREIG photo 3" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_4.webp" data-gal="garden2" data-idx="2"></li><li><img class="" src="media/img/breig-garden_1-s.webp" srcset="media/img/breig-garden_1-s.webp 800w, media/img/breig-garden_1.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Garden Villa II by BREIG photo 4" loading="lazy" decoding="async" data-zoom="media/img/breig-garden_1.webp" data-gal="garden2" data-idx="3"></li></ul>
   <div class="b-body">
     <p class="eyebrow">Sukawati · Gianyar</p>
     <h3>Garden Villa II</h3>
     <p class="price sm"><span class="from mono">from</span> $330,000</p>
     <dl class="facts">
+      <div class="fact"><dt>Bedrooms</dt><dd>3 bedrooms</dd></div>
       <div class="fact"><dt>Type</dt><dd>3BR jungle villas, ~180 m²</dd></div>
       <div class="fact"><dt>Status</dt><dd>Completed (Q4 2025)</dd></div>
       <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
@@ -964,14 +997,15 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     <div class="ask"><img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy"><a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Garden%20Villa%20II%20by%20BREIG%20%28Sukawati%20%C2%B7%20Gianyar%2C%20Bali%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask about Garden Villa II</span></a></div>
   </div>
 </article>
-<article class="b-card" id="aqua1">
-  <img class="b-main" src="media/img/breig-aqua_1-s.webp" srcset="media/img/breig-aqua_1-s.webp 800w, media/img/breig-aqua_1.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Aquamarine I by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_1.webp">
-  <ul class="thumbs small"><li><img class="" src="media/img/breig-aqua_2-s.webp" srcset="media/img/breig-aqua_2-s.webp 800w, media/img/breig-aqua_2.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_2.webp"></li><li><img class="" src="media/img/breig-aqua_3-s.webp" srcset="media/img/breig-aqua_3-s.webp 800w, media/img/breig-aqua_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_3.webp"></li><li><img class="" src="media/img/breig-aqua_4-s.webp" srcset="media/img/breig-aqua_4-s.webp 800w, media/img/breig-aqua_4.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_4.webp"></li></ul>
+<article class="b-card" id="aqua1" data-tags="villas" data-beds="b3 b4">
+  <img class="b-main" src="media/img/breig-aqua_1-s.webp" srcset="media/img/breig-aqua_1-s.webp 800w, media/img/breig-aqua_1.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Aquamarine I by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_1.webp" data-gal="aqua1" data-idx="0">
+  <ul class="thumbs small"><li><img class="" src="media/img/breig-aqua_2-s.webp" srcset="media/img/breig-aqua_2-s.webp 800w, media/img/breig-aqua_2.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I by BREIG photo 2" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_2.webp" data-gal="aqua1" data-idx="1"></li><li><img class="" src="media/img/breig-aqua_3-s.webp" srcset="media/img/breig-aqua_3-s.webp 800w, media/img/breig-aqua_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I by BREIG photo 3" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_3.webp" data-gal="aqua1" data-idx="2"></li><li><img class="" src="media/img/breig-aqua_4-s.webp" srcset="media/img/breig-aqua_4-s.webp 800w, media/img/breig-aqua_4.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Aquamarine I by BREIG photo 4" loading="lazy" decoding="async" data-zoom="media/img/breig-aqua_4.webp" data-gal="aqua1" data-idx="3"></li></ul>
   <div class="b-body">
     <p class="eyebrow">Berawa · Canggu</p>
     <h3>Aquamarine I</h3>
     <p class="price sm"><span class="from mono">from</span> $620,000</p>
     <dl class="facts">
+      <div class="fact"><dt>Bedrooms</dt><dd>3 · 4 bedrooms</dd></div>
       <div class="fact"><dt>Type</dt><dd>3–4BR pool villas, 263–358 m²</dd></div>
       <div class="fact"><dt>Status</dt><dd>Completed</dd></div>
       <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
@@ -981,14 +1015,15 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
     <div class="ask"><img class="face" src="media/img/florin-s.webp" srcset="media/img/florin-s.webp 1x, media/img/florin.webp 2x" alt="Florin, Bali Invest" width="64" height="64" loading="lazy"><a class="btn wa" href="https://wa.me/40757070757?text=Hello%20Florin%2C%20I%27d%20like%20details%20about%20Aquamarine%20I%20by%20BREIG%20%28Berawa%20%C2%B7%20Canggu%2C%20Bali%29." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>Ask about Aquamarine I</span></a></div>
   </div>
 </article>
-<article class="b-card" id="baliwood2">
-  <img class="b-main" src="media/img/breig-baliwood_2-s.webp" srcset="media/img/breig-baliwood_2-s.webp 800w, media/img/breig-baliwood_2.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Baliwood II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_2.webp">
-  <ul class="thumbs small"><li><img class="" src="media/img/breig-baliwood_1-s.webp" srcset="media/img/breig-baliwood_1-s.webp 800w, media/img/breig-baliwood_1.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_1.webp"></li><li><img class="" src="media/img/breig-baliwood_3-s.webp" srcset="media/img/breig-baliwood_3-s.webp 800w, media/img/breig-baliwood_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_3.webp"></li><li><img class="" src="media/img/breig-baliwood_5-s.webp" srcset="media/img/breig-baliwood_5-s.webp 800w, media/img/breig-baliwood_5.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_5.webp"></li></ul>
+<article class="b-card" id="baliwood2" data-tags="villas" data-beds="b3 b4 b5">
+  <img class="b-main" src="media/img/breig-baliwood_2-s.webp" srcset="media/img/breig-baliwood_2-s.webp 800w, media/img/breig-baliwood_2.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw" alt="Baliwood II by BREIG" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_2.webp" data-gal="baliwood2" data-idx="0">
+  <ul class="thumbs small"><li><img class="" src="media/img/breig-baliwood_1-s.webp" srcset="media/img/breig-baliwood_1-s.webp 800w, media/img/breig-baliwood_1.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II by BREIG photo 2" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_1.webp" data-gal="baliwood2" data-idx="1"></li><li><img class="" src="media/img/breig-baliwood_3-s.webp" srcset="media/img/breig-baliwood_3-s.webp 800w, media/img/breig-baliwood_3.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II by BREIG photo 3" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_3.webp" data-gal="baliwood2" data-idx="2"></li><li><img class="" src="media/img/breig-baliwood_5-s.webp" srcset="media/img/breig-baliwood_5-s.webp 800w, media/img/breig-baliwood_5.webp 1600w" sizes="(min-width: 1000px) 12vw, 30vw" alt="Baliwood II by BREIG photo 4" loading="lazy" decoding="async" data-zoom="media/img/breig-baliwood_5.webp" data-gal="baliwood2" data-idx="3"></li></ul>
   <div class="b-body">
     <p class="eyebrow">Pererenan · Canggu</p>
     <h3>Baliwood II</h3>
     <p class="price sm"><span class="from mono">from</span> $750,000</p>
     <dl class="facts">
+      <div class="fact"><dt>Bedrooms</dt><dd>3 · 4 · 5 bedrooms</dd></div>
       <div class="fact"><dt>Type</dt><dd>3–5BR oceanfront villas, 268–336 m²</dd></div>
       <div class="fact"><dt>Status</dt><dd>Completed</dd></div>
       <div class="fact"><dt>Ownership</dt><dd>Leasehold</dd></div>
@@ -1060,28 +1095,75 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
   <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg></span>
 </a>
 
-<dialog class="lb" id="lb"><img id="lb-img" alt=""><button type="button" id="lb-close">Close</button></dialog>
+<dialog class="lb" id="lb" aria-label="Photo viewer"><div class="lb-stage" id="lb-stage"><img id="lb-img" alt=""></div><button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">&#8249;</button><button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Next photo">&#8250;</button><span class="lb-count" id="lb-count"></span><button type="button" id="lb-close">Close</button></dialog>
 
 <script>
 (function () {
-  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img');
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'), lbCount = document.getElementById('lb-count');
+  var prevBtn = document.getElementById('lb-prev'), nextBtn = document.getElementById('lb-next');
+  var set = [], pos = 0;
+  function show(i) {
+    if (!set.length) return;
+    pos = (i + set.length) % set.length;
+    var el = set[pos];
+    lbImg.src = el.getAttribute('data-zoom');
+    lbImg.alt = el.getAttribute('alt') || el.getAttribute('data-alt') || '';
+    lbCount.textContent = set.length > 1 ? (pos + 1) + ' / ' + set.length : '';
+    prevBtn.hidden = nextBtn.hidden = set.length < 2;
+    var nx = set[(pos + 1) % set.length]; if (nx) { var pre = new Image(); pre.src = nx.getAttribute('data-zoom'); }
+  }
+  function open(el) {
+    var g = el.getAttribute('data-gal');
+    set = g ? Array.prototype.slice.call(document.querySelectorAll('[data-gal="' + g + '"]')).sort(function (a, b) { return a.dataset.idx - b.dataset.idx; }) : [el];
+    show(g ? set.indexOf(el) : 0);
+    if (lb.showModal && !lb.open) lb.showModal();
+  }
   document.addEventListener('click', function (ev) {
     var t = ev.target.closest('[data-zoom]');
-    if (t && lb.showModal) { lbImg.src = t.getAttribute('data-zoom'); lbImg.alt = t.alt || ''; lb.showModal(); }
+    if (t) open(t);
   });
+  prevBtn.addEventListener('click', function (ev) { ev.stopPropagation(); show(pos - 1); });
+  nextBtn.addEventListener('click', function (ev) { ev.stopPropagation(); show(pos + 1); });
   document.getElementById('lb-close').addEventListener('click', function () { lb.close(); });
-  lb.addEventListener('click', function (ev) { if (ev.target === lb) lb.close(); });
+  document.getElementById('lb-stage').addEventListener('click', function (ev) { if (ev.target.id === 'lb-stage') lb.close(); });
+  document.addEventListener('keydown', function (ev) {
+    if (!lb.open) return;
+    if (ev.key === 'ArrowRight') { show(pos + 1); ev.preventDefault(); }
+    else if (ev.key === 'ArrowLeft') { show(pos - 1); ev.preventDefault(); }
+  });
+  var sx = null, sy = 0;
+  lb.addEventListener('touchstart', function (ev) { if (ev.touches.length === 1) { sx = ev.touches[0].clientX; sy = ev.touches[0].clientY; } }, { passive: true });
+  lb.addEventListener('touchend', function (ev) {
+    if (sx === null) return;
+    var dx = ev.changedTouches[0].clientX - sx, dy = ev.changedTouches[0].clientY - sy; sx = null;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) show(dx < 0 ? pos + 1 : pos - 1);
+  }, { passive: true });
 
-  var active = null;
-  document.querySelectorAll('.chip').forEach(function (c) {
-    c.addEventListener('click', function () {
-      active = (active === c.dataset.f) ? null : c.dataset.f;
-      document.querySelectorAll('.chip').forEach(function (o) { o.setAttribute('aria-pressed', o.dataset.f === active ? 'true' : 'false'); });
-      document.querySelectorAll('.ix, .project').forEach(function (el) {
-        var on = !active || el.dataset.tags.split(' ').indexOf(active) > -1;
-        el.classList.toggle('dim', !on);
-      });
+  var fType = null, fBed = null, status = document.getElementById('fstatus');
+  function applyFilters() {
+    document.querySelectorAll('.chip[data-f]').forEach(function (o) { o.setAttribute('aria-pressed', o.dataset.f === fType ? 'true' : 'false'); });
+    document.querySelectorAll('.chip[data-b]').forEach(function (o) { o.setAttribute('aria-pressed', o.dataset.b === fBed ? 'true' : 'false'); });
+    var n = 0, nb = 0;
+    document.querySelectorAll('.ix, .project, .b-card').forEach(function (el) {
+      var okT = !fType || el.dataset.tags.split(' ').indexOf(fType) > -1;
+      var okB = !fBed || el.dataset.beds.split(' ').indexOf(fBed) > -1;
+      var on = okT && okB;
+      el.classList.toggle('dim', !on);
+      if (on && el.classList.contains('ix')) n++;
+      if (on && el.classList.contains('b-card')) nb++;
     });
+    if (!fType && !fBed) { status.textContent = ''; return; }
+    status.innerHTML = '';
+    status.appendChild(document.createTextNode(n + ' Nuanu project' + (n === 1 ? '' : 's') + ' and ' + nb + ' BREIG villa project' + (nb === 1 ? '' : 's') + ' match.'));
+    var clr = document.createElement('button'); clr.type = 'button'; clr.textContent = 'Clear filters';
+    clr.addEventListener('click', function () { fType = null; fBed = null; applyFilters(); });
+    status.appendChild(clr);
+  }
+  document.querySelectorAll('.chip[data-f]').forEach(function (c) {
+    c.addEventListener('click', function () { fType = (fType === c.dataset.f) ? null : c.dataset.f; applyFilters(); });
+  });
+  document.querySelectorAll('.chip[data-b]').forEach(function (c) {
+    c.addEventListener('click', function () { fBed = (fBed === c.dataset.b) ? null : c.dataset.b; applyFilters(); });
   });
 
   document.querySelectorAll('.copy').forEach(function (b) {
@@ -1099,6 +1181,4 @@ dialog.lb button { position: fixed; top: calc(14px + env(safe-area-inset-top, 0p
   });
 })();
 </script>
-
-</body>
-</html>
+</body></html>
