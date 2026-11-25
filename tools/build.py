@@ -130,6 +130,61 @@ BREIG = [
        imgs=["breig-baliwood_2","breig-baliwood_1","breig-baliwood_3","breig-baliwood_5"]),
 ]
 
+# ---------- Dubai: Tonino Lamborghini Residences (developer brochure, Gulf Land Property Developers, Nov 2026) ----------
+TL_IMGS = ["tl-ext","tl-aerial","tl-tower","tl-kitchen","tl-living","tl-bed1","tl-bed2","tl-dining","tl-tub","tl-sink","tl-pool","tl-padel","tl-wellness","tl-terrace","tl-sauna","tl-constr"]
+
+def dubai_section():
+    main, thumbs = gallery("tonino", TL_IMGS, "Tonino Lamborghini Residences, Meydan Dubai", "g-main", "(min-width: 1000px) 60vw, 100vw", "", "(min-width: 1000px) 15vw, 33vw", 5)
+    msg = "Hello Florin, I'm interested in Tonino Lamborghini Residences in Meydan, Dubai. Please send me the presentation and floor plans."
+    units = "".join(f'<div class="dx-unit"><b>{b}</b><span class="mono">{sz}</span></div>' for b, sz in [
+        ("1 Bedroom", "860–1,312 sq ft · ~80–122 m²"), ("2 Bedrooms", "1,484–1,637 sq ft · ~138–152 m²"), ("3 Bedrooms", "1,508–1,885 sq ft · ~140–175 m²")])
+    hl = ["Fully branded Tonino Lamborghini kitchens", "Tonino Lamborghini sanitaryware", "Carbon fibre feature walls (select units)",
+          "Italian hand-laid mosaic pool", "Branded lobby & corridors", "Optional Tonino Lamborghini furniture"]
+    amen = ["Wellness hub","Adults' & kids' pools","Padel court","Gym","Jogging track","Botanical garden","Kids' play area","Retail shops","Concierge","Valet parking","Smart home","24/7 security"]
+    return f'''
+<section class="dubai" id="dubai" data-tags="apartments offplan" data-beds="b1 b2 b3">
+  <div class="wrap">
+    <header class="p-head">
+      <p class="p-index mono">Beyond Bali · Dubai</p>
+      <h2>Tonino Lamborghini Residences</h2>
+      <p class="p-kind">Branded residences in Meydan, Dubai · by Gulf Land Property Developers</p>
+      <div class="tags"><span class="tag">Apartments</span><span class="tag">Off-plan</span><span class="tag">Branded</span></div>
+    </header>
+    <div class="p-grid">
+      <div class="gallery">
+        {main}
+        {thumbs}
+      </div>
+      <div class="p-info">
+        <p class="price dx-price">Price on request</p>
+        <dl class="facts">
+          {fact("Bedrooms", "1 · 2 · 3 bedrooms")}
+          {fact("Construction", "60% complete")}
+          {fact("Handover", "Q4 2027")}
+          {fact("Location", "Meydan, 10 min to Burj Khalifa")}
+          {fact("Community", "541 residences, 4 towers")}
+          {fact("Payment plan", "60/40 (20% down)")}
+        </dl>
+        <p class="about">A luxury hidden gem in Meydan, one of Dubai's most prestigious districts, and the only address that Tonino Lamborghini himself will call home. Four sculpted towers around a private resort podium, with the Italian house's design in every kitchen and bathroom, ten minutes from Burj Khalifa and The Dubai Mall.</p>
+        <div class="dx-units">{units}</div>
+        <ul class="amen">{"".join(f"<li>{e(h)}</li>" for h in hl)}</ul>
+        <ul class="amen dx-amen">{"".join(f"<li>{e(a)}</li>" for a in amen)}</ul>
+        <div class="ask">
+          {BUBBLE}
+          <a class="btn wa" href="{wa(msg)}" target="_blank" rel="noopener">{WA_ICON}<span>Ask Florin about Tonino Lamborghini</span></a>
+          <a class="btn ghost" href="media/doc/Tonino_Lamborghini_Residences_Dubai_BaliInvest.pdf" target="_blank" rel="noopener">Presentation (PDF)</a>
+        </div>
+      </div>
+      <figure class="phone">
+        <video controls playsinline preload="none" poster="media/v/tonino.webp" aria-label="Video: Tonino Lamborghini Residences Dubai">
+          <source src="media/v/tonino.mp4" type="video/mp4">
+        </video>
+        <figcaption class="mono">Video tour · tap to play</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>'''
+
 TAG_LABEL = dict(villas="Villas", apartments="Apartments", hotel="Hotel", freehold="Freehold", ready="Ready", offplan="Off-plan", beachfront="Beachfront")
 
 def pic(name, alt, sizes="(min-width: 1000px) 60vw, 100vw", cls="", eager=False, zoom=True, gal=None, idx=0):
@@ -467,6 +522,19 @@ h1, h2, h3 {{ font-family: var(--display); line-height: 1.04; letter-spacing: -0
 .b-body .facts {{ margin-bottom: 6px; }}
 @media (max-width: 860px) {{ .b-grid {{ grid-template-columns: minmax(0, 1fr); }} }}
 
+/* Dubai */
+.dubai {{ padding-block: 80px 64px; background: #0E0E0F; color: #F2F1EE; --ink: #F2F1EE; --muted: #A3A19C; --line: #2E2D2B; --surface: #18181A; }}
+.dubai .p-index {{ color: #D2232A; }}
+.dubai .tag {{ background: #18181A; border-color: #2E2D2B; color: #F2F1EE; }}
+.dubai .dx-price {{ font-size: clamp(26px, 3vw, 34px); color: #C9A46A; }}
+.dubai .phone video {{ border-color: #2E2D2B; }}
+.dx-units {{ display: grid; gap: 6px; margin: 6px 0 10px; }}
+.dx-unit {{ display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border: 1px solid #2E2D2B; background: #18181A; border-radius: 10px; padding: 10px 14px; }}
+.dx-unit span {{ color: #C9A46A; font-size: 13px; }}
+.dubai .amen li {{ background: #18181A; border-color: #2E2D2B; color: #F2F1EE; }}
+.dubai.dim {{ display: none; }}
+.dubai .ask {{ flex-wrap: wrap; }}
+
 /* contact */
 .contact {{ padding-block: 80px; background: var(--surface); border-top: 1px solid var(--line); }}
 .contact-grid {{ display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 40px; align-items: center; }}
@@ -514,7 +582,7 @@ dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top
 <header class="bar">
   <div class="wrap">
     <a class="brand" href="#top"><img class="face" src="media/img/florin-s.webp" alt="" width="40" height="40"><span><b>BALI INVEST</b><small>Florin · Nuanu & Bali property</small></span></a>
-    <nav aria-label="Sections"><a href="#nuanu">Nuanu</a><a href="#map">Map</a><a href="#projects">Projects</a><a href="#breig">BREIG villas</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Sections"><a href="#nuanu">Nuanu</a><a href="#map">Map</a><a href="#projects">Projects</a><a href="#breig">BREIG villas</a><a href="#dubai">Dubai</a><a href="#contact">Contact</a></nav>
     <a class="btn wa sm" href="{wa("Hello Florin, I'd like details about property in Nuanu, Bali.")}" target="_blank" rel="noopener">{WA_ICON}<span>WhatsApp</span></a>
   </div>
 </header>
@@ -528,7 +596,7 @@ dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top
   <div class="hero-copy"><div class="wrap">
     <p class="eyebrow">Bali Invest · Property presentation</p>
     <h1>Nuanu, <em>Bali.</em></h1>
-    <p class="lead">Fifteen projects inside Nuanu Creative City on Bali's west coast, plus a selection of BREIG villas across the island. Prices, key facts, renders and video tours in one place.</p>
+    <p class="lead">Fifteen projects inside Nuanu Creative City on Bali's west coast, plus a selection of BREIG villas across the island and Tonino Lamborghini Residences in Dubai. Prices, key facts, renders and video tours in one place.</p>
     <div class="hero-row">
       <a class="btn wa" href="{wa("Hello Florin, I saw your Nuanu projects page and I'd like more details.")}" target="_blank" rel="noopener">{WA_ICON}<span>Ask Florin on WhatsApp</span></a>
       <a class="btn ghost" href="#projects">See the projects</a>
@@ -583,6 +651,8 @@ dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top
     <div class="b-grid">{"".join(breig_card(b) for b in BREIG)}</div>
   </div>
 </section>
+
+{dubai_section()}
 
 {cta_band("Not sure where to start? Tell me your budget and I'll shortlist.", "Hello Florin, my budget is ... and I'm looking for ... in Bali. Can you shortlist some options?", 99)}
 
@@ -677,18 +747,19 @@ dialog.lb #lb-close {{ position: fixed; top: calc(14px + env(safe-area-inset-top
   function applyFilters() {{
     document.querySelectorAll('.chip[data-f]').forEach(function (o) {{ o.setAttribute('aria-pressed', o.dataset.f === fType ? 'true' : 'false'); }});
     document.querySelectorAll('.chip[data-b]').forEach(function (o) {{ o.setAttribute('aria-pressed', o.dataset.b === fBed ? 'true' : 'false'); }});
-    var n = 0, nb = 0;
-    document.querySelectorAll('.ix, .project, .b-card').forEach(function (el) {{
+    var n = 0, nb = 0, nd = 0;
+    document.querySelectorAll('.ix, .project, .b-card, .dubai').forEach(function (el) {{
       var okT = !fType || el.dataset.tags.split(' ').indexOf(fType) > -1;
       var okB = !fBed || el.dataset.beds.split(' ').indexOf(fBed) > -1;
       var on = okT && okB;
       el.classList.toggle('dim', !on);
       if (on && el.classList.contains('ix')) n++;
       if (on && el.classList.contains('b-card')) nb++;
+      if (on && el.classList.contains('dubai')) nd++;
     }});
     if (!fType && !fBed) {{ status.textContent = ''; return; }}
     status.innerHTML = '';
-    status.appendChild(document.createTextNode(n + ' Nuanu project' + (n === 1 ? '' : 's') + ' and ' + nb + ' BREIG villa project' + (nb === 1 ? '' : 's') + ' match.'));
+    status.appendChild(document.createTextNode(n + ' Nuanu project' + (n === 1 ? '' : 's') + ' and ' + nb + ' BREIG villa project' + (nb === 1 ? '' : 's') + (nd ? ' and the Dubai project' : '') + ' match.'));
     var clr = document.createElement('button'); clr.type = 'button'; clr.textContent = 'Clear filters';
     clr.addEventListener('click', function () {{ fType = null; fBed = null; applyFilters(); }});
     status.appendChild(clr);
